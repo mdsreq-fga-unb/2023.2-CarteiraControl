@@ -1,5 +1,9 @@
 site_name: CarteiraControl
 
+repo_url: https://github.com/mdsreq-fga-unb/2023.2-CarteiraControl
+repo_name: CarteiraControl
+
+docs_dir: docs
 theme:
   name: material
   palette:
