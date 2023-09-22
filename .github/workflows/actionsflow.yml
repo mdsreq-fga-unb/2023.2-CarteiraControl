@@ -18,7 +18,10 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-          
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .aux
       - run: pip install mkdocs-material
       - run: mkdocs build
       - run: mkdocs gh-deploy --force
