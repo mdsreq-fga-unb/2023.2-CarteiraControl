@@ -1,0 +1,21 @@
+site_name: CarteiraControl
+
+theme:
+  name: material
+  palette:
+    primary: black
+    accent: teal
+  font:
+    text: Roboto
+  language: pt
+nav:
+  - Início: index.md
+  - Gunther's: historia.md
+  - Visão Geral do Produto: VisaoProduto.md
+  - Visão Geral do Projeto: VisaoProjeto.md
+  - Processo de desenvolvimento: ProcessoDesenvolvimento.md
+  - Lições aprendidas: Licoes.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
