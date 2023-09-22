@@ -60,7 +60,7 @@ Mark então segue seu caminho como um destemido caçador de recompensas, caçand
 <p align= "justify">História: Zephyr Newdown nasceu nas profundezas da metrópole futurista de Nova Argentum, uma das cidades mais avançadas da galáxia Calamum Caeruleum. Cresceu em um ambiente repleto de tecnologia de ponta e oportunidades de aprendizado. Desde jovem, Zephyr demonstrou habilidades excepcionais em lidar com dispositivos eletrônicos, robótica e computação.</p>
 <p align= "justify">Enquanto a cidade prosperava em meio à ciência e à inovação, Zephyr desenvolveu um apetite voraz por conhecimento e poder. Ele sonhava em transcender os limites de Nova Argentum e explorar os recantos desconhecidos da galáxia. Essa ambição o levou a seguir uma carreira de caçador de recompensas, uma profissão que exigia não apenas sua engenhosidade tecnológica, mas também suas habilidades de combate.</p>
 
-<p align= "justify">Nave: "Atalho Lento" é equipada com dispositivos de fuga eficazes, e armas potentes refletindo o desejo por poder e liberdade.</p>
+<p align= "justify">Nave: "Atalho Lento" é equipada com dispositivos de fuga eficazes, e armas potentes refletindo o desejo por poder e liberdade, a sagacidade tecnologica de Zephyr o ajudou a construir uma das naves mais eficientes, resistente e rapida da galaxia, sua destreza é implacável.</p>
 
 <p align= "justify">Poder Especial: Zephyr possui uma intuição sobrenatural quando se trata de estratégia. Ele pode identificar a melhor abordagem para qualquer situação quase instantaneamente, tornando suas decisões de liderança ainda mais eficazes.</p>
  
