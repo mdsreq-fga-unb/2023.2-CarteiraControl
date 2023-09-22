@@ -57,7 +57,7 @@ Mark então segue seu caminho como um destemido caçador de recompensas, caçand
  
 ### Harry - Zephyr Newdown
 
-<p align= "justify">História: Zephyr Newdown nasceu nas profundezas da metrópole futurista de Nova Argentum, uma das cidades mais avançadas da galáxia Calamum Caeruleum. Cresceu em um ambiente repleto de tecnologia de ponta e oportunidades de aprendizado. Desde jovem, Zephyr demonstrou habilidades excepcionais em lidar com dispositivos eletrônicos, robótica e computação.</p>
+<p align= "justify">História: Zephyr Newdown nasceu nas profundezas da metrópole futurista de Nova Argentum, uma das cidades mais avançadas da galáxia Calamum Caeruleum. Cresceu em um ambiente repleto de tecnologia de ponta e oportunidades de aprendizado. Desde jovem, Zephyr demonstrou habilidades excepcionais em lidar com dispositivos eletrônicos, robótica e computação, além disso era facinado com o espaço e suas possibilidades.</p>
 <p align= "justify">Enquanto a cidade prosperava em meio à ciência e à inovação, Zephyr desenvolveu um apetite voraz por conhecimento e poder. Ele sonhava em transcender os limites de Nova Argentum e explorar os recantos desconhecidos da galáxia. Essa ambição o levou a seguir uma carreira de caçador de recompensas, uma profissão que exigia não apenas sua engenhosidade tecnológica, mas também suas habilidades de combate.</p>
 
 <p align= "justify">Nave: "Atalho Lento" é equipada com dispositivos de fuga eficazes, e armas potentes refletindo o desejo por poder e liberdade,sua sagacidade tecnologica deu a ela o titulo de nave mais rápida de Nova Argentum, vencendo várias competições.</p>
