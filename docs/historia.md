@@ -66,8 +66,8 @@ Mark então segue seu caminho como um destemido caçador de recompensas, caçand
  
 ### João - Siesta 
 
-<p align= "justify">História: João nascido em Gorg-28, o especialista em combate da equipe, tem uma abordagem descontraída e única para o combate. Apesar de sua aparência sonolenta, ele é conhecido por derrotar seus inimigos enquanto parece estar quase dormindo. Sua habilidade de combate excepcional e estilo tranquilo surpreendiam constantemente seus oponentes. </p>
-<p align= "justify">Se tornou caçador de recompensas em busca de PAXs, a moeda mais valiosa em seu planeta natal. Seus objetivos finais são acumular fortuna para financiar sua educação, entrando na maior faculdade de tecnologia do seu planeta e evitar que seu lar seja alvo dos conglomerados.</p>
+<p align= "justify">História: João nascido em Gorg-28, o especialista em combate da equipe, tem uma abordagem única para o combate. Apesar de sua aparência não intimidante, ele é conhecido por derrotar seus inimigos enquanto parece estar entediado. Sua habilidade de combate excepcional e estilo exótico surpreendiam constantemente seus oponentes. </p>
+<p align= "justify">Se tornou caçador de recompensas em busca de PAXs, a moeda mais valiosa em seu planeta natal. Seus objetivos eram acumular fortuna para financiar sua educação, entrando na maior faculdade de tecnologia da galaxia e evitar que seu lar seja alvo dos conglomerados. Entretanto durante sua busca incessante por PAXs acabou desenvolvendo uma obsessão por dinheiro, abandonando seus antigos sonhos e objetivos para se dedicar inteiramente a sua nova vida como caçador de recompensas. </p>
 
 <p align= "justify">Nave: "Siesta Voadora" é equipada com armamento poderoso e temida por aqueles que cruzam o caminho dos "Gunther's".</p>
 
