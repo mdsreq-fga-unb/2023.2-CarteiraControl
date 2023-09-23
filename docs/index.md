@@ -1,3 +1,7 @@
+custom_css: 
+  -custom/custom.css
+
+<body>
 <h1 align="center"> <b>Gunther's - 2023.2<b> </h1>
 
 ## Sobre o projeto
@@ -23,3 +27,7 @@ A documentação do projeto está disponivel nesse <a href="#" target= "_blank">
 
 | Versão | Data       | Modificação                             | Autor                         |
 | ------ | ---------- | --------------------------------------- | ----------------------------- |
+
+<body>
+custom_css: 
+  -custom/custom.css
