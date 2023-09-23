@@ -4,8 +4,18 @@ site_name: CarteiraControl
 theme:
   name: material
   palette:
-    primary: black
-    accent: teal
+    - scheme: default 
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: #191717
+      accent: #8ECDDD
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: #191717
+      accent: #8ECDDD
   font:
     text: Roboto
   language: pt
@@ -18,6 +28,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
+    - navigation.tabs.sticky
 
 nav:
   - Início: index.md
