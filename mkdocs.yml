@@ -9,6 +9,16 @@ theme:
   font:
     text: Roboto
   language: pt
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - header.autohide
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+
 nav:
   - Início: index.md
   - Gunther's: historia.md
@@ -20,3 +30,6 @@ nav:
 markdown_extensions:
   - attr_list
   - md_in_html
+
+custom_css: 
+  -custom/custom.css

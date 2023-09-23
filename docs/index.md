@@ -1,4 +1,4 @@
-<h1 align="center">Gunther's - 2023.2 </h1>
+<h1 align="center"> <b>Gunther's - 2023.2<b> </h1>
 
 ## Sobre o projeto
 Repositório de projeto da disciplina de REQ-T4. Equipe 3.
@@ -19,3 +19,7 @@ A documentação do projeto está disponivel nesse <a href="#" target= "_blank">
 | 202028973 | Tiago Albuquerque de Lima | Tiago1604 |  [<img src="https://avatars.githubusercontent.com/u/98188815?v=4" width=50>](https://github.com/Tiago1604)  |
 
 
+## Histórico de versão
+
+| Versão | Data       | Modificação                             | Autor                         |
+| ------ | ---------- | --------------------------------------- | ----------------------------- |
