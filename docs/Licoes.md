@@ -15,4 +15,4 @@
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
-|    1.0   |   Tiago     |   Adiciona Adicionar Lições da primeira missão |  23/10 |
+|    1.0   |   Tiago     |   Adiciona lições da primeira missão |  23/10 |

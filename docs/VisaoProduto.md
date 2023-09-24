@@ -13,7 +13,7 @@
 |     Para      |                          **Público jovem-adulto que necessitem de controle de finanças.**                                                                             |
 | :-----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |     Quem      |                                                     Público sem conhecimento de organização ou administração financeira.                                              |
-| Chaos Manager |                                      É uma aplicação web : “CarteiraControl”                                                                                          |
+| CarteiraControl |                                      É uma aplicação web : “CarteiraControl”                                                                                          |
 |      Que      |                                            Ajuda no controle e gestão de finanças                                                                                     |
 | Ao contrário  |                                Mobillis e organizze                                                                                                                   |
 | Nosso produto |        Disponibiliza ferramentas e dicas de gestão financeira de forma acessível para qualquer usuário.                                                               |
