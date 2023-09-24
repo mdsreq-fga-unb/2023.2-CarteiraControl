@@ -4,6 +4,8 @@
 
 <p align = "justify" > A tabela a seguir possui os integrantes definidos para cada divisão de atribuições de taferas a serem cumpridas. <p> 
 
+<center>
+
 |            **PAPEL**              |                                       **ATRIBUIÇÕES**                                                            | **RESPONSÁVEL**  | **PARTICIPANTES**  |
 |:----------------------------------|:----------------------------------------------------------------------------------------------------------------:|:----------------:|:------------------:|
 |Dono do Produto                    | Coordenar as fases do projeto, atualizar escopo do produto, validar as entregas e gerenciar prazos.              |    Juan Pablo    |        ...         |
@@ -13,10 +15,12 @@
 |Analise e design de requisitos     |Descobre, propõe e analisa os requisitos do produto, documentando e esclarecendo possíveis dúvidas aos envolvidos.|João Lucas        |...|
 |Cliente                            | Valida o produto e propõe requisitos que o mesmo necessita que exista na aplicação.                              |Danilo            |...|
 
-<br> 
+</center>
+
 
 ## 2.2 Planejamento das iterações do projeto 
 
+<center>
 
 | **ITERAÇÃO**  |                           **PRODUTO(ENTREGAS)**                           | **INÍCIO**      |    **FIM**     |
 |:-------------:|:-------------------------------------------------------------------------:|:---------------:|:--------------:|
@@ -27,9 +31,11 @@
 |5              |...|...|...|
 |6              |...|...|...|
 
-<br> 
+</center>
 
 ## 2.3 Matriz de Comunicação
+
+<center>
 
 |        **DESCRIÇÃO**        |   **ENVOLVIDOS**   | **PERIODICIDADE** |                        **PRODUTOS GERADOS**                          |
 |:----------------------------|:------------------:|:-----------------:|:--------------------------------------------------------------------:|
@@ -39,7 +45,7 @@
 |Encontro com o cliente       | Toda a equipe      | Quizenal          | -Validação dos artefatos construídos.                                |
 |Comunicar situação do projeto| Equipe e professor.| Semanal           | -Relatório da situação atual do projeto.                             | 
 
-<br>
+</center>
 
 ## 2.4 Gerenciamento de riscos
 
@@ -52,7 +58,7 @@
     - Solução:
     Replanejamento das atribuições designadas, e replanejamento das fases de desenvolvimento.
 
-<br>
+
 
 ## 2.5 Critérios de Replanejamento
 
