@@ -58,12 +58,12 @@
 
 1. **Diminuição dos membros da equipe**
 
-&emps;&emps;&emps;Caso haja a mudanças na formação original da equipe é importante que seja reavaliado as atividades primeiramente definidas, com reajuste de prazos, tarefas e complexidade do desenvolvimento, a fim de reduzir os impactos no projeto.
+&emsp;&emsp;&emsp;Caso haja a mudanças na formação original da equipe é importante que seja reavaliado as atividades primeiramente definidas, com reajuste de prazos, tarefas e complexidade do desenvolvimento, a fim de reduzir os impactos no projeto.
 
 2. **Não cumprimento de prazos**
 
-&emps;&emps;&emps;Caso a equipe não consiga cumprir os prazos pré-definidos anteriormente, é possível que haja um reajuste dos requisitos e suas complexidade, a fim de que ao final possa ser possível realizar a entrega de um produto funcional ao cliente.
+&emsp;&emsp;&emsp;Caso a equipe não consiga cumprir os prazos pré-definidos anteriormente, é possível que haja um reajuste dos requisitos e suas complexidade, a fim de que ao final possa ser possível realizar a entrega de um produto funcional ao cliente.
 
 3. **Insatisfação do Cliente**
 
-&emps;&emps;&emps;Caso haja uma insatisfação por parte do cliente, é importante que a equipe refaça a analise dos defeitos apontados, com o objetivo de trazer as causas da possível insatisfação e assim poder trazer uma melhora para tal aspecto.
+&emsp;&emsp;&emsp;Caso haja uma insatisfação por parte do cliente, é importante que a equipe refaça a analise dos defeitos apontados, com o objetivo de trazer as causas da possível insatisfação e assim poder trazer uma melhora para tal aspecto.
