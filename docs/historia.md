@@ -73,4 +73,14 @@ Mark então segue seu caminho como um destemido caçador de recompensas, caçand
 
 <p align= "justify">Poder Especial: João tem um estado de combate semelhante a um transe. Quando ele entra nesse estado, seus movimentos se tornam incrivelmente precisos e rápidos, permitindo que ele derrote múltiplos inimigos com facilidade.</p>
 
+## Compromisso
+
+<p align= "justify">Faremos o nosso melhor para honrar a nossa aliança com o Comando Estelar e nos comprometemos a cumprir todas as missões atribuídas à nossa facção com o objetivo de restabelecer a paz em Calamum Caeruleum</p>
+
+## Importância
+
+<p align="justify">Grande parte dos membros desta facção possuem interesse em desestabilizar os conglomerados pois já foram prejudicados por eles. As habilidades dos membros são diversas e úteis para cumprir esse objetivo e eles também possuem experiências adquiridas em outras aventuras. Tudo isso faz com que a presença desta facção se torne indispensável para esta missão.</p>
+
+ 
+
 

@@ -26,5 +26,5 @@
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
-|    1.0   |   Jefferson     |   Adiciona problemas, posição e objetivos do produto |  23/10 |
-|    1.1   |   Leandro     |   Concerta a tabela |  24/10 |
+|    1.0   |   Jefferson     |   Adiciona problemas, posição e objetivos do produto |  23/09 |
+|    1.1   |   Leandro     |   Concerta a tabela |  24/09 |
