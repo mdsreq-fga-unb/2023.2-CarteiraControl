@@ -1,5 +1,5 @@
 # Gunther's - 2023.2
-Repositório de projeto da disciplina de REQ-T4. Equipe 3.
+Repositório de projeto da disciplina de REQ-T3. Equipe 3.
 
 ## Documentação
 A documentação do projeto está disponivel nesse <a href="https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/" target= "_blank">link</a>.
