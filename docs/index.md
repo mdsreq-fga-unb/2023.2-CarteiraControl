@@ -1,7 +1,7 @@
 <h1 align="center"> <b>Gunther's - 2023.2<b> </h1>
 
 ## Sobre o projeto
-Repositório de projeto da disciplina de REQ-T4. Equipe 3.
+Repositório de projeto da disciplina de REQ-T3. Equipe 3.
 
 ## Documentação
 A documentação do projeto está disponivel nesse <a href="#" target= "_blank">link</a>.

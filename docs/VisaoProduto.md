@@ -13,7 +13,7 @@
 |     Para      |                          **Público jovem-adulto que necessitem de controle de finanças.**                                                                             |
 | :-----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |     Quem      |                                                     Público sem conhecimento de organização ou administração financeira.                                              |
-| CarteiraControl |                                      É uma aplicação web : “CarteiraControl”                                                                                          |
+| CarteiraControl |                                      É uma aplicação web: “CarteiraControl”                                                                                          |
 |      Que      |                                            Ajuda no controle e gestão de finanças                                                                                     |
 | Ao contrário  |                                Mobillis e organizze                                                                                                                   |
 | Nosso produto |        Disponibiliza ferramentas e dicas de gestão financeira de forma acessível para qualquer usuário.                                                               |
@@ -27,4 +27,4 @@
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 |    1.0   |   Jefferson     |   Adiciona problemas, posição e objetivos do produto |  23/09 |
-|    1.1   |   Leandro     |   Concerta a tabela |  24/09 |
+|    1.1   |   Leandro     |   Conserta a tabela |  24/09 |

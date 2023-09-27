@@ -5,7 +5,7 @@ Repositório de projeto da disciplina de REQ-T3. Equipe 3.
 A documentação do projeto está disponivel nesse <a href="https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/" target= "_blank">link</a>.
 
 # Sobre o projeto
-O carteiraControl é um web app que ajuda os usuários a administrarem melhor o seu dinheiro.
+O CarteiraControl é um web app que ajuda os usuários a administrarem melhor o seu dinheiro.
 
 # Integrantes
 | Matrícula | Nome                            | GitHub |                                                       Foto                                                       |
