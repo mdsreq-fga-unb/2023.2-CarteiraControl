@@ -58,3 +58,11 @@ Os riscos identificados para o projeto foram:
 3. **Insatisfação do Cliente**
 
    Caso haja insatisfação por parte do cliente, é importante que a equipe refaça a análise dos defeitos apontados, com o objetivo de trazer as causas da possível insatisfação e assim poder trazer uma melhoria para tal aspecto.
+
+## Histórico de versão
+
+| Versão  | Autor| Descrição | Data |
+| :---: | :----: | :-------: | :---: |
+|    1.0   |   Harryson     |   Implementação do documento inicial |  23/09 |
+
+
