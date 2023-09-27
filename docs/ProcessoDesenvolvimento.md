@@ -12,6 +12,7 @@ Ao optarmos por uma estratégia de desenvolvimento de software, seguimos os crit
 <p>Figura 1: Fatores que influenciam a escolha do desenvolvimento dirigido a plano. Sommerville (2018).</p>
 </div>
 
+
 #### Questões Técnicas
 
 - **Qual é o tamanho do sistema que está sendo desenvolvido?** É um sistema pequeno, mas com alta complexidade.
