@@ -5,7 +5,7 @@ theme:
   name: material
   palette:
     primary: black
-    accent: teal
+    accent: 146C94
   font:
     text: Roboto
   language: pt
