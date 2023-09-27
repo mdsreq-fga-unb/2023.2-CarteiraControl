@@ -117,8 +117,6 @@ Com o propósito de facilitar a execução das tarefas durante o desenvolvimento
 
 
 
-
-
 ### 3.4 Referências
 
 > Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.
