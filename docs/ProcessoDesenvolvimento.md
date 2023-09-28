@@ -43,7 +43,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 
 <div align="center" style="text-align: center">
 
-![Image title](assets/imagens/PU.png)
+![Image title] (assets/imagens/PU.png)
 
 <p>Figura 1: Diagrama do Processo Unificado.</p>
 </div>
@@ -82,7 +82,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 
 <div align="center" style="text-align: center">
 
-![Image title](assets/imagens/facetas.png)
+![Image title](assets\imagens\brasao.png)
 
 
 
