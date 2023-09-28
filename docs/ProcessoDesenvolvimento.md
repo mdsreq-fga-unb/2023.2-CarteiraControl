@@ -46,7 +46,8 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 <p align = "justify" > Dessa forma com o processo definido, será seguido a seguinte sequência de elaboração: </p>
 
 
-![pu] (assets/imagens/PU.png)
+![pu](assets/imagens/PU.png)
+
 <div align="center" style="text-align: center">
 <p>Figura 1: Diagrama do Processo Unificado.</p>
 </div>
@@ -60,6 +61,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 <p align = "justify" >&emsp;&emsp;Por fim, diante do processo de desenvolvimento estabelecido, é necessário relacionar tal, ao processo de engenharia de requisitos, que tem as seguintes fases:  </p>
 
 ![er](assets/imagens/ER.png)
+
 <div align="center" style="text-align: center">
 <p>Figura 2: Especificação da ER.</p>
 </div>
