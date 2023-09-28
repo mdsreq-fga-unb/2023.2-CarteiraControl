@@ -15,6 +15,6 @@ Definição de Ciclo de Vida, Abordagem e Processo
 
 3° Entrega: 28/09/2023 - Entrega final missão 1
 
-[VIDEO APRESENTAÇÃO](LINK DO VIDEO AQUI)
+[VIDEO APRESENTAÇÃO](https://www.youtube.com/watch?v=6vte3ta_GRs)
 
 
