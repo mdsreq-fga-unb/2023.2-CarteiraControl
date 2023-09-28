@@ -46,7 +46,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 <p align = "justify" > Dessa forma com o processo definido, será seguido a seguinte sequência de elaboração: </p>
 
 
-![pu] (assets/imagens/PU.png)
+![pu](assets/imagens/PU.png)
 <div align="center" style="text-align: center">
 <p>Figura 1: Diagrama do Processo Unificado.</p>
 </div>
@@ -81,11 +81,11 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 &emsp;&emsp;O Processo Unificado já possui uma ER, com determinadas tarefas a serem seguidas. Para desenvolver as atividades do projeto é necessário escolher uma abordagem que se adeque às especificidades do software, e para isso utilizaremos um método proposto pela IREB (2022) no qual é apresentado diferentes facetas e configurações 'típicas' para um processo de ER, representado na Figura 3. </p>
 
 
-![facetas](assets\imagens\facetas.png)
-
+![facetas](assets/imagens/facetas.png)
 <div align="center" style="text-align: center">
 <p>Figura 3: Facetas do processo de ER. IREB (2023).</p>
 </div>
+
 <p align="justify"> &emsp;&emsp;
 Com base no que foi avaliado no sommerville e na abordagem de desenvolvimento já definida, identificamos a faceta do <b>Processo de ER Contratual</b>  compartilhava seus principais pontos. Os pontos definidos para o projeto foram:
 
