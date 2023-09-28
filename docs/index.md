@@ -23,5 +23,5 @@ A documentação do projeto está disponivel nesse <a href="#" target= "_blank">
 
 | Versão | Data       | Modificação                             | Autor                         |
 | ------ | ---------- | --------------------------------------- | ----------------------------- |
-
+|    1.0   |   Leandro     |   Implementação da página inicial |  25/09 |
 
