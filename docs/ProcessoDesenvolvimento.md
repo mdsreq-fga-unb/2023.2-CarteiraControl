@@ -35,9 +35,13 @@ projeto.</b>
   <p align = "justify"> &emsp;&emsp;
 Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</p>
 
+<center>
+
 | Abordagem | Ciclo de Vida| Processo | 
 | :---: | :----: | :-------: |
 | Dirigida a plano| Iterativo-Incremental|Processo unificado|
+
+</center>
 
 <p align = "justify" > Dessa forma com o processo definido, será seguido a seguinte sequência de elaboração: </p>
 
