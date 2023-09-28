@@ -45,10 +45,9 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 
 <p align = "justify" > Dessa forma com o processo definido, será seguido a seguinte sequência de elaboração: </p>
 
+
+![pu] (assets/imagens/PU.png)
 <div align="center" style="text-align: center">
-
-![pu](assets/imagens/PU.png)
-
 <p>Figura 1: Diagrama do Processo Unificado.</p>
 </div>
 
@@ -60,10 +59,8 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 
 <p align = "justify" >&emsp;&emsp;Por fim, diante do processo de desenvolvimento estabelecido, é necessário relacionar tal, ao processo de engenharia de requisitos, que tem as seguintes fases:  </p>
 
-<div align="center" style="text-align: center">
-
 ![er](assets/imagens/ER.png)
-
+<div align="center" style="text-align: center">
 <p>Figura 2: Especificação da ER.</p>
 </div>
 
@@ -84,12 +81,9 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 &emsp;&emsp;O Processo Unificado já possui uma ER, com determinadas tarefas a serem seguidas. Para desenvolver as atividades do projeto é necessário escolher uma abordagem que se adeque às especificidades do software, e para isso utilizaremos um método proposto pela IREB (2022) no qual é apresentado diferentes facetas e configurações 'típicas' para um processo de ER, representado na Figura 3. </p>
 
 
-<div align="center" style="text-align: center">
-
 ![facetas](assets\imagens\facetas.png)
 
-
-
+<div align="center" style="text-align: center">
 <p>Figura 3: Facetas do processo de ER. IREB (2023).</p>
 </div>
 <p align="justify"> &emsp;&emsp;
