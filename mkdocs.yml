@@ -8,8 +8,6 @@ theme:
   # logo: "icon-640.png"
   # favicon: "favicon-640.png"
   palette:
-    primary: black
-    accent: 146C94
     - scheme: default 
       toggle:
         icon: material/toggle-switch-off-outline
