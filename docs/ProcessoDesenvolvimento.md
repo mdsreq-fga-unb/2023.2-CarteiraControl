@@ -42,7 +42,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 <p align = "justify" > Dessa forma com o processo definido, será seguido a seguinte sequência de elaboração: </p>
 
 <div align="center" style="text-align: center">
-<img src="https://github.com/mdsreq-fga-unb/2023.2-CarteiraControl/tree/main/docs/assets/imagens/PU.png">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.2-CarteiraControl/main/docs/assets/PU.png">
 <p>Figura 1: Diagrama do Processo Unificado.</p>
 </div>
 
@@ -55,7 +55,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 <p align = "justify" >&emsp;&emsp;Por fim, diante do processo de desenvolvimento estabelecido, é necessário relacionar tal, ao processo de engenharia de requisitos, que tem as seguintes fases:  </p>
 
 <div align="center" style="text-align: center">
-<img src="https://github.com/mdsreq-fga-unb/2023.2-CarteiraControl/tree/main/docs/assets/imagens/ER.png">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.2-CarteiraControl/main/docs/assets/ER.png">
 <p>Figura 2: Especificação da ER.</p>
 </div>
 
@@ -77,7 +77,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 
 
 <div align="center" style="text-align: center">
-<img src="https://github.com/mdsreq-fga-unb/2023.2-CarteiraControl/tree/main/docs/assets/imagens/facetas.png">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.2-CarteiraControl/main/docs/assets/facetas.png">
 
 
 
