@@ -18,11 +18,11 @@ A tabela a seguir possui os integrantes definidos para cada divisão de atribui�
 | **ITERAÇÃO**  |                           **PRODUTO(ENTREGAS)**                           | **INÍCIO**      |    **FIM**     |
 |:-------------:|:-------------------------------------------------------------------------:|:---------------:|:--------------:|
 |1              | Definição do produto e seu escopo.                                        |  05/09/2023     | 25/09/2023     |
-|2              | Planejamento, definição de backlog, requisitos brutos e validação.        |  26/09/2023     |03/10/2023|
-|3              | Definição do MVP, definição das tecnologias e forma de desenvolvimento.   | 04/10/2023| 10/10/2023|
-|4              | Prototipagem e início do desenvolvimento.                                 | ... |...|
-|5              |...|...|...|
-|6              |...|...|...|
+|2              | Planejamento, definição de backlog, requisitos brutos e validação.        |  26/09/2023     | 03/10/2023     |
+|3              | Definição do MVP, definição das tecnologias e forma de desenvolvimento.   | 04/10/2023 | 10/10/2023|
+|4              | Prototipagem e início do desenvolvimento.                                 | 10/10/2023 | 5/12/2023|
+|5              |Teste e validação do cliente|5/12/2023|14/12/2023|
+|6              |Entrega final|14/12/2023|14/12/2023|
 
 ## 2.3 Matriz de Comunicação
 
