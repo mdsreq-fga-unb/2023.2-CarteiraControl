@@ -13,7 +13,7 @@
 |     Para      |                          **Público jovem-adulto que necessitem de controle de finanças.**                                                                             |
 | :-----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |     Quem      |                                                     Público sem conhecimento de organização ou administração financeira.                                              |
-| CarteiraControl |                                      É uma aplicação web: “CarteiraControl”                                                                                          |
+| CarteiraControl |                                      É uma aplicação mobile: “CarteiraControl”                                                                                          |
 |      Que      |                                            Ajuda no controle e gestão de finanças                                                                                     |
 | Ao contrário  |                                Mobillis e organizze                                                                                                                   |
 | Nosso produto |        Disponibiliza ferramentas e dicas de gestão financeira de forma acessível para qualquer usuário.                                                               |
@@ -25,7 +25,7 @@
 
 ## Tecnologias a serem utilizadas
 
-<p align = "justify" > Atraves de pesquisas entre os membros do grupo, pesquisas direcionadas ao produto e recomendações de terceiros, apesar de poder haver certas adaptações durante o desenvolvimento do projeto, foram definidas as seguintes tecnologias a serem utilizadas: </p>
+<p align = "justify" > Através de pesquisas entre os membros do grupo, pesquisas direcionadas ao produto e recomendações de terceiros, apesar de poder haver certas adaptações durante o desenvolvimento do projeto, foram definidas as seguintes tecnologias a serem utilizadas: </p>
 
 - Comunicação : Whatsapp, Discord e Teams.
 - Documentação: Mkdocs, Gitpages e Github.
