@@ -22,9 +22,23 @@
 
 <p align= "justify">  O principal objetivo do CarteiraControl é fornecer aos usuários um sistema de gestão financeira abrangente. Com ele, é oferecido um ambiente integrado para gerenciar suas finanças, tornando a administração financeira mais eficaz e organizada. Além disso, é proporcionado uma experiência interativa e estruturada ajudando a alcançar suas metas financeiras, permitindo que acompanhem, sem dificuldades, o progresso de seus planos e a evolução de suas finanças. </p>
 
+
+## Tecnologias a serem utilizadas
+
+<p align = "justify" > Atraves de pesquisas entre os membros do grupo, pesquisas direcionadas ao produto e recomendações de terceiros, apesar de poder haver certas adaptações durante o desenvolvimento do projeto, foram definidas as seguintes tecnologias a serem utilizadas: </p>
+
+- Comunicação : Whatsapp, Discord e Teams.
+- Documentação: Mkdocs, Gitpages e Github.
+- IDE's: Vscode e Android Studio.
+- Kit de desenvolvimento e Frameworks: Dart e Flutter.
+- Backend: Kotlin
+- Prototipação: FIGMA.
+
+
 ## Histórico de versão
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
-|    1.0   |   Jefferson     |   Adiciona problemas, posição e objetivos do produto |  23/09 |
-|    1.1   |   Leandro     |   Conserta a tabela |  24/09 |
+|    1.0   |   Jefferson   |  Adiciona problemas, posição e objetivos do produto |  23/09 |
+|    1.1   |   Leandro     |  Conserta a tabela                                  |  24/09 |
+|    1.2   |   Harryson    |  Adiciona tecnologias definidas                     |  27/09 |

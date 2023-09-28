@@ -47,15 +47,15 @@ Os riscos identificados para o projeto foram:
 
 ## 2.5 Critérios de Replanejamento
 
-1. **Diminuição dos membros da equipe**
+   - **Diminuição dos membros da equipe**
 
    Caso haja mudanças na formação original da equipe, é importante que se reavalie as atividades primeiramente definidas, com reajuste de prazos, tarefas e complexidade do desenvolvimento, a fim de reduzir os impactos no projeto.
 
-2. **Não cumprimento de prazos**
+   - **Não cumprimento de prazos**
 
    Caso a equipe não consiga cumprir os prazos pré-definidos anteriormente, é possível que haja um reajuste dos requisitos e sua complexidade, a fim de que ao final possa ser possível realizar a entrega de um produto funcional ao cliente.
 
-3. **Insatisfação do Cliente**
+   - **Insatisfação do Cliente**
 
    Caso haja insatisfação por parte do cliente, é importante que a equipe refaça a análise dos defeitos apontados, com o objetivo de trazer as causas da possível insatisfação e assim poder trazer uma melhoria para tal aspecto.
 
