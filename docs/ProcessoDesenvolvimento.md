@@ -47,10 +47,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 
 
 ![pu](assets/imagens/PU.png)
-<<<<<<< HEAD
-=======
 
->>>>>>> 6984118fb3d06b16f3d6a332827117416bebbf14
 <div align="center" style="text-align: center">
 <p>Figura 1: Diagrama do Processo Unificado.</p>
 </div>
