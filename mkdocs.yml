@@ -41,6 +41,7 @@ nav:
   - Visão Geral do Projeto: VisaoProjeto.md
   - Processo de desenvolvimento: ProcessoDesenvolvimento.md
   - Lições aprendidas: Licoes.md
+  - Entregas: entregas.md
 
 markdown_extensions:
   - attr_list
