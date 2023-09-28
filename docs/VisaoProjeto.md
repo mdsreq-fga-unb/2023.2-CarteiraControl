@@ -6,11 +6,11 @@ A tabela a seguir possui os integrantes definidos para cada divisão de atribui�
 
 |            **PAPEL**              |                                       **ATRIBUIÇÕES**                                                            | **RESPONSÁVEL**  | **PARTICIPANTES**  |
 |:----------------------------------|:----------------------------------------------------------------------------------------------------------------:|:----------------:|:------------------:|
-|Dono do Produto                    | Coordenar as fases do projeto, atualizar escopo do produto, validar as entregas e gerenciar prazos.              |    Juan Pablo    |        ...         |
+|Dono do Produto                    | Coordenar as fases do projeto, atualizar escopo do produto, validar as entregas e gerenciar prazos.              |    Juan Pablo    |        Leandro        |
 |Desenvolvedor                      | Codificar e construir o software definido a partir dos requisitos analisados.                                    |Harryson          | Equipe             |
-|Analista de qualidade              | Garante a qualidade da aplicação, identifica erros e cria cenários de avaliação.                                 |Jefferson         |...|
-|Design e prototipagem de interfaces| Prototipa possíveis interfaces a serem implementadas no software, mantendo padrões definidos.                    |Leandro           |...|
-|Análise e design de requisitos     | Descobre, propõe e analisa os requisitos do produto, documentando e esclarecendo possíveis dúvidas aos envolvidos.|João Lucas        |...|
+|Analista de qualidade              | Garante a qualidade da aplicação, identifica erros e cria cenários de avaliação.                                 |Jefferson         | Thiago|
+|Design e prototipagem de interfaces| Prototipa possíveis interfaces a serem implementadas no software, mantendo padrões definidos.                    |Leandro           |Juan e Harryson|
+|Análise e design de requisitos     | Descobre, propõe e analisa os requisitos do produto, documentando e esclarecendo possíveis dúvidas aos envolvidos.|João Lucas        | Jefferson|
 |Cliente                            | Valida o produto e propõe requisitos que o mesmo necessita que exista na aplicação.                              |Danilo            |...|
 
 ## 2.2 Planejamento das iterações do projeto
