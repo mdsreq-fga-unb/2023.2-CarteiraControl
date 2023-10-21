@@ -49,20 +49,21 @@ Os riscos identificados para o projeto foram:
 
    - **Diminuição dos membros da equipe**
 
-   Caso haja mudanças na formação original da equipe, é importante que se reavalie as atividades primeiramente definidas, com reajuste de prazos, tarefas e complexidade do desenvolvimento, a fim de reduzir os impactos no projeto.
+   Caso haja mudanças na formação da equipe, é importante reavaliar as atividades definidas, com reajuste de prazos, tarefas e complexidade do desenvolvimento, a fim de reduzir os impactos no projeto.
 
    - **Não cumprimento de prazos**
 
-   Caso a equipe não consiga cumprir os prazos pré-definidos anteriormente, é possível que haja um reajuste dos requisitos e sua complexidade, a fim de que ao final possa ser possível realizar a entrega de um produto funcional ao cliente.
+   Caso a equipe não consiga cumprir os prazos pré-definidos, é possível que haja um reajuste dos requisitos e sua complexidade, a fim de que ao final seja possível realizar a entrega do produto ao cliente.
 
    - **Insatisfação do Cliente**
 
-   Caso haja insatisfação por parte do cliente, é importante que a equipe refaça a análise dos defeitos apontados, com o objetivo de trazer as causas da possível insatisfação e assim poder trazer uma melhoria para tal aspecto.
+   Caso haja insatisfação por parte do cliente, é importante que a equipe refaça a análise dos defeitos apontados, com o objetivo de trazer as causas da insatisfação e assim trazer uma melhoria para tal aspecto.
 
 ## Histórico de versão
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 |    1.0   |   Harryson     |   Implementação do documento inicial |  23/09 |
+|    1.1   |   Jefferson     |   Correção dos Textos |  21/10 |
 
 
