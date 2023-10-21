@@ -3,7 +3,7 @@
 ### 3.1 Metodologia
 
 <p style="text-indent: 20px; text-align: justify;">
-Levamos em conta as três natureza distintas apontadas por Sommerville: Técnicas, Humanas e Organizacionais. para formular perguntas que nos guiaram a abordagem de processo mais indicada para o nosso projeto.
+Levamos em conta as três naturezas apontadas por Sommerville: Técnicas, Humanas e Organizacionais, para formular perguntas que nos guiaram a abordagem de processo mais indicada para o nosso projeto.
 </p>
 
 - **Questões Técnicas:** <br>
@@ -21,7 +21,7 @@ Quais tecnologias estão disponíveis para apoiar o desenvolvimento do sistema? 
 
 - **Questões Organizacionais:** <br>
 <p style="margin-left: 70px;">
-É necessária uma especificação detalhada antes de começar a fase de implementação 
+É necessária uma especificação antes de começar a fase de implementação 
 do projeto? <b>Sim. A maior parte dos requisitos já são conhecidos.</b>
 <br>Um esquema de entrega incremental é 
 realista? <b>Sim</b>.<br>
@@ -53,7 +53,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 </div>
 
 <p align = "justify"> &emsp;&emsp;
-&emsp;&emsp;A escolha do processo foi direcionada devido às suas fases claras de desenvolvimento as quais se encaixaram de forma certeira com o Processo de engenharia de requisitos.
+&emsp;&emsp;A escolha do processo foi direcionada devido às suas fases de desenvolvimento as quais se encaixaram com o Processo de engenharia de requisitos.
 </p>
 
 ### 3.3 Tarefas
@@ -70,9 +70,9 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 
 |Atividade | Método | Ferramenta | Artefatos |
 | :---: | :----: | :-------: | :---: |
-| Elicitação e Descoberta| Entrevistas e análise de requistos | Teams  | Especificação, caso de uso, pedidos do cliente, esboço inicial|
-|Análise e Consenso| Caso de Uso, Brainstorming, Conversas com o cliente, Análises de custo e benefícios, Análises de valor, Análise de Prioridade e Impacto ,Entrevistas, Prototipagem | Teams, discord e Github| Modelo de casos de uso|
-|Declaração | Casos de Uso, Temas, Épicos, Uses Stories, Features|  Reunião e Uses Stories|Casos de uso e visão de requisitos|
+| Elicitação e Descoberta| Entrevistas | Teams  | Pedidos do cliente, esboço inicial|
+|Análise e Consenso| Caso de Uso, Brainstorming, Conversas com o cliente, Análises de custo e benefícios, Análises de valor, Análise de Prioridade e Impacto e Entrevistas | Teams, discord e Github| Casos de Uso,   Lista de RFs e RNFs  |
+|Declaração | Casos de Uso |  Reunião e Uses Stories|Casos de uso e visão de requisitos|
 | Representação | Diagrama UML |LucidChart e astah|  Diagrama de JCasos de Uso |
 | Validação e Verificação| Casos de Uso, Uses Stories, DoR, Feedback, INVEST, Revisão em Pares | Vitest e jest | Feedback do produto|
 | Organização e Atualização| Casos de Uso |Mural, Word, Github |Backlog do produto|
@@ -123,4 +123,5 @@ Com base no que foi avaliado no sommerville e na abordagem de desenvolvimento j�
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 |    1.0   |   Juan Pablo    |   Implementação do documento inicial |  27/09 |
-| 2.0| Harryson, Jefferson, João Lucas, Juan Pablo, Leandro, Thiago |  Regulação e correção do documento | 27/09 |
+| 1.1| Harryson, Jefferson, João Lucas, Juan Pablo, Leandro, Thiago |  Regulação e correção do documento | 27/09 |
+| 1.2| Jefferson |  Correção dos Textos | 21/10 |
