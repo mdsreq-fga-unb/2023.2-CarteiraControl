@@ -104,7 +104,7 @@ Com base no que foi avaliado no sommerville e na abordagem de desenvolvimento j�
 
 | Iniciação/Concepção | Elaboração| Construção | Transição |
 | :---: | :----: | :-------: | :---: |
-|   Elicitação e Descoberta|   Analise e Consenso, Organização e Atualização, Declaração e Representação   |   Organização e Atualização, Verificação e Validação |  Verificação e Validação |
+|   Elicitação e Descoberta, Analise e Consenso, Organização e Atualização, Declaração |  Representação   |   Elicitação e Descoberta, Verificação e Validação, Organização e Atualização | Organização e Atualização, Verificação e Validação |
 | Identificação de stakeholders e suas necessidades, Elaboração de uma visão inicial do sistema e Definição de requisitos de alto nível funcionais e não funcionais | Refinamento e análise dos requisitos iniciais, Modelagem de casos de uso, diagramas e artefatos de modelagem e Priorização dos requisitos com base nas necessidades dos stakeholders | Desenvolvimento dos componentes do sistema baseado nos requisitos, Verificação da definição dos requisitos e Atualização contínua da documentação a medida que ocorrer mudanças | Validação final dos requisitos em relação ao sistema implementado, Preparação para a implantação do sistema no ambiente de produção e Treinamento de usuários finais com base nos requisitos de uso do sistema
 
 
@@ -125,3 +125,4 @@ Com base no que foi avaliado no sommerville e na abordagem de desenvolvimento j�
 |    1.0   |   Juan Pablo    |   Implementação do documento inicial |  27/09 |
 | 1.1| Harryson, Jefferson, João Lucas, Juan Pablo, Leandro, Thiago |  Regulação e correção do documento | 27/09 |
 | 1.2| Jefferson |  Correção dos Textos | 21/10 |
+| 1.2| João Lucas|  Correção de tabela  | 23/10 |
