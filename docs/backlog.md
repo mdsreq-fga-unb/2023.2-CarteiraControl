@@ -25,25 +25,18 @@
 |Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Login e Logoff|Eu, como usuário, desejo atualizar as informações de login, para que eu possa modificar meu acesso|
 |Gerenciamento de Usuários e Contas Bancárias|Informações de Contas Bancárias|Gerir cadastro de informações de Contas bancárias|Eu, como usuário, desejo cadastrar minhas contas dos bancos, para que eu possa rastrear minhas depesas|
 |Gerenciamento de Usuários e Contas Bancárias|Informações de Contas Bancárias|Gerir cadastro de informações de Contas bancárias|Eu, como usuário, desejo atualizar as informações da minha conta do banco, para que eu possa modificar meu perfil|
+|
 
 
-
-
-
-
-
-
-
-
-## Requisitos não-funcionais
-
-| ID | Categoria       | Declaração|                                                                                                                                                                                                                                                 
-| :----: | --------------- | ------------------ |
-|  RNF1  | Implementação   | App mobile android |                                                                                                                                                                                                               
-|  RNF2  | Disponibilidade     | App online |                                                                                                                                                                                                                                                                                                                    
+## Requisitos Não-Funcionais
+|ID| Categoria | Declaração |
+|----| -----| ------|
+|RFN1| Implementação| App Mobile Android|
+|RFN2| Disponibilidade| App Online |
+                                                                                                                                                                                                                                          
 ## Critério de priorização
 Os campos de valor de négocio, viabilidade e complexidade podem variar de 0 a 5, sendo 0 o valor mínimo e 5 o valor máximO. A História de usuário será priorizada se seu MVP for maior ou igual 6 (MVP >= 6).
-    MVP = Valor de negócio + Viabilidade - Complexidade
+MVP = Valor de negócio + Viabilidade - Complexidade
                                                                                                   
 
 ## Priorização de histórias de usuário
@@ -74,7 +67,6 @@ Os campos de valor de négocio, viabilidade e complexidade podem variar de 0 a 5
 
 ## Alinhamento com os objetivos
 
-|
 | aprimorar o controle financeiro do usuário | US03, US07  |
 
 | |
