@@ -169,9 +169,40 @@ O framework utilizado para a declaração de requisitos não funcionais foi o UR
 </table>
                                                                                                                                                                                                                                           
 ## Critério de priorização
-Os campos de valor de négocio, viabilidade e complexidade podem variar de 0 a 5, sendo 0 o valor mínimo e 5 o valor máximO. A História de usuário será priorizada se seu MVP for maior ou igual 6 (MVP >= 6).
-MVP = Valor de negócio + Viabilidade - Complexidade
-                                                                                                  
+Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5, sendo 0 o valor mínimo e 5 o valor máximo. A História de usuário será priorizada se seu MVP for maior ou igual 6 (MVP >= 6).
+
+    MVP = Valor de negócio + Viabilidade - Complexidade
+
+ - Valor de negócio: O quanto a US agrega valor ao produto, se uma US tem valor de negócio 5 significa que ela é um ponto vital do sistema, não podendo ficar fora do MVP. Se uma US tem valor de negócio 1 , significa que não agrega valor algum ao sistema, não pertencendo ao MVP. <b>É validado pelo cliente</b>.
+ - Viabilidade: Se refere a viabilidade de desenvolvimento da US no tempo disponível. Quanto mais perto de 5, mais viável é a US, quanto mais perto de 1, menos viável.
+ - Complexidade: O quão difícil os integrantes consideram a US. Quanto mais perto de 5, maior é a complexidade, quanto mais perto de 1, menos complexo.
+
+### Valor de negócio
+|escala| prioridade|                                                                                                  
+| ----- | ------------| 
+| 1 | Muito baixa |
+| 2 | Baixa |
+| 3 | Média |
+| 4 | Alta |
+| 5 | Muito alta, vital |       
+
+### Viabilidade
+|escala| Viabilidade no tempo disponível|                                                                                                  
+| ----- | ------------| 
+| 1 | Muito baixa |
+| 2 | Baixa |
+| 3 | Média |
+| 4 | Alta |
+| 5 | Muito alta | 
+
+### Complexidade
+|escala| Nível de complexidade|                                                                                                  
+| ----- | ------------| 
+| 1 | Muito baixa |
+| 2 | Baixa |
+| 3 | Média |
+| 4 | Alta |
+| 5 | Muito alta, não fazemos ideia de como implementar | 
 
 ## Priorização de Backlog
 
@@ -183,18 +214,18 @@ MVP = Valor de negócio + Viabilidade - Complexidade
 |  US04  | Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso as despesas  |        5         |     5      |    2       |    8     |✅ |
 |  US05  | Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar  |     5          |   5       |      2       |  8    |✅ |
 |  US06  | Eu, como usuario, desejo definir um planejamento de gastos para me organizar no período de planejamento  |      5 |       5 |      4 | 6    |✅ |
-|  US07  | Eu, como usuário, desejo cadastrar minhas reservas (ex.:contas,dinheiro físico em carteiro), para que eu possa rastrear minhas depesas |    5 |   5      |   3   |    7    |✅ |
-|  US08  | Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis                          |        5         |      5      |      2       |     8     |✅|
-|  US09  | Eu, como usuário, desejo criar um novo tipo categoria de despesas, para que eu possa filtrar os despesas adicionais                    |        5         |      5      |      5       |     5    |❌|
-|  US10  | Eu, como usuário, desejo ser notificado 5 dias antes da data do planejamento, para que eu não exceda o limite da data.                |        5         |      5      |      5       |     5     |❌ |
+|  US07  | Eu, como usuário, desejo cadastrar minhas reservas (ex.:contas,dinheiro físico em carteiro), para que eu possa rastrear minhas depesas |    4 |   5      |   3   |    6    |✅ |
+|  US08  | Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis                          |        4         |      5      |      2       |     7     |✅|
+|  US09  | Eu, como usuário, desejo criar um novo tipo categoria de despesas, para que eu possa filtrar as despesas adicionais                    |        3         |      5      |      5       |     3    |❌|
+|  US10  | Eu, como usuário, desejo ser notificado 5 dias antes da data do planejamento, para que eu não exceda o limite da data.                |        2         |      4      |      5       |     1    |❌ |
 |  US11  | Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas               |        5         |      5      |      4       |     6     |✅ |
 |  US12  | Eu, como usuário, desejo definir teto de gasto para cada categoria, para que eu controle gastos específicos             |        5         |      5      |      4       |     6     |✅ |
 |  US13  | Eu, como usuário, desejo acompanhar progresso em direção as metas do planejamento, para que eu possa poupar recursos   financeiros  |        5         |      5      |      4       |     6     |✅ |
-|  US14  | Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos |        5         |      5      |      5       |     5     |❌ |
-|  US15  | Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês                 |        5   |    5      |       4      |     6     | ✅|
-|  US16  | Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos   |        3         |      5      |      4       |     4     | ❌|
-|  US17  | Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil   |        5         |      5      |      3       |     7     |✅ |
-| US18 | como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimento dos meu ganhos mensais em cada categoria de gasto                |        5         |      5      |      4      |     6     |✅ |
+|  US14  | Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos |        3         |      5      |      5       |     3     |❌ |
+|  US15  | Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês                 |        4   |    5      |       3      |     6     | ✅|
+|  US16  | Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos   |        2         |      5      |      4       |     3     | ❌|
+|  US17  | Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil   |        5         |      5      |      3       |     5     |✅ |
+| US18 | como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimento dos meu ganhos mensais em cada categoria de gasto                |        4         |      5      |      3      |     6     |✅ |
 | US19 | como usuário, desejo ver gráficos de barras dos ganhos por categoria, para que eu tenha conhecimento dos meu ganhos mensais                 |        3         |      5      |      4       |     4     |❌ |
 
 
