@@ -37,10 +37,10 @@
 
 ## Requisitos não-funcionais
 
-| ID | Categoria       | Declaração                                                                                                                                                                                                                                                   |
-| :----: | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|  RNF1  | Implementação   | App mobile android                                                                                                                                                                                                                         |
-|  RNF2  | Disponibilidade     | App online                                                                                                                                                                                                                                                                                                                     |
+| ID | Categoria       | Declaração|                                                                                                                                                                                                                                                 
+| :----: | --------------- | ------------------ |
+|  RNF1  | Implementação   | App mobile android |                                                                                                                                                                                                               
+|  RNF2  | Disponibilidade     | App online |                                                                                                                                                                                                                                                                                                                    
 ## Critério de priorização
 Os campos de valor de négocio, viabilidade e complexidade podem variar de 0 a 5, sendo 0 o valor mínimo e 5 o valor máximO. A História de usuário será priorizada se seu MVP for maior ou igual 6 (MVP >= 6).
     MVP = Valor de negócio + Viabilidade - Complexidade
