@@ -5,10 +5,30 @@
 |Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir processos de despesas|Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso às despesas|
 |Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar despesas|Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas|
 |Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar Despesas|Eu, como usuário, desejo criar categoria de despesas adicionais, para que eu possa filtrar os despesas adicionais|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar ganhos|Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar ganhos|Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir Processos de ganhos|Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir processos de ganhos|Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis|
+|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Categorizar ganhos|Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos|
+|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Categorizar ganhos|Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais|
+|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Gerir Processos de ganhos|Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar|
+|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Gerir processos de ganhos|Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis|
+|||||
+|Análise Financeira|Definir Planejamento|Gerir Planejamentos|Eu, como usuário, desejo definir teto de gasto para cada categoria, para que eu controle gastos específicos|
+|Análise Financeira|Definir Planejamento|Gerir Planejamentos|Eu, como usuário, desejo definir um planejamento financeiro com metas, para que eu possa melhor administrar meus recursos financeiros|
+|Análise Financeira|Definir Planejamento|Gerir Planejamentos|Eu, como usuário, desejo acompanhar progresso em direção as metas do planejamento, para que eu possa poupar recursos   financeiros|
+|Análise Financeira|Definir Planejamento|Notificação de Planejamento|Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos|
+|Análise Financeira|Definir Planejamento|Notificação de Planejamento|Eu, como usuário, desejo ser notificado 5 dias antes da data do planejamento, para que eu não exceda o limite da data.|
+|Análise Financeira|Estatísticas|Gráfico de ganhos e despesas|Eu, como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimentos dos meu gastos ao final do mês|
+|Análise Financeira|Estatísticas|Gráfico de ganhos e despesas|Eu, como usuário, desejo ver gráficos de barras dos ganhos por categoria, para que eu tenha conhecimento dos meu ganhos mensais|
+|Análise Financeira|Estatísticas|Gráfico de ganhos e despesas|Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês|
+|||||
+|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Gerir cadastro de informações de Usuário|Eu, como usuário, desejo criar minha conta, para que eu possa criar um perfil|
+|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Gerir cadastro de informações de Usuário|Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil|
+|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Login e Logoff|Eu, como usuário, desejo logar na minha conta, para que eu possa acessar meu perfil|
+|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Login e Logoff|Eu, como usuário, desejo atualizar as informações de login, para que eu possa modificar meu acesso|
+|Gerenciamento de Usuários e Contas Bancárias|Informações de Contas Bancárias|Gerir cadastro de informações de Contas bancárias|Eu, como usuário, desejo cadastrar minhas contas dos bancos, para que eu possa rastrear minhas depesas|
+|Gerenciamento de Usuários e Contas Bancárias|Informações de Contas Bancárias|Gerir cadastro de informações de Contas bancárias|Eu, como usuário, desejo atualizar as informações da minha conta do banco, para que eu possa modificar meu perfil|
+
+
+
+
 
 
 
