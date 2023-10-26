@@ -1,31 +1,137 @@
 ## Requisitos funcionais
-|Épicos |Capacidades |Features |Histórias de Usuário |
-| ----- | -------| ------|-------------|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir processos de despesas|Eu, como usuário, desejo ver meu gasto individual, para que eu possa controlar meus gastos|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir processos de despesas|Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso às despesas|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar despesas|Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas|
-|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar Despesas|Eu, como usuário, desejo criar categoria de despesas adicionais, para que eu possa filtrar os despesas adicionais|
-|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Categorizar ganhos|Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos|
-|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Categorizar ganhos|Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais|
-|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Gerir Processos de ganhos|Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar|
-|Gerenciamento de Despesas e Ganhos|Transações de Ganhos|Gerir processos de ganhos|Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis|
-|||||
-|Análise Financeira|Definir Planejamento|Gerir Planejamentos|Eu, como usuário, desejo definir teto de gasto para cada categoria, para que eu controle gastos específicos|
-|Análise Financeira|Definir Planejamento|Gerir Planejamentos|Eu, como usuário, desejo definir um planejamento financeiro com metas, para que eu possa melhor administrar meus recursos financeiros|
-|Análise Financeira|Definir Planejamento|Gerir Planejamentos|Eu, como usuário, desejo acompanhar progresso em direção as metas do planejamento, para que eu possa poupar recursos   financeiros|
-|Análise Financeira|Definir Planejamento|Notificação de Planejamento|Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos|
-|Análise Financeira|Definir Planejamento|Notificação de Planejamento|Eu, como usuário, desejo ser notificado 5 dias antes da data do planejamento, para que eu não exceda o limite da data.|
-|Análise Financeira|Estatísticas|Gráfico de ganhos e despesas|Eu, como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimentos dos meu gastos ao final do mês|
-|Análise Financeira|Estatísticas|Gráfico de ganhos e despesas|Eu, como usuário, desejo ver gráficos de barras dos ganhos por categoria, para que eu tenha conhecimento dos meu ganhos mensais|
-|Análise Financeira|Estatísticas|Gráfico de ganhos e despesas|Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês|
-|||||
-|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Gerir cadastro de informações de Usuário|Eu, como usuário, desejo criar minha conta, para que eu possa criar um perfil|
-|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Gerir cadastro de informações de Usuário|Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil|
-|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Login e Logoff|Eu, como usuário, desejo logar na minha conta, para que eu possa acessar meu perfil|
-|Gerenciamento de Usuários e Contas Bancárias|Informações de Usuário|Login e Logoff|Eu, como usuário, desejo atualizar as informações de login, para que eu possa modificar meu acesso|
-|Gerenciamento de Usuários e Contas Bancárias|Informações de Contas Bancárias|Gerir cadastro de informações de Contas bancárias|Eu, como usuário, desejo cadastrar minhas contas dos bancos, para que eu possa rastrear minhas depesas|
-|Gerenciamento de Usuários e Contas Bancárias|Informações de Contas Bancárias|Gerir cadastro de informações de Contas bancárias|Eu, como usuário, desejo atualizar as informações da minha conta do banco, para que eu possa modificar meu perfil|
-|
+<table>
+    <thead>
+        <tr>
+            <th>Épicos</th>
+            <th>Capacidades</th>
+            <th>Funcionalidades</th>
+            <th>Histórias de Usuário</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="37">Gerenciamento de Despesas e Ganhos</td>
+        <td rowspan="8">Transações de Despesa</td>
+        <td rowspan="4">Gerir processos de despesas</td>
+        <td>Eu, como usuário, desejo ver meu gasto individual, para que eu possa controlar meus gastos </td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso às despesas</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="4">Categorizar despesas </td>
+        <td>Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo criar categoria de despesas adicionais, para que eu possa filtrar os despesas adicionais</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="14">Transações de Ganhos</td>
+        <td rowspan="4">Categorizar ganhos</td>
+        <td>Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="2">Gerir Processos de ganhos</td>
+        <td>Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis</td>
+    </tr>
+    <tr>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td rowspan="37">Análise Financeira</td>
+        <td rowspan="8">Definir Planejamento</td>
+        <td rowspan="4">Gerir Planejamentos</td>
+        <td>Eu, como usuário, desejo definir teto de gasto para cada categoria, para que eu controle gastos específicos </td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo definir um planejamento financeiro com metas, para que eu possa melhor administrar meus recursos financeiros</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo acompanhar progresso em direção as metas do planejamento, para que eu possa poupar recursos financeiros</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="4">Notificação de Planejamento </td>
+        <td>Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo ser notificado 5 dias antes da data do planejamento, para que eu não exceda o limite da data.</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="14">Estatísticas</td>
+        <td rowspan="4">Gráfico de ganhos e despesas</td>
+        <td>Eu, como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimentos dos meu gastos ao final do mês</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo ver gráficos de barras dos ganhos por categoria, para que eu tenha conhecimento dos meu ganhos mensais</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês</td>
+    </tr>
+    <tr>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td rowspan="37">Gerenciamento de Usuários e Contas Bancárias</td>
+        <td rowspan="8">Informações de Usuário</td>
+        <td rowspan="4">Gerir cadastro de informações de Usuário</td>
+        <td>Eu, como usuário, desejo criar minha conta, para que eu possa criar um perfil </td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="4">Login e Logoff </td>
+        <td>Eu, como usuário, desejo logar na minha conta, para que eu possa acessar meu perfil</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar as informações de login, para que eu possa modificar meu acesso</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="14">Informações de Contas Bancárias</td>
+        <td rowspan="4">Gerir cadastro de informações de Contas bancárias</td>
+        <td>Eu, como usuário, desejo cadastrar minhas contas dos bancos, para que eu possa rastrear minhas depesas</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar as informações da minha conta do banco, para que eu possa modificar meu perfil</td>
+    </tr>
+    <tr>
+    </tr>
+    </tbody>
+</table>
 
 
 ## Requisitos Não-Funcionais

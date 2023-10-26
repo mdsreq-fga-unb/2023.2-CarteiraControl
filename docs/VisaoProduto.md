@@ -20,7 +20,7 @@
 
 ## Objetivos do Produto
 
-<p align= "justify">  O objetivo do CarteiraControl é aprimorar o controle financeiro do usuário, garantindo a análise de suas finanças, relatando gastos excessivos, riscos de endividamentos, declaração de renda variável e ajuda na administração de suas economias.
+<p align= "justify">  O objetivo do CarteiraControl é aprimorar o controle financeiro do usuário, garantindo a análise de suas finanças e relatando gastos excessivos.
 </p>
 
 
