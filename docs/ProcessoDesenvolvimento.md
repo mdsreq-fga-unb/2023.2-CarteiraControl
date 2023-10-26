@@ -125,4 +125,4 @@ Com base no que foi avaliado no sommerville e na abordagem de desenvolvimento j�
 |    1.0   |   Juan Pablo    |   Implementação do documento inicial |  27/09 |
 | 1.1| Harryson, Jefferson, João Lucas, Juan Pablo, Leandro, Thiago |  Regulação e correção do documento | 27/09 |
 | 1.2| Jefferson |  Correção dos Textos | 21/10 |
-| 1.2| João Lucas|  Correção de tabela  | 23/10 |
+| 1.3| João Lucas|  Correção de tabela  | 23/10 |
