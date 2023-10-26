@@ -37,9 +37,11 @@ theme:
 nav:
   - Início: index.md
   - Gunther's: historia.md
-  - Visão Geral do Produto: VisaoProduto.md
-  - Visão Geral do Projeto: VisaoProjeto.md
-  - Processo de desenvolvimento: ProcessoDesenvolvimento.md
+  - Visão do Produto e Projeto:
+    - Visão Geral do Produto: VisaoProduto.md
+    - Visão Geral do Projeto: VisaoProjeto.md
+    - Processo de desenvolvimento: ProcessoDesenvolvimento.md
+  - Backlog: backlog.md
   - Lições aprendidas: Licoes.md
   - Entregas: entregas.md
 
