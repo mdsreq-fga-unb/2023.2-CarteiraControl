@@ -1,4 +1,37 @@
 ## Requisitos funcionais
+|ID| Declaração |
+|----| ------|
+|RF1| Cadastrar usuário |
+|RF2| Logar usuário |
+|RF3| Cadastrar até 3 contas bancárias |
+|RF4| Alterar despesas |
+|RF5| Deletar despesas |
+|RF6| Categorizar despesas |
+|RF7| Filtrar os gastos por categoria de gastos |
+|RF8| Pesquisar gastos |
+|RF9| Registrar despesas mensais |
+|RF10| Acompanhar progresso em direção às metas de economia |
+|RF11| Notificar quando estiver a 10% do teto de gastos|
+|RF12| Definir teto de gastos para cada categoria de despesas |
+|RF13| Definir objetivos de economia |
+|RF14| Registrar os ganhos mensais |
+|RF15| Registrar transferências|
+|RF16| Gerar gráfico de gastos no final do mês |
+|RF17| Criar gráfico sobre as transações financeiras |
+|RF18| Deletar conta |
+|RF19| Acessar perfil do usuário |
+|RF20| Alterar conta |
+|RF21| Destacar categorias de gastos mais frequentes|
+                                    
+## Requisitos Não-Funcionais
+O framework utilizado para a declaração de requisitos não funcionais foi o URPS+
+|ID| Categoria | Declaração |
+|----| -----| ------|
+|RNF1| Implementação| App Mobile Android|
+|RNF2| Disponibilidade| App Online |
+|RNF3| Usabilidade| Compatibilidade com o modo retrato e paisagem |
+
+## SAFe                                    
 <table>
     <thead>
         <tr>
@@ -132,13 +165,6 @@
     </tr>
     </tbody>
 </table>
-
-
-## Requisitos Não-Funcionais
-|ID| Categoria | Declaração |
-|----| -----| ------|
-|RFN1| Implementação| App Mobile Android|
-|RFN2| Disponibilidade| App Online |
                                                                                                                                                                                                                                           
 ## Critério de priorização
 Os campos de valor de négocio, viabilidade e complexidade podem variar de 0 a 5, sendo 0 o valor mínimo e 5 o valor máximO. A História de usuário será priorizada se seu MVP for maior ou igual 6 (MVP >= 6).
@@ -165,7 +191,7 @@ MVP = Valor de negócio + Viabilidade - Complexidade
 |  US14  | Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos |        5         |      5      |      5       |     5     |❌ |
 |  US15  | Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês                 |        5   |    5      |       4      |     6     | ✅|
 |  US16  | Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos   |        3         |      5      |      4       |     4     | ❌|
-|  US17  | Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil   |        5         |      5      |      3       |     5     |✅ |
+|  US17  | Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil   |        5         |      5      |      3       |     7     |✅ |
 | US18 | como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimento dos meu ganhos mensais em cada categoria de gasto                |        5         |      5      |      4      |     6     |✅ |
 | US19 | como usuário, desejo ver gráficos de barras dos ganhos por categoria, para que eu tenha conhecimento dos meu ganhos mensais                 |        3         |      5      |      4       |     4     |❌ |
 
@@ -185,3 +211,4 @@ MVP = Valor de negócio + Viabilidade - Complexidade
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 | 1.0| Jefferson, Tiago, Juan e João |  Adicionando Backlog MVP com Priorização | 25/10 |
+| 1.1| João Lucas | Adicionando tabela de requisitos funcionais e atualização de requisitos não funcionais| 26/10 |
