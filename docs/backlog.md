@@ -25,6 +25,8 @@
                                     
 ## Requisitos Não-Funcionais
 O framework utilizado para a declaração de requisitos não funcionais foi o URPS+
+
+### Tabela Requisitos Não Funcionais
 |ID| Categoria | Declaração |
 |----| -----| ------|
 |RNF1| Implementação| App Mobile Android|

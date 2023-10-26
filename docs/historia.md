@@ -32,6 +32,8 @@ Em um ato desesperado, Jonas decidiu roubar uma nave da Slitherium e fugir de Na
 <p align= "justify">Nave: F-Zero é uma nave que pode parecer inofensiva à primeira vista, mas esconde armamento poderoso já que era da Slitherium.</p>
 
 <p align= "justify">Poder Especial: Jonas tem a habilidade de se camuflar em quase qualquer ambiente fazendo com que se torne quase impossível perceber sua presença.</p>
+
+<p align= "justify"> MORTE: Infelizmente, Jonas foi morto em combate durante a missão Conquistar Celestia pelo Comandante Estelar Marsicano.</p>
  
 ### Tiago - Rek D lawysk:
 
@@ -63,6 +65,8 @@ Mark então segue seu caminho como um destemido caçador de recompensas, caçand
 <p align= "justify">Nave: "Atalho secreto" é equipada com dispositivos de fuga eficazes, e armas potentes refletindo o desejo por poder e liberdade,sua sagacidade tecnologica deu a ela o título de nave mais rápida de Nova Argentum, vencendo várias competições.</p>
 
 <p align= "justify">Poder Especial: Zephyr possui uma intuição sobrenatural quando se trata de estratégia. Ele pode identificar a melhor abordagem para qualquer situação, tornando suas decisões de liderança eficazes, tambem tem grande inteligência financeira e sabe manejar os recursos da facção.</p>
+
+<p align= "justify"> MORTE: Infelizmente, Zephyr Newdown foi morto em combate durante a missão Conquistar Celestia pelo Comandante Estelar Marsicano.</p>
  
 ### João - Siesta 
 
@@ -88,3 +92,4 @@ Mark então segue seu caminho como um destemido caçador de recompensas, caçand
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 | 1.0| Jefferson, Tiago, Juan e João |  Criação da história de Usuário | 20/09 |
+| 1.1| Juan Pablo |  Declaração de Mortes | 26/10 |

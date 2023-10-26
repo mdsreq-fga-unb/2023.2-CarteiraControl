@@ -72,7 +72,7 @@ Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</
 | :---: | :----: | :-------: | :---: |
 | Elicitação e Descoberta| Entrevistas | Teams  | Pedidos do cliente, esboço inicial|
 |Análise e Consenso| Caso de Uso, Brainstorming, Conversas com o cliente, Análises de custo e benefícios, Análises de valor, Análise de Prioridade e Impacto e Entrevistas | Teams, discord e Github| Casos de Uso,   Lista de RFs e RNFs  |
-|Declaração | Casos de Uso |  Reunião e Uses Stories|Casos de uso e visão de requisitos|
+|Declaração | Casos de Uso |  Reunião |Casos de uso e visão de requisitos|
 | Representação | Diagrama UML |LucidChart e astah|  Diagrama de JCasos de Uso |
 | Validação e Verificação| Casos de Uso, DoR, Feedback, INVEST, Revisão em Pares | Vitest e jest | Feedback do produto|
 | Organização e Atualização| Casos de Uso |Mural, Word, Github |Backlog do produto|
