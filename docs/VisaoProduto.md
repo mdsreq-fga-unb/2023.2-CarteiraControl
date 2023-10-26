@@ -51,4 +51,4 @@
 |    1.0   |   Jefferson   |  Adiciona problemas, posição e objetivos do produto |  23/09 |
 |    1.1   |   Leandro     |  Conserta a tabela                                  |  24/09 |
 |    1.2   |   Harryson    |  Adiciona tecnologias definidas                     |  27/09 |
-|    1.3   |   Jefferson     |   Correção do Objetivo |  21/10 |
+|    1.3   |   Jefferson |   Correção do Objetivo |  21/10 |

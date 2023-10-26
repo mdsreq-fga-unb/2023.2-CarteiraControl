@@ -42,7 +42,7 @@ nav:
     - Visão Geral do Projeto: VisaoProjeto.md
     - Processo de desenvolvimento: ProcessoDesenvolvimento.md
   - Backlog: 
-    - Backlog: backlog.md
+    - Backlog SAFe: backlog.md
     - Verificação e Validação: verificacao_validacao.md
   - Lições aprendidas: Licoes.md
   - Entregas: entregas.md

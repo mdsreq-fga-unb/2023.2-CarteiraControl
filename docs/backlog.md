@@ -33,7 +33,13 @@ O framework utilizado para a declaração de requisitos não funcionais foi o UR
 |RNF2| Disponibilidade| App Online |
 |RNF3| Usabilidade| Compatibilidade com o modo retrato e paisagem |
 
-## SAFe                                    
+## Backlog SAFe
+A partir dos requisitos funcionais, foi estruturado o backlog do SAFe utilizando o mural abaixo: 
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://app.mural.co/embed/1d2e2e95-009d-4e06-af5b-1b133fb233f0" allowfullscreen></iframe> 
+
+A seguir, é utilizado a representação do backlog em formato de tabela:
+
 <table>
     <thead>
         <tr>
@@ -245,3 +251,5 @@ Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5
 | :---: | :----: | :-------: | :---: |
 | 1.0| Jefferson, Tiago, Juan e João |  Adicionando Backlog MVP com Priorização | 25/10 |
 | 1.1| João Lucas | Adicionando tabela de requisitos funcionais e atualização de requisitos não funcionais| 26/10 |
+| 1.2| Tiago | Adicionando descriçao dos critérios de aceitação | 26/10 |
+| 1.3| Jefferson | Adicionando iframe para vizualização do backlog no mural| 26/10 |
