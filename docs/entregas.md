@@ -52,3 +52,9 @@ Definição de Ciclo de Vida, Abordagem e Processo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6vte3ta_GRs?si=4_6dCliZ-XbkqYMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Histórico de versão
+
+| Versão  | Autor| Descrição | Data |
+| :---: | :----: | :-------: | :---: |
+| 1.1| Jefferson, Tiago, Juan e João |  Adicionando Entrega 1 | 20/09 |
+| 1.1| Jefferson, Tiago, Juan e João |  Adicionando Entrega 2 | 25/10 |

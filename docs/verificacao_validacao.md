@@ -1,7 +1,7 @@
 # Verificação e Validação Facção Bersek
 
 ## Introdução
-<p align="justify">Nós da facção Gunther's realizamos a validação e verificação do backlog do produto da facção Berserk, de acordo com a dinâmica proposta pelo comandante estelar <b>Marcicano</b>. Realizamos a atividade e retornamos feedbacks afim de ajudar na melhora desse artefato da outra facção, indicando pontos que estavam bons e pontos de melhoria. A equipe Berserk também realizou a mesma atividade com nosso backlog. A cooperação entre as facções é importante para a restauração da paz em Calamun Caereleum. </p>
+<p align="justify">Nós da facção Gunther's realizamos a validação e verificação do backlog do produto da facção Berserk, de acordo com a dinâmica proposta pelo comandante estelar <b>Marsicano</b>. Realizamos a atividade e retornamos feedbacks afim de ajudar na melhora desse artefato da outra facção, indicando pontos que estavam bons e pontos de melhoria. A equipe Berserk também realizou a mesma atividade com nosso backlog. A cooperação entre as facções é importante para a restauração da paz em Calamun Caereleum. </p>
 
 ## Técnicas
 
@@ -41,5 +41,4 @@ As técnicas utilizadas para a validação e verificação, foram:
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
-
 | 1.0| Jefferson e Tiago |  Adicionando Verificação e Validação da Facção Bersek | 25/10 |

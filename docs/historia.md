@@ -83,4 +83,8 @@ Mark então segue seu caminho como um destemido caçador de recompensas, caçand
 
  
 
+## Histórico de versão
 
+| Versão  | Autor| Descrição | Data |
+| :---: | :----: | :-------: | :---: |
+| 1.0| Jefferson, Tiago, Juan e João |  Criação da história de Usuário | 20/09 |
