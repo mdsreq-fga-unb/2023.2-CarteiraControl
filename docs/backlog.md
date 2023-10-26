@@ -1,20 +1,14 @@
-
-    
-        <td>Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais</td>
-   
-      
-
 ## Requisitos funcionais
-|Épicos |Cpacidades |Features |Histórias de Usuário |
+|Épicos |Capacidades |Features |Histórias de Usuário |
 | ----- | -------| ------|-------------|
-||||Eu, como usuário, desejo ver meu gasto individual, para que eu possa controlar meus gastos|
-||||Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso às despesas|
-||||Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas|
-||||Eu, como usuário, desejo criar categoria de despesas adicionais, para que eu possa filtrar os despesas adicionais|
-||||Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos|
-||||Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais|
-||||Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar|
-||||Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir processos de despesas|Eu, como usuário, desejo ver meu gasto individual, para que eu possa controlar meus gastos|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir processos de despesas|Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso às despesas|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar despesas|Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar Despesas|Eu, como usuário, desejo criar categoria de despesas adicionais, para que eu possa filtrar os despesas adicionais|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar ganhos|Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Categorizar ganhos|Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir Processos de ganhos|Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar|
+|Gerenciamento de Despesas e Ganhos|Transações de Despesa|Gerir processos de ganhos|Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis|
 
 
 
@@ -26,8 +20,7 @@
 | ID | Categoria       | Declaração                                                                                                                                                                                                                                                   |
 | :----: | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |  RNF1  | Implementação   | App mobile android                                                                                                                                                                                                                         |
-|  RNF2  | Disponibilidade     | App online                                                                                                                                                                                   |
-|  RNF3  | Usabilidade    | Compatibilidade com o modo retrato e paisagem                                                                                                                                                                                                |
+|  RNF2  | Disponibilidade     | App online                                                                                                                                                                                                                                                                                                                     |
 ## Critério de priorização
 Os campos de valor de négocio, viabilidade e complexidade podem variar de 0 a 5, sendo 0 o valor mínimo e 5 o valor máximO. A História de usuário será priorizada se seu MVP for maior ou igual 6 (MVP >= 6).
     MVP = Valor de negócio + Viabilidade - Complexidade
