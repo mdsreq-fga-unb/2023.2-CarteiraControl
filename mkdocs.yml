@@ -44,6 +44,7 @@ nav:
   - Backlog: 
     - Backlog SAFe: backlog.md
     - Verificação e Validação: verificacao_validacao.md
+    - Casos de uso: caso_uso.md
   - Lições aprendidas: Licoes.md
   - Entregas: entregas.md
 
