@@ -688,10 +688,10 @@ Este caso de uso permite que o usuário altere, delete, registre, categorize, pe
 
 ### MVP
 
-<p align="justify">&emsp;&emsp; Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem parte do MVP foram selecionados:
+Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem parte do MVP foram selecionados:
 
 | Casos de Uso do MVP |
- :----: |
+|:----:|
 |CDU-01 - Gerenciar casos de Usuário |
 |CDU-02 - Gerenciar Ganhos|
 |CDU-03 - Manter o usuário informado |
