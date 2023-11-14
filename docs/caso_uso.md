@@ -51,58 +51,97 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 
 #### CdU-01 - Gerenciar casos de Usuário
 
-|**Nome do caso de uso** |Gerenciar casos de Usuário|
-| :----------- | :- |
-|**Autor**|Juan Pablo|
-|**1. Atores**|Usuário|
-|**2. Breve Descrição**|Este caso de uso permite que o usuário realize operações relacionadas à gestão de seu perfil, incluindo o cadastro, login e o gerenciamento de até três contas bancárias associadas.|
-|**3. Fluxo básico de eventos**| <p>FB.</p>
-<p>3.1. O usuário acessa o sistema</p>
-<p>3.2. O usuário escolhe a opção de cadastrar um novo usuário (RF1)</p>   
-<p>3.3. O sistema solicita as informações necessárias para o cadastro do usuário.</p>
-<p>3.4. O usuário fornece os dados necessários.
-<p>3.5. O sistema valida as informações e cadastra o usuário.</p>
-<p>3.6. O usuário escolhe a opção de fazer login (RF2).</p>
-<p>3.7. O sistema solicita as credenciais do usuário.</p>
-<p>3.8. O usuário fornece as credenciais e o sistema valida.</p>
-<p>3.9. O sistema autentica o usuário e o direciona para a área logada.</p>
-<p>3.10. O usuário escolhe a opção de cadastrar conta bancária (RF3).</p>
-<p>3.11. O sistema solicita as informações da conta bancária.</p>
-<p>3.12. O usuário fornece os dados necessários.</p>
-<p>3.13. O sistema valida as informações e associa a conta bancária ao usuário.</p>
+```markdown
+# Especificação de Caso de Uso: CDU-01 Gerenciar casos de Usuário
 
-|**4. Fluxo Alternativos**| 
-<p>4.1. Área de Funcionalidade: Cadastro de Usuário</p>
-<p>-4.1.1. A1 Primeiro Fluxo Alternativo</p>
-    <p>-   4.1.1.1. Um Subfluxo Alternativo</p>
-Se as informações fornecidas pelo usuário no cadastro forem inválidas, o sistema exibe uma mensagem de erro.</p>
-<p>- 4.1.2. A2 Segundo Fluxo Alternativo
-- Se o usuário já possuir uma conta, ele pode optar por fazer login em vez de cadastrar um novo usuário.</p>
-<p>4.2. Outra Área de Funcionalidade: Cadastro de Conta Bancária</p>
-<p>-       4.2.1. AN Outro Fluxo Alternativo</p>
-<p>- Se as informações da conta bancária fornecidas forem inválidas, o sistema notifica o usuário e não realiza o cadastro.</p>
+| Número do Caso de Uso | CDU-01 |
+| --- | --- |
+| **Nome do Caso de Uso** | Gerenciar casos de Usuário |
+| **Versão** | 1.0 |
+| **Data de Criação** | DD/MM/AAAA |
+| **Responsável** | Equipe de Desenvolvimento |
 
-|**5. Fluxos de exceção**|
--5.1. FE1 – Fluxo de Exceção
-- Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha.
-5.2. FE2 – Fluxo de Exceção
-- Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos.|
+## 1. Breve Descrição
 
-|**6. Pré-condições**|
--6.1. O sistema está operacional.|
-|**7. Pós-condições**|
--7.1. O usuário está autenticado no sistema.
--7.2. As informações do cadastro e as contas bancárias associadas foram registradas no sistema.
+Este caso de uso permite que o usuário realize operações relacionadas à gestão de seu perfil, incluindo o cadastro, login e o gerenciamento de até três contas bancárias associadas.
 
-|**8. Pontos de extensão**|
--8.1. Não há pontos de extensão definidos para este caso de uso.|
-|**9. Requisitos especiais**|
--9.1. O sistema deve garantir a segurança das informações do usuário durante o cadastro e login.
+## 2. Fluxo Básico de Eventos
 
-|**10. Informações adicionais**|
-- Nenhuma informação adicional fornecida.|
+| Passo | Descrição |
+| --- | --- |
+| 2.1 | O usuário acessa o sistema. |
+| 2.2 | O usuário escolhe a opção de cadastrar um novo usuário (RF1). |
+| 2.3 | O sistema solicita as informações necessárias para o cadastro do usuário. |
+| 2.4 | O usuário fornece os dados necessários. |
+| 2.5 | O sistema valida as informações e cadastra o usuário. |
+| 2.6 | O usuário escolhe a opção de fazer login (RF2). |
+| 2.7 | O sistema solicita as credenciais do usuário. |
+| 2.8 | O usuário fornece as credenciais e o sistema valida. |
+| 2.9 | O sistema autentica o usuário e o direciona para a área logada. |
+| 2.10 | O usuário escolhe a opção de cadastrar conta bancária (RF3). |
+| 2.11 | O sistema solicita as informações da conta bancária. |
+| 2.12 | O usuário fornece os dados necessários. |
+| 2.13 | O sistema valida as informações e associa a conta bancária ao usuário. |
 
+## 3. Fluxos Alternativos
 
+### 3.1 Área de Funcionalidade: Cadastro de Usuário
+
+#### 3.1.1 A1 Primeiro Fluxo Alternativo
+
+##### 3.1.1.1 Um Subfluxo Alternativo
+
+- Se as informações fornecidas pelo usuário no cadastro forem inválidas, o sistema exibe uma mensagem de erro.
+
+#### 3.1.2 A2 Segundo Fluxo Alternativo
+
+- Se o usuário já possuir uma conta, ele pode optar por fazer login em vez de cadastrar um novo usuário.
+
+### 3.2 Outra Área de Funcionalidade: Cadastro de Conta Bancária
+
+#### 3.2.1 AN Outro Fluxo Alternativo
+
+- Se as informações da conta bancária fornecidas forem inválidas, o sistema notifica o usuário e não realiza o cadastro.
+
+## 4. Fluxos de Exceção
+
+| Número | Fluxo de Exceção | Descrição |
+| --- | --- | --- |
+| 4.1 | FE1 | Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha. |
+| 4.2 | FE2 | Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
+
+## 5. Pré-Condições
+
+| Número | Descrição |
+| --- | --- |
+| 5.1 | O sistema está operacional. |
+| 5.2 | Não há restrições específicas para o cadastro de novos usuários. |
+
+## 6. Pós-Condições
+
+| Número | Descrição |
+| --- | --- |
+| 6.1 | O usuário está autenticado no sistema. |
+| 6.2 | As informações do cadastro e as contas bancárias associadas foram registradas no sistema. |
+
+## 7. Pontos de Extensão
+
+| Número | Nome do Ponto de Extensão | Descrição |
+| --- | --- | --- |
+| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+
+## 8. Requisitos Especiais
+
+| Número | Descrição |
+| --- | --- |
+| 8.1 | O sistema deve garantir a segurança das informações do usuário durante o cadastro e login. |
+
+## 9. Informações Adicionais
+
+- Nenhuma informação adicional fornecida.
+```
+
+Este é o formato em tabela para MKDocs do Caso de Uso CDU-01. Se precisar de mais alguma coisa, estou à disposição!
 
 ## Histórico de versão
 
