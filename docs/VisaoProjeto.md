@@ -28,11 +28,11 @@ A tabela a seguir possui os integrantes definidos para cada divisão de atribui�
 
 |        **DESCRIÇÃO**        |   **ENVOLVIDOS**   | **PERIODICIDADE** |                        **PRODUTOS GERADOS**                          |
 |:----------------------------|:------------------:|:-----------------:|:--------------------------------------------------------------------:|
-|Planejamento                 | Toda equipe        | Semanal        | - Atas de reuniões e Definições das atividades da respectiva iteração.|
+|Planejamento                 | Toda equipe        | Semanal        | - reunião entre os membros presencialmente para relatar o andamento da iteração|
 |Acompanhamento de riscos     | Toda equipe        | Diário            | - Relatos de riscos encontrados na iteração pelos membros.             |
 |Desenvolvimento              | Toda equipe        | Diário            | - Feedback de complexidade e dificuldades de contrução.               |
 |Encontro com o cliente       | Toda a equipe      | Quinzenal          | - Validação dos artefatos construídos.                                |
-|Comunicar situação do projeto| Equipe e professor.| Semanal           | - Relatório da situação atual do projeto.                             |
+|Comunicar situação do projeto| Equipe e professor.| Semanal           | - Tirar dúvidas em relação ao andamento e aspectos que podem ser melhorados.                             |
 
 ## 2.4 Gerenciamento de riscos
 
