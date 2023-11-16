@@ -685,7 +685,56 @@ Este caso de uso permite que o usuário altere, delete, registre, categorize, pe
 ## 9. Informações Adicionais
 
 - Nenhuma informação adicional fornecida.
-### Backlog Priorizado
+
+
+## Critério de priorização
+Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5, sendo 0 o valor mínimo e 5 o valor máximo. O caso de uso será priorizado se seu MVP for maior ou igual 6 (MVP >= 6).
+
+    MVP = Valor de negócio + Viabilidade - Complexidade
+
+ - Valor de negócio: O quanto o caso de uso agrega valor ao produto, se um caso de uso tem valor de negócio 5 significa que ele é um ponto vital do sistema, não podendo ficar fora do MVP. Se um caso de uso tem valor de negócio 1 , significa que não agrega valor algum ao sistema, não pertencendo ao MVP. <b>É validado pelo cliente</b>.
+ - Viabilidade: Se refere a viabilidade de desenvolvimento do caso de uso no tempo disponível. Quanto mais perto de 5, mais viável é o caso de uso, quanto mais perto de 1, menos viável.
+ - Complexidade: O quão difícil os integrantes consideram o caso de uso. Quanto mais perto de 5, maior é a complexidade, quanto mais perto de 1, menos complexo.
+
+### Valor de negócio
+|escala| prioridade|                                                                                                  
+| ----- | ------------| 
+| 1 | Muito baixa |
+| 2 | Baixa |
+| 3 | Média |
+| 4 | Alta |
+| 5 | Muito alta, vital |       
+
+### Viabilidade
+|escala| Viabilidade no tempo disponível|                                                                                                  
+| ----- | ------------| 
+| 1 | Muito baixa |
+| 2 | Baixa |
+| 3 | Média |
+| 4 | Alta |
+| 5 | Muito alta | 
+
+### Complexidade
+|escala| Nível de complexidade|                                                                                                  
+| ----- | ------------| 
+| 1 | Muito baixa |
+| 2 | Baixa |
+| 3 | Média |
+| 4 | Alta |
+| 5 | Muito alta, não fazemos ideia de como implementar | 
+
+## Priorização de Backlog
+
+| ID | Descrição                                        | Valor de negócio | Viabilidade | Complexidade | Pontuação | MVP |
+| :----: | ------------------------------------------- | :--------------: | :---------: | :----------: | :-------: | :------: |
+|  CDU-01 -  Gerenciar Casos de Usuário  | O usuário pode cadastrar e logar   |        5         |      5      |      2       |     8     | ✅ |
+|  CDU-02 - Gerenciar Ganhos  | Relatra os ganhos financeiros do usuário   |        5        |      5     |      2      |     8    |✅|
+|  CDU-03 - Manter o usuário informado | O usuário tem informações de como estão suas esconomias |   4   |      5   |    3   |     5  |❌ |
+|  CDU-04 - Gerenciar contas de usuário  | O usuário pode alterar, acessar seu perfil e deletá-lo |        5         |     5      |    2       |    8     |✅ |
+|  CDU-05 - Gerenciar planos de gasto para economia | O usuário define um plano de gastos com objetivos de economia  |     4       |   5       |      3       |  5   |❌ |
+|  CDU-06 - Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras |      5 |       5 |      4 | 6    |✅ |
+|  CDU-07 - Definir Estatísticas | O usuário visulzias gráficos estatísticos de suas economias |    4 |   5      |   3   |    6    |✅ |
+|  CDU-08 - Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas depesas                          |        4         |      5      |      2       |     7     |✅|
 
 
 ### MVP
