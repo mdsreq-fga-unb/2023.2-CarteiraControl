@@ -685,19 +685,39 @@ Este caso de uso permite que o usuário altere, delete, registre, categorize, pe
 ## 9. Informações Adicionais
 
 - Nenhuma informação adicional fornecida.
+### Backlog Priorizado
+
 
 ### MVP
 
 Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem parte do MVP foram selecionados:
 
-| Casos de Uso do MVP |
-|:----:|
-|CDU-01 - Gerenciar casos de Usuário |
-|CDU-02 - Gerenciar Ganhos|
-|CDU-04 - Gerenciar conta do Usuário |
-|CDU-06 - Gerenciar Transações Financeiras |
-|CDU-07 - Definir Estatísticas |
-|CDU-08 - Gerenciar Despesas |
+|Objetivos| Casos de Uso do MVP |
+|---|----|
+|Aprimorar controle Financeiro| CDU-02 - Gerenciar Ganhos e CDU-06 - Gerenciar Transações Financeiras  |
+| Relatar gastos excessivos | CDU-08 - Gerenciar Despesas, CDU-01 - Gerenciar casos de usuário e CDU-04 -  Gerenciar contas de usuário
+|garantindo a análise de suas finanças| CDU-07 - Definir Estatísticas|
+
+### Definição de Preparado (DOR)
+
+<p align="justify">&emsp;&emsp; A Declaração de Pronto (DOR) é um compromisso essencial estabelecido entre o time de desenvolvimento e o cliente, delineando meticulosamente o momento preciso em que um requisito estará plenamente preparado para ser integrado a uma iteração. Este acordo abrange diversos critérios que asseguram a qualidade e a prontidão do trabalho a ser realizado, visando uma execução eficiente e eficaz.</p>
+
+ - O requisito, devidamente representado em um caso de uso, é considerado integral e passível de ser abordado de maneira completa e efetiva;
+ - O caso de uso é minuciosamente especificado, atendendo de maneira abrangente a todos os requisitos necessários para ser trabalhado com sucesso;
+ - A equipe de desenvolvimento alcançou um consenso unânime de que este caso de uso específico é não apenas viável, mas altamente recomendado para ser incorporado à iteração de desenvolvimento em questão;
+ - A representação visual do caso de uso, através de uma interface ou protótipo, está completamente alinhada com as expectativas e requisitos do cliente;
+ - Quaisquer dependências inerentes aos requisitos foram cuidadosamente identificadas e estão prontas para serem gerenciadas de forma eficiente durante o processo.
+
+### Definição de Pronto (DOD)
+
+<p align="justify">&emsp;&emsp; A Declaração de Pronto (DOD) é um compromisso crucial que atesta não apenas a conclusão, mas a qualidade inquestionável do requisito produzido. A expressão "Done" vai além de uma mera confirmação; é a validação coletiva da satisfação integral com o trabalho realizado. Em conformidade com os mais elevados padrões de excelência, um requisito que não atenda aos rigorosos critérios de "Done" não apenas é retido, mas é excluído da possibilidade de ser liberado ou apresentado na iteração em curso.</p>
+
+- Os casos de uso não apenas oferecem um incremento ao produto, mas proporcionam uma experiência palpável que foi validada e aprovada pelo cliente;
+- Todos os fluxos de eventos e condições do caso de uso são seguidos de maneira meticulosa, garantindo uma implementação precisa e completa;
+- O código relacionado às funcionalidades vinculadas ao caso de uso passa por uma revisão detalhada e é submetido à aprovação de pelo menos outro membro experiente da equipe, assegurando uma qualidade consistente e elevada.
+
+
+
 
 
 
