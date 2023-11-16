@@ -694,9 +694,7 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 |:----:|
 |CDU-01 - Gerenciar casos de Usuário |
 |CDU-02 - Gerenciar Ganhos|
-|CDU-03 - Manter o usuário informado |
 |CDU-04 - Gerenciar conta do Usuário |
-|CDU-05 - Gerenciar plano de gastos para economia |
 |CDU-06 - Gerenciar Transações Financeiras |
 |CDU-07 - Definir Estatísticas |
 |CDU-08 - Gerenciar Despesas |
@@ -712,3 +710,4 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 | :---: | :----: | :-------: | :---: |
 | 1.0| Juan Pablo |  Declaração dos Casos de Uso | 06/11/2023 |
 | 1.1| Juan Pablo |  Especificação dos Casos de Uso | 14/11/2023 |
+| 1.2| Juan Pablo | Atualiza MVP | 16/11/2023 |
