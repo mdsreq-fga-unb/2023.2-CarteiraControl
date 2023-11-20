@@ -1,6 +1,6 @@
 # Review, Planning Meeting e Restrospective Meeting
 
-## Iteração 3 - Elaboração
+## Iterações
 
 <iframe src='https://app.mural.co/embed/a987aaf3-f649-441f-a235-8027a21a6387'
   width='100%'
