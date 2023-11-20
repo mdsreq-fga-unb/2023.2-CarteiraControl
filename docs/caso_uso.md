@@ -38,41 +38,48 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 
 |ID| Nome do Casos de Uso| Descrição | Requisitos Envolvidos| Resultado|
 |---|----|----|----|---|
-|CDU-01|Gerenciar cadastro de Usuário | O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias |RF1	Cadastrar usuário| Usuário cadastrado |
-|CDU-02|Gerenciar login de Usuário | O usuário pode fazer login no sistema, fornecendo suas credenciais |RF2	Logar usuário| Usuário autenticado |
-|CDU-03|Gerenciar cadastro de conta bancária | O usuário pode cadastrar até três contas bancárias associadas ao seu perfil |RF3	Cadastrar até 3 contas bancárias| Conta bancária cadastrada |
-|CDU-04|Gerenciar Ganhos| Relata os ganhos financeiros do usuário |  RF14	Registrar os ganhos mensais | Gastos Apresentados |
-|CDU-05|Manter o usuário informado | O usuário tem informações de como estão suas economias |RF10	Acompanhar progresso em direção às metas de economia, RF11	Notificar quando estiver a 10% do teto de gastos RF21	Destacar categorias de gastos mais frequentes| Usuário informado sobre suas finanças|
-|CDU-06|Gerenciar conta do Usuário | O usuário pode alterar, acessar seu perfil e deletá-lo|RF18	Deletar conta, RF19	Acessar perfil do usuário, RF20	Alterar conta | Conta do usuário |
-|CDU-07|Gerenciar plano de gastos para economia | O  usuário define um plano de gastos com objetivos de economia|RF12	Definir teto de gastos para cada categoria de despesas, RF13	Definir objetivos de economia | Plano de gastos|
-|CDU-08|Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras|RF15	Registrar transferências | Gerenciamentos de Transações financeiras|
-|CDU-09|Definir Estatísticas | O usuário visualiza gráficos estatísticos de suas economias|RF16	Gerar gráfico de gastos no final do mês, RF17	Criar gráfico sobre as transações financeiras | Gerar Estatísticas  |
-|CDU-10 | Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas despesas | RF4	Alterar despesas, RF5	Deletar despesas, RF6	Categorizar despesas, RF9	Registrar despesas mensais, RF7	Filtrar os gastos por categoria de gastos, RF8	Pesquisar gastos | Despesas Apresentadas |
+|CDU-01|Gerenciar casos de Usuário | O usuário pode cadastrar, logar e ainda cadastrar contas bancárias |RF1	Cadastrar usuário, RF2	Logar usuário, RF3	Cadastrar até 3 contas bancárias | Acesso do Usário |
+|CDU-02|Gerenciar Ganhos| Relata os ganhos financeiros do usuário |  RF14	Registrar os ganhos mensais | Gastos Apresentados |
+|CDU-03|Manter o suário informado | O usuário tem informações de como estão suas esconomias |RF10	Acompanhar progresso em direção às metas de economia, RF11	Notificar quando estiver a 10% do teto de gastos RF21	Destacar categorias de gastos mais frequentes| Uusário informado sobre suas finanças|
+|CDU-04|Gerenciar conta do Usuário | O usuário pode alterar, acessar seu perfil e deletá-lo|RF18	Deletar conta, RF19	Acessar perfil do usuário, RF20	Alterar conta | Conta do usuário |
+|CDU-05|Gerenciar plano de gastos para economia | O  usuário define um plano de gastos com objetivos de economia|RF12	Definir teto de gastos para cada categoria de despesas, RF13	Definir objetivos de economia | Plano de gastos|
+|CDU-06|Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras|RF15	Registrar transferências | Gerenciamentos de Transações financeiras|
+|CDU-07|Definir Estatísticas | O usuário visulzias gráficos estatísticos de suas economias|RF16	Gerar gráfico de gastos no final do mês, RF17	Criar gráfico sobre as transações financeiras | Gerar Estatísticas  |
+|CDU-08 | Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas depesas | RF4	Alterar despesas, RF5	Deletar despesas, RF6	Categorizar despesas, RF9	Registrar despesas mensais, RF7	Filtrar os gastos por categoria de gastos, RF8	Pesquisar gastos | Despesas Apresentadas |
 
 # Especificação dos Casos de Uso
 
 
-# Especificação de Caso de Uso: CDU-01 Gerenciar cadastro de Usuário
+# Especificação de Caso de Uso: CDU-01 Gerenciar casos de Usuário
 
 | Número do Caso de Uso | CDU-01 |
 | --- | --- |
-| **Nome do Caso de Uso** | Gerenciar cadastro de Usuário |
+| **Nome do Caso de Uso** | Gerenciar casos de Usuário |
 | **Versão** | 1.0 |
-| **Data de Criação** | 20/11/2023 |
-| **Responsável** | Juan Pablo e João Lucas|
+| **Data de Criação** | 13/11/2023 |
+| **Responsável** | Juan Pablo |
 
 ## 1. Breve Descrição
 
-Este caso de uso permite que um usuário realize o cadastro no sistema.
+Este caso de uso permite que o usuário realize operações relacionadas à gestão de seu perfil, incluindo o cadastro, login e o gerenciamento de até três contas bancárias associadas.
 
 ## 2. Fluxo Básico de Eventos
 
 | Passo | Descrição |
 | --- | --- |
-| 2.1 | O usuário escolhe a opção de cadastrar um novo usuário (RF1). |
-| 2.2 | O sistema solicita as informações necessárias para o cadastro do usuário. |
-| 2.3 | O usuário fornece os dados necessários. |
-| 2.4 | O sistema valida as informações e cadastra o usuário. |
+| 2.1 | O usuário acessa o sistema. |
+| 2.2 | O usuário escolhe a opção de cadastrar um novo usuário (RF1). |
+| 2.3 | O sistema solicita as informações necessárias para o cadastro do usuário. |
+| 2.4 | O usuário fornece os dados necessários. |
+| 2.5 | O sistema valida as informações e cadastra o usuário. |
+| 2.6 | O usuário escolhe a opção de fazer login (RF2). |
+| 2.7 | O sistema solicita as credenciais do usuário. |
+| 2.8 | O usuário fornece as credenciais e o sistema valida. |
+| 2.9 | O sistema autentica o usuário e o direciona para a área logada. |
+| 2.10 | O usuário escolhe a opção de cadastrar conta bancária (RF3). |
+| 2.11 | O sistema solicita as informações da conta bancária. |
+| 2.12 | O usuário fornece os dados necessários. |
+| 2.13 | O sistema valida as informações e associa a conta bancária ao usuário. |
 
 ## 3. Fluxos Alternativos
 
@@ -88,11 +95,18 @@ Este caso de uso permite que um usuário realize o cadastro no sistema.
 
 - Se o usuário já possuir uma conta, ele pode optar por fazer login em vez de cadastrar um novo usuário.
 
+### 3.2 Outra Área de Funcionalidade: Cadastro de Conta Bancária
+
+#### 3.2.1 AN Outro Fluxo Alternativo
+
+- Se as informações da conta bancária fornecidas forem inválidas, o sistema notifica o usuário e não realiza o cadastro.
+
 ## 4. Fluxos de Exceção
 
 | Número | Fluxo de Exceção | Descrição |
 | --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
+| 4.1 | FE1 | Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha. |
+| 4.2 | FE2 | Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
 
 ## 5. Pré-Condições
 
@@ -106,6 +120,7 @@ Este caso de uso permite que um usuário realize o cadastro no sistema.
 | Número | Descrição |
 | --- | --- |
 | 6.1 | O usuário está autenticado no sistema. |
+| 6.2 | As informações do cadastro e as contas bancárias associadas foram registradas no sistema. |
 
 ## 7. Pontos de Extensão
 
@@ -117,161 +132,18 @@ Este caso de uso permite que um usuário realize o cadastro no sistema.
 
 | Número | Descrição |
 | --- | --- |
-| 8.1 | O sistema deve garantir a segurança das informações do usuário durante o cadastro. |
+| 8.1 | O sistema deve garantir a segurança das informações do usuário durante o cadastro e login. |
 
 ## 9. Informações Adicionais
 
 - Nenhuma informação adicional fornecida.
 
-# Especificação de Caso de Uso: CDU-02 Gerenciar login de Usuário
+
+
+
+# Especificação de Caso de Uso: CDU-02 Gerenciar Ganhos
 
 | Número do Caso de Uso | CDU-02 |
-| --- | --- |
-| **Nome do Caso de Uso** | Gerenciar login de Usuário |
-| **Versão** | 1.0 |
-| **Data de Criação** | 20/11/2023 |
-| **Responsável** | Juan Pablo e João Lucas|
-
-## 1. Breve Descrição
-
-Este caso de uso permite que um usuário faça login no sistema.
-
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
-| --- | --- |
-| 2.1 | O usuário escolhe a opção de fazer login (RF2). |
-| 2.2 | O sistema solicita as credenciais do usuário. |
-| 2.3 | O usuário fornece as credenciais. |
-| 2.4 | O sistema valida as credenciais. |
-| 2.5 | O sistema autentica o usuário e o direciona para a área logada. |
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Login de Usuário
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-##### 3.1.1.1 Um Subfluxo Alternativo
-
-- A1: Se o usuário não tiver uma conta no sistema:
-   - O sistema não autentica o usuário.
-   - O sistema exibe uma mensagem informando que o usuário não possui uma conta no sistema.
-   - O usuário pode escolher criar uma nova conta.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 5.1 | O sistema está operacional. |
-
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | O usuário está autenticado no sistema. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 |  O sistema deve garantir a segurança das informações do usuário durante o login. |
-
-## 9. Informações Adicionais
-
-- Nenhuma informação adicional fornecida.
-
-# Especificação de Caso de Uso: CDU-03 Gerenciar Cadastro de Conta Bancária
-
-| Número do Caso de Uso | CDU-03 |
-| --- | --- |
-| **Nome do Caso de Uso** | Gerenciar Cadastro de Conta Bancária |
-| **Versão** | 1.0 |
-| **Data de Criação** | 20/11/2023 |
-| **Responsável** | Juan Pablo e João Lucas|
-
-## 1. Breve Descrição
-
-Este caso de uso permite que um usuário cadastre até três contas bancárias associadas ao seu perfil.
-
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
-| --- | --- |
-| 2.1 | O usuário escolhe a opção de cadastrar conta bancária (RF3). |
-| 2.2 | O sistema solicita as informações da conta bancária. |
-| 2.3 | O usuário fornece os dados necessários. |
-| 2.4 | O sistema valida as informações e associa a conta bancária ao usuário. |
-        
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Cadastro de Conta Bancária
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-##### 3.1.1.1 Um Subfluxo Alternativo
-
-- A1: Se o usuário tentar cadastrar mais de três contas bancárias:
-    - O sistema não permite o cadastro da conta bancária.
-    - O sistema exibe uma mensagem informando que o usuário só pode cadastrar até três contas bancárias.
-
-#### 3.1.2 A2 Segundo Fluxo Alternativo
-- A2: Se o usuário tentar cadastrar uma conta bancária de um banco que não é suportado pelo sistema:
-    - O sistema não permite o cadastro da conta bancária.
-    - O sistema exibe uma mensagem informando que o banco não é suportado pelo sistema.
-
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 5.1 | O sistema está operacional. |
-
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | As informações do cadastro e as contas bancárias associadas foram registradas no sistema.|
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 |  O sistema deve garantir a segurança das informações do usuário durante o cadastro. |
-
-## 9. Informações Adicionais
-
-- Nenhuma informação adicional fornecida.
-
-
-# Especificação de Caso de Uso: CDU-04 Gerenciar Ganhos
-
-| Número do Caso de Uso | CDU-04 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Ganhos |
 | **Versão** | 1.0 |
@@ -336,9 +208,9 @@ Este caso de uso permite que o usuário registre seus ganhos financeiros, fornec
 
 - Os ganhos registrados serão utilizados para análises estatísticas nas funcionalidades futuras.
 
-# Especificação de Caso de Uso: CDU-05 Manter o Usuário Informado
+# Especificação de Caso de Uso: CDU-03 Manter o Usuário Informado
 
-| Número do Caso de Uso | CDU-05 |
+| Número do Caso de Uso | CDU-03 |
 | --- | --- |
 | **Nome do Caso de Uso** | Manter o Usuário Informado |
 | **Versão** | 1.0 |
@@ -417,9 +289,9 @@ Este caso de uso permite que o usuário acompanhe o progresso em direção às m
 
 - Este caso de uso serve como base para futuras funcionalidades de análise avançada de gastos e economias.
 
-# Especificação de Caso de Uso: CDU-06 Gerenciar Conta do Usuário
+# Especificação de Caso de Uso: CDU-04 Gerenciar Conta do Usuário
 
-| Número do Caso de Uso | CDU-06 |
+| Número do Caso de Uso | CDU-04 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Conta do Usuário |
 | **Versão** | 1.0 |
@@ -489,9 +361,9 @@ Este caso de uso permite que o usuário altere, acesse seu perfil e delete sua c
 
 - Nenhuma informação adicional fornecida.
 
-# Especificação de Caso de Uso: CDU-07 Gerenciar Plano de Gastos para Economia
+# Especificação de Caso de Uso: CDU-05 Gerenciar Plano de Gastos para Economia
 
-| Número do Caso de Uso | CDU-07 |
+| Número do Caso de Uso | CDU-05 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Plano de Gastos para Economia |
 | **Versão** | 1.0 |
@@ -565,9 +437,9 @@ Este caso de uso permite que o usuário defina um plano de gastos com objetivos 
 
 - Nenhuma informação adicional fornecida.
 
-# Especificação de Caso de Uso: CDU-08 Gerenciar Transações Financeiras
+# Especificação de Caso de Uso: CDU-06 Gerenciar Transações Financeiras
 
-| Número do Caso de Uso | CDU-08 |
+| Número do Caso de Uso | CDU-06 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Transações Financeiras |
 | **Versão** | 1.0 |
@@ -631,9 +503,9 @@ Este caso de uso permite que o usuário tenha controle de suas transações fina
 
 - Nenhuma informação adicional fornecida.
 
-# Especificação de Caso de Uso: CDU-09 Definir Estatísticas
+# Especificação de Caso de Uso: CDU-07 Definir Estatísticas
 
-| Número do Caso de Uso | CDU-09 |
+| Número do Caso de Uso | CDU-07 |
 | --- | --- |
 | **Nome do Caso de Uso** | Definir Estatísticas |
 | **Versão** | 1.0 |
@@ -704,9 +576,9 @@ Este caso de uso permite que o usuário visualize gráficos estatísticos de sua
 
 - Os gráficos gerados são destinados apenas para fins informativos e análise do usuário.
 
-# Especificação de Caso de Uso: CDU-10 Gerenciar Despesas
+# Especificação de Caso de Uso: CDU-08 Gerenciar Despesas
 
-| Número do Caso de Uso | CDU-10 |
+| Número do Caso de Uso | CDU-08 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Despesas |
 | **Versão** | 1.0 |
@@ -908,4 +780,3 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 | 1.0| Juan Pablo |  Declaração dos Casos de Uso | 06/11/2023 |
 | 1.1| Juan Pablo |  Especificação dos Casos de Uso | 14/11/2023 |
 | 1.2| Juan Pablo | Atualiza MVP | 16/11/2023 |
-| 1.3| João Lucas | Atualização dos Casos de Uso | 20/11/2023|
