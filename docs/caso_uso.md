@@ -419,81 +419,108 @@ Este caso de uso permite que o usuário acompanhe o progresso em direção às m
 
 - Este caso de uso serve como base para futuras funcionalidades de análise avançada de gastos e economias.
 
-# Especificação de Caso de Uso: CDU-06 Gerenciar Conta do Usuário
-
-| Número do Caso de Uso | CDU-06 |
-| --- | --- |
-| **Nome do Caso de Uso** | Gerenciar Conta do Usuário |
-| **Versão** | 1.0 |
-| **Data de Criação** | 13/11/2023 |
-| **Responsável** | Juan Pablo|
+# Especificação caso de uso-06
+# CDU-06 Gerenciar Acesso de Perfil
 
 ## 1. Breve Descrição
-
-Este caso de uso permite que o usuário altere, acesse seu perfil e delete sua conta no sistema.
+Este caso de uso permite que o usuário acesse as informações do seu perfil na plataforma.
 
 ## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
-| --- | --- |
-| 2.1 | O usuário acessa a área de gerenciamento de conta. |
-| 2.2 | O usuário escolhe a opção de acessar seu perfil (RF19). |
-| 2.3 | O sistema exibe as informações do perfil do usuário. |
-| 2.4 | O usuário escolhe a opção de alterar sua conta (RF20). |
-| 2.5 | O sistema permite que o usuário faça as alterações necessárias. |
-| 2.6 | O usuário escolhe a opção de deletar sua conta (RF18). |
-| 2.7 | O sistema solicita confirmação do usuário. |
-| 2.8 | O usuário confirma a exclusão da conta. |
+1. O usuário acessa a área de gerenciamento de conta.
+2. O usuário escolhe a opção de acessar seu perfil (RF19).
+3. O sistema exibe as informações do perfil do usuário.
 
 ## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Alterar Conta
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-- Se o usuário decidir não realizar alterações, ele pode retornar à página principal.
-
+- Não há
 ## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico. |
-| 4.2 | FE2 | Se a confirmação da exclusão não for recebida, o sistema mantém a conta do usuário. |
+1. Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.
 
 ## 5. Pré-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 5.1 | O usuário está autenticado no sistema. |
-| 5.2 | O usuário possui um perfil ativo no sistema. |
+1. O usuário está autenticado no sistema.
+2. O usuário possui um perfil ativo no sistema.
 
 ## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | As alterações na conta do usuário são refletidas no sistema. |
-| 6.2 | O perfil do usuário é acessível e exibido corretamente. |
-| 6.3 | A conta do usuário é deletada do sistema, se confirmada. |
+- O perfil do usuário é acessível e exibido corretamente.
 
 ## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+- Não há pontos de extensão definidos para este caso de uso.
 
 ## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 | O sistema deve garantir a segurança durante o acesso e alteração de informações da conta do usuário. |
+1. O sistema deve garantir a segurança durante o acesso às informações do perfil do usuário.
 
 ## 9. Informações Adicionais
+Nenhuma informação adicional fornecida.
 
-- Nenhuma informação adicional fornecida.
+# Especificação do Caso de Uso 07
+# CDU-07 Gerenciar Alteração de Perfil
 
-# Especificação de Caso de Uso: CDU-07 Gerenciar Plano de Gastos para Economia
+## 1. Breve Descrição
+Este caso de uso permite que o usuário realize alterações em seu perfil na plataforma.
 
-| Número do Caso de Uso | CDU-07 |
+## 2. Fluxo Básico de Eventos
+1. O usuário acessa a área de gerenciamento de conta.
+2. O usuário escolhe a opção de alterar sua conta (RF20).
+3. O sistema permite que o usuário faça as alterações necessárias de senha e de nome.
+
+## 3. Fluxos Alternativos
+- Se o usuário optar por não realizar alterações, ele pode retornar à página principal.
+
+## 4. Fluxos de Exceção
+1. Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.
+
+## 5. Pré-Condições
+1. O usuário está autenticado no sistema.
+
+## 6. Pós-Condições
+- As alterações na conta do usuário são refletidas no sistema.
+
+## 7. Pontos de Extensão
+- Não há pontos de extensão definidos para este caso de uso.
+
+## 8. Requisitos Especiais
+1. O sistema deve garantir a segurança durante a alteração de informações da conta do usuário.
+
+## 9. Informações Adicionais
+Nenhuma informação adicional fornecida.
+
+# Especificação do Caso de Uso 08
+# CDU-08 Gerenciar Deleção de Perfil
+
+## 1. Breve Descrição
+Este caso de uso permite que o usuário exclua permanentemente seu perfil na plataforma.
+
+## 2. Fluxo Básico de Eventos
+1. O usuário acessa a área de gerenciamento de conta.
+2. O usuário escolhe a opção de deletar sua conta (RF18).
+3. O sistema solicita confirmação do usuário.
+4. O usuário confirma a exclusão da conta.
+
+## 3. Fluxos Alternativos
+- Se a confirmação da exclusão não for recebida, o sistema mantém a conta do usuário.
+
+## 4. Fluxos de Exceção
+1. Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.
+
+## 5. Pré-Condições
+1. O usuário está autenticado no sistema.
+2. O usuário possui um perfil ativo no sistema.
+
+## 6. Pós-Condições
+- A conta do usuário é deletada do sistema, se confirmada.
+
+## 7. Pontos de Extensão
+- Não há pontos de extensão definidos para este caso de uso.
+
+## 8. Requisitos Especiais
+1. O sistema deve garantir a segurança durante a deleção da conta do usuário.
+
+## 9. Informações Adicionais
+Nenhuma informação adicional fornecida.
+
+
+# Especificação de Caso de Uso: CDU-09 Gerenciar Plano de Gastos para Economia
+
+| Número do Caso de Uso | CDU-09 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Plano de Gastos para Economia |
 | **Versão** | 1.0 |
@@ -567,9 +594,9 @@ Este caso de uso permite que o usuário defina um plano de gastos com objetivos 
 
 - Nenhuma informação adicional fornecida.
 
-# Especificação de Caso de Uso: CDU-08 Gerenciar Transações Financeiras
+# Especificação de Caso de Uso: CDU-10 Gerenciar Transações Financeiras
 
-| Número do Caso de Uso | CDU-08 |
+| Número do Caso de Uso | CDU-10 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Transações Financeiras |
 | **Versão** | 1.0 |
@@ -633,9 +660,9 @@ Este caso de uso permite que o usuário tenha controle de suas transações fina
 
 - Nenhuma informação adicional fornecida.
 
-# Especificação de Caso de Uso: CDU-09 Definir Estatísticas
+# Especificação de Caso de Uso: CDU-11 Definir Estatísticas
 
-| Número do Caso de Uso | CDU-09 |
+| Número do Caso de Uso | CDU-11 |
 | --- | --- |
 | **Nome do Caso de Uso** | Definir Estatísticas |
 | **Versão** | 1.0 |
@@ -706,9 +733,9 @@ Este caso de uso permite que o usuário visualize gráficos estatísticos de sua
 
 - Os gráficos gerados são destinados apenas para fins informativos e análise do usuário.
 
-# Especificação de Caso de Uso: CDU-10 Gerenciar Despesas
+# Especificação de Caso de Uso: CDU-12 Gerenciar Despesas
 
-| Número do Caso de Uso | CDU-10 |
+| Número do Caso de Uso | CDU-12 |
 | --- | --- |
 | **Nome do Caso de Uso** | Gerenciar Despesas |
 | **Versão** | 1.0 |
