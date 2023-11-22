@@ -43,11 +43,13 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 |CDU-03|Gerenciar cadastro de conta bancária | O usuário pode cadastrar até três contas bancárias associadas ao seu perfil |RF3	Cadastrar até 3 contas bancárias| Conta bancária cadastrada |
 |CDU-04|Gerenciar Ganhos| Relata os ganhos financeiros do usuário |  RF14	Registrar os ganhos mensais | Gastos Apresentados |
 |CDU-05|Manter o usuário informado | O usuário tem informações de como estão suas economias |RF10	Acompanhar progresso em direção às metas de economia, RF11	Notificar quando estiver a 10% do teto de gastos RF21	Destacar categorias de gastos mais frequentes| Usuário informado sobre suas finanças|
-|CDU-06|Gerenciar conta do Usuário | O usuário pode alterar, acessar seu perfil e deletá-lo|RF18	Deletar conta, RF19	Acessar perfil do usuário, RF20	Alterar conta | Conta do usuário |
-|CDU-07|Gerenciar plano de gastos para economia | O  usuário define um plano de gastos com objetivos de economia|RF12	Definir teto de gastos para cada categoria de despesas, RF13	Definir objetivos de economia | Plano de gastos|
-|CDU-08|Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras|RF15	Registrar transferências | Gerenciamentos de Transações financeiras|
-|CDU-09|Definir Estatísticas | O usuário visualiza gráficos estatísticos de suas economias|RF16	Gerar gráfico de gastos no final do mês, RF17	Criar gráfico sobre as transações financeiras | Gerar Estatísticas  |
-|CDU-10 | Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas despesas | RF4	Alterar despesas, RF5	Deletar despesas, RF6	Categorizar despesas, RF9	Registrar despesas mensais, RF7	Filtrar os gastos por categoria de gastos, RF8	Pesquisar gastos | Despesas Apresentadas |
+|CDU-06|Gerenciar acesso de perfil  | O usuário pode acessar seu perfil | RF19	Acessar perfil do usuário| Conta do usuário |
+|CDU-07|Gerenciar alteração de perfil  | O usuário pode alterar seu perfil| RF20 Alterar conta | Conta do usuário |
+|CDU-08|Gerenciar deleção de perfil| O usuário pode deletar seu perfil|RF18	Deletar conta | Conta do usuário |
+|CDU-09|Gerenciar plano de gastos para economia | O  usuário define um plano de gastos com objetivos de economia|RF12	Definir teto de gastos para cada categoria de despesas, RF13	Definir objetivos de economia | Plano de gastos|
+|CDU-10|Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras|RF15	Registrar transferências | Gerenciamentos de Transações financeiras|
+|CDU-11|Definir Estatísticas | O usuário visualiza gráficos estatísticos de suas economias|RF16	Gerar gráfico de gastos no final do mês, RF17	Criar gráfico sobre as transações financeiras | Gerar Estatísticas  |
+|CDU-12 | Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas despesas | RF4	Alterar despesas, RF5	Deletar despesas, RF6	Categorizar despesas, RF9	Registrar despesas mensais, RF7	Filtrar os gastos por categoria de gastos, RF8	Pesquisar gastos | Despesas Apresentadas |
 
 # Especificação dos Casos de Uso
 
