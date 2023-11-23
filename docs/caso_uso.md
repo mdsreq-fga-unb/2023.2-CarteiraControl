@@ -60,8 +60,9 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 
 # Especificação dos Casos de Uso
 
-
 # Especificação de Caso de Uso: CDU-01 Gerenciar cadastro de Usuário
+
+
 
 | Número do Caso de Uso | CDU-01 |
 | --- | --- |
@@ -70,67 +71,47 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Data de Criação** | 20/11/2023 |
 | **Responsável** | Juan Pablo e João Lucas|
 
-## 1. Breve Descrição
+# Caso de Uso: Cadastro de Usuário
 
-Este caso de uso permite que um usuário realize o cadastro no sistema.
-
-## 2. Fluxo Básico de Eventos
-
+| **Breve Descrição** | Este caso de uso permite que um usuário realize o cadastro no sistema. |
+| --- | --- |
+| **Fluxo Básico de Eventos** | 
 | Passo | Descrição |
 | --- | --- |
 | 2.1 | O usuário escolhe a opção de cadastrar um novo usuário (RF1). |
 | 2.2 | O sistema solicita as informações necessárias para o cadastro do usuário. |
 | 2.3 | O usuário fornece os dados necessários. |
 | 2.4 | O sistema valida as informações e cadastra o usuário. |
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Cadastro de Usuário
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-##### 3.1.1.1 Um Subfluxo Alternativo
-
-- Se as informações fornecidas pelo usuário no cadastro forem inválidas, o sistema exibe uma mensagem de erro.
-
-#### 3.1.2 A2 Segundo Fluxo Alternativo
-
-- Se o usuário já possuir uma conta, ele pode optar por fazer login em vez de cadastrar um novo usuário.
-
-## 4. Fluxos de Exceção
-
+| **Fluxos Alternativos** |
+| --- | --- |
+| **Área de Funcionalidade: Cadastro de Usuário** |
+| **A1 Primeiro Fluxo Alternativo** | Se as informações fornecidas pelo usuário no cadastro forem inválidas, o sistema exibe uma mensagem de erro. |
+| **A2 Segundo Fluxo Alternativo** | Se o usuário já possuir uma conta, ele pode optar por fazer login em vez de cadastrar um novo usuário. |
+| **Fluxos de Exceção** |
 | Número | Fluxo de Exceção | Descrição |
 | --- | --- | --- |
 | 4.1 | FE1 | Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
-
-## 5. Pré-Condições
-
+| **Pré-Condições** |
 | Número | Descrição |
 | --- | --- |
 | 5.1 | O sistema está operacional. |
 | 5.2 | Não há restrições específicas para o cadastro de novos usuários. |
-
-## 6. Pós-Condições
-
+| **Pós-Condições** |
 | Número | Descrição |
 | --- | --- |
 | 6.1 | O usuário está autenticado no sistema. |
-
-## 7. Pontos de Extensão
-
+| **Pontos de Extensão** |
 | Número | Nome do Ponto de Extensão | Descrição |
 | --- | --- | --- |
 | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
+| **Requisitos Especiais** |
 | Número | Descrição |
 | --- | --- |
 | 8.1 | O sistema deve garantir a segurança das informações do usuário durante o cadastro. |
+| **Informações Adicionais** |
+| --- |
+| Nenhuma informação adicional fornecida. |
 
-## 9. Informações Adicionais
-
-- Nenhuma informação adicional fornecida.
 
 # Especificação de Caso de Uso: CDU-02 Gerenciar login de Usuário
 
@@ -141,66 +122,28 @@ Este caso de uso permite que um usuário realize o cadastro no sistema.
 | **Data de Criação** | 20/11/2023 |
 | **Responsável** | Juan Pablo e João Lucas|
 
-## 1. Breve Descrição
+# Caso de Uso: Login de Usuário
 
-Este caso de uso permite que um usuário faça login no sistema.
 
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
+| **Breve Descrição** | Este caso de uso permite que um usuário faça login no sistema. |
 | --- | --- |
-| 2.1 | O usuário escolhe a opção de fazer login (RF2). |
-| 2.2 | O sistema solicita as credenciais do usuário. |
-| 2.3 | O usuário fornece as credenciais. |
-| 2.4 | O sistema valida as credenciais. |
-| 2.5 | O sistema autentica o usuário e o direciona para a área logada. |
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Login de Usuário
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-##### 3.1.1.1 Um Subfluxo Alternativo
-
-- A1: Se o usuário não tiver uma conta no sistema:
-   - O sistema não autentica o usuário.
-   - O sistema exibe uma mensagem informando que o usuário não possui uma conta no sistema.
-   - O usuário pode escolher criar uma nova conta.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
+| **Fluxo Básico de Eventos** | Passo | Descrição | --- | --- | 2.1 | O usuário escolhe a opção de fazer login (RF2). | 2.2 | O sistema solicita as credenciais do usuário. | 2.3 | O usuário fornece as credenciais. | 2.4 | O sistema valida as credenciais. | 2.5 | O sistema autentica o usuário e o direciona para a área logada. |
+| **Fluxos Alternativos** |
 | --- | --- |
-| 5.1 | O sistema está operacional. |
+| **Área de Funcionalidade: Login de Usuário** |
+| **A1 Primeiro Fluxo Alternativo** | **A1.1 Um Subfluxo Alternativo** | A1: Se o usuário não tiver uma conta no sistema: - O sistema não autentica o usuário. - O sistema exibe uma mensagem informando que o usuário não possui uma conta no sistema. - O usuário pode escolher criar uma nova conta. |
+| **Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha. |
+| **Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O sistema está operacional. |
+| **Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | O usuário está autenticado no sistema. |
+| **Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a segurança das informações do usuário durante o login. |
+| **Informações Adicionais** | --- | Nenhuma informação adicional fornecida. |
 
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | O usuário está autenticado no sistema. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 |  O sistema deve garantir a segurança das informações do usuário durante o login. |
-
-## 9. Informações Adicionais
-
-- Nenhuma informação adicional fornecida.
 
 # Especificação de Caso de Uso: CDU-03 Gerenciar Cadastro de Conta Bancária
 
@@ -211,71 +154,28 @@ Este caso de uso permite que um usuário faça login no sistema.
 | **Data de Criação** | 20/11/2023 |
 | **Responsável** | Juan Pablo e João Lucas|
 
-## 1. Breve Descrição
+# Caso de Uso: Cadastro de Conta Bancária
 
-Este caso de uso permite que um usuário cadastre até três contas bancárias associadas ao seu perfil.
-
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
+| **Breve Descrição** | Este caso de uso permite que um usuário cadastre até três contas bancárias associadas ao seu perfil. |
 | --- | --- |
-| 2.1 | O usuário escolhe a opção de cadastrar conta bancária (RF3). |
-| 2.2 | O sistema solicita as informações da conta bancária. |
-| 2.3 | O usuário fornece os dados necessários. |
-| 2.4 | O sistema valida as informações e associa a conta bancária ao usuário. |
-        
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Cadastro de Conta Bancária
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-##### 3.1.1.1 Um Subfluxo Alternativo
-
-- A1: Se o usuário tentar cadastrar mais de três contas bancárias:
-    - O sistema não permite o cadastro da conta bancária.
-    - O sistema exibe uma mensagem informando que o usuário só pode cadastrar até três contas bancárias.
-
-#### 3.1.2 A2 Segundo Fluxo Alternativo
-- A2: Se o usuário tentar cadastrar uma conta bancária de um banco que não é suportado pelo sistema:
-    - O sistema não permite o cadastro da conta bancária.
-    - O sistema exibe uma mensagem informando que o banco não é suportado pelo sistema.
-
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
+| **Fluxo Básico de Eventos** | Passo | Descrição | --- | --- | 2.1 | O usuário escolhe a opção de cadastrar conta bancária (RF3). | 2.2 | O sistema solicita as informações da conta bancária. | 2.3 | O usuário fornece os dados necessários. | 2.4 | O sistema valida as informações e associa a conta bancária ao usuário. |
+| **Fluxos Alternativos** |
 | --- | --- |
-| 5.1 | O sistema está operacional. |
+| **Área de Funcionalidade: Cadastro de Conta Bancária** |
+| **A1 Primeiro Fluxo Alternativo** | **A1.1 Um Subfluxo Alternativo** | A1: Se o usuário tentar cadastrar mais de três contas bancárias: - O sistema não permite o cadastro da conta bancária. - O sistema exibe uma mensagem informando que o usuário só pode cadastrar até três contas bancárias. |
+| **A2 Segundo Fluxo Alternativo** | - A2: Se o usuário tentar cadastrar uma conta bancária de um banco que não é suportado pelo sistema: - O sistema não permite o cadastro da conta bancária. - O sistema exibe uma mensagem informando que o banco não é suportado pelo sistema. |
+| **Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
+| **Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O sistema está operacional. |
+| **Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | As informações do cadastro e as contas bancárias associadas foram registradas no sistema.|
+| **Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 |  O sistema deve garantir a segurança das informações do usuário durante o cadastro. |
+| **Informações Adicionais** | --- | Nenhuma informação adicional fornecida. |
 
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | As informações do cadastro e as contas bancárias associadas foram registradas no sistema.|
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 |  O sistema deve garantir a segurança das informações do usuário durante o cadastro. |
-
-## 9. Informações Adicionais
-
-- Nenhuma informação adicional fornecida.
 
 
 # Especificação de Caso de Uso: CDU-04 Gerenciar Ganhos
@@ -287,63 +187,27 @@ Este caso de uso permite que um usuário cadastre até três contas bancárias a
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo |
 
-## 1. Breve Descrição
+# Caso de Uso: Registro de Ganhos
 
-Este caso de uso permite que o usuário registre seus ganhos financeiros, fornecendo uma visão detalhada de seus ingressos mensais.
-
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
+| **Breve Descrição** | Este caso de uso permite que o usuário registre seus ganhos financeiros, fornecendo uma visão detalhada de seus ingressos mensais. |
 | --- | --- |
-| 2.1 | O usuário acessa a área de gerenciamento de ganhos. |
-| 2.2 | O usuário escolhe a opção de registrar ganhos mensais (RF14). |
-| 2.3 | O sistema exibe um formulário para o usuário inserir os detalhes do ganho. |
-| 2.4 | O usuário fornece as informações necessárias. |
-| 2.5 | O sistema valida as informações e registra os ganhos. |
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Registro de Ganhos
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-- Se o usuário decidir não registrar ganhos, ele pode retornar à página principal.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na validação das informações do ganho, o sistema notifica o usuário e destaca os campos inválidos. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
+| **Fluxo Básico de Eventos** | Passo | Descrição | --- | --- | 2.1 | O usuário acessa a área de gerenciamento de ganhos. | 2.2 | O usuário escolhe a opção de registrar ganhos mensais (RF14). | 2.3 | O sistema exibe um formulário para o usuário inserir os detalhes do ganho. | 2.4 | O usuário fornece as informações necessárias. | 2.5 | O sistema valida as informações e registra os ganhos. |
+| **Fluxos Alternativos** |
 | --- | --- |
-| 5.1 | O usuário está autenticado no sistema. |
-| 5.2 | Não há restrições específicas para o registro de ganhos. |
+| **Área de Funcionalidade: Registro de Ganhos** |
+| **A1 Primeiro Fluxo Alternativo** | - Se o usuário decidir não registrar ganhos, ele pode retornar à página principal. |
+| **Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha na validação das informações do ganho, o sistema notifica o usuário e destaca os campos inválidos. |
+| **Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Não há restrições específicas para o registro de ganhos. |
+| **Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | Os ganhos são registrados no sistema e associados ao perfil do usuário. | 6.2 | As estatísticas de ganhos são atualizadas para refletir as alterações. |
+| **Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve fornecer uma interface intuitiva para facilitar o registro de ganhos. |
+| **Informações Adicionais** | --- | Os ganhos registrados serão utilizados para análises estatísticas nas funcionalidades futuras. |
 
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | Os ganhos são registrados no sistema e associados ao perfil do usuário. |
-| 6.2 | As estatísticas de ganhos são atualizadas para refletir as alterações. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 | O sistema deve fornecer uma interface intuitiva para facilitar o registro de ganhos. |
-
-## 9. Informações Adicionais
-
-- Os ganhos registrados serão utilizados para análises estatísticas nas funcionalidades futuras.
 
 # Especificação de Caso de Uso: CDU-05 Manter o Usuário Informado
 
@@ -354,175 +218,84 @@ Este caso de uso permite que o usuário registre seus ganhos financeiros, fornec
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo|
 
-## 1. Breve Descrição
+# Caso de Uso: Acompanhamento Financeiro
 
-Este caso de uso permite que o usuário acompanhe o progresso em direção às metas de economia, receba notificações quando estiver a 10% do teto de gastos e tenha insights sobre as categorias de gastos mais frequentes.
-
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
+| **Breve Descrição** | Este caso de uso permite que o usuário acompanhe o progresso em direção às metas de economia, receba notificações quando estiver a 10% do teto de gastos e tenha insights sobre as categorias de gastos mais frequentes. |
 | --- | --- |
-| 2.1 | O usuário acessa a área de informações financeiras. |
-| 2.2 | O sistema exibe o acompanhamento do progresso em direção às metas de economia (RF10). |
-| 2.3 | O usuário visualiza notificações sobre o teto de gastos quando estiver a 10% do limite (RF11). |
-| 2.4 | O sistema destaca as categorias de gastos mais frequentes (RF21). |
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Acompanhar Progresso
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-- Se o usuário não tiver definido metas de economia, o sistema sugere a definição de metas antes de exibir o progresso.
-
-### 3.2 Área de Funcionalidade: Notificações de Gastos
-
-#### 3.2.1 A2 Segundo Fluxo Alternativo
-
-- Se o usuário optar por desativar as notificações de teto de gastos, o sistema atualiza as configurações.
-
-### 3.3 Área de Funcionalidade: Destacar Categorias de Gastos
-
-#### 3.3.1 A3 Terceiro Fluxo Alternativo
-
-- Se não houver dados suficientes para identificar as categorias de gastos mais frequentes, o sistema informa ao usuário.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver uma falha na exibição do progresso em direção às metas, o sistema notifica o usuário e oferece suporte técnico. |
-| 4.2 | FE2 | Se não for possível enviar notificações, o sistema registra a ocorrência e sugere que o usuário verifique suas configurações de notificação. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
+| **Fluxo Básico de Eventos** | Passo | Descrição | --- | --- | 2.1 | O usuário acessa a área de informações financeiras. | 2.2 | O sistema exibe o acompanhamento do progresso em direção às metas de economia (RF10). | 2.3 | O usuário visualiza notificações sobre o teto de gastos quando estiver a 10% do limite (RF11). | 2.4 | O sistema destaca as categorias de gastos mais frequentes (RF21). |
+| **Fluxos Alternativos** |
 | --- | --- |
-| 5.1 | O usuário está autenticado no sistema. |
-| 5.2 | Metas de economia foram definidas pelo usuário. |
-| 5.3 | O usuário concordou em receber notificações. |
+| **Área de Funcionalidade: Acompanhar Progresso** |
+| **A1 Primeiro Fluxo Alternativo** | - Se o usuário não tiver definido metas de economia, o sistema sugere a definição de metas antes de exibir o progresso. |
+| **Área de Funcionalidade: Notificações de Gastos** |
+| **A2 Segundo Fluxo Alternativo** | - Se o usuário optar por desativar as notificações de teto de gastos, o sistema atualiza as configurações. |
+| **Área de Funcionalidade: Destacar Categorias de Gastos** |
+| **A3 Terceiro Fluxo Alternativo** | - Se não houver dados suficientes para identificar as categorias de gastos mais frequentes, o sistema informa ao usuário. |
+| **Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver uma falha na exibição do progresso em direção às metas, o sistema notifica o usuário e oferece suporte técnico. | 4.2 | FE2 | Se não for possível enviar notificações, o sistema registra a ocorrência e sugere que o usuário verifique suas configurações de notificação. |
+| **Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Metas de economia foram definidas pelo usuário. | 5.3 | O usuário concordou em receber notificações. |
+| **Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | O usuário tem informações atualizadas sobre o progresso em direção às metas de economia. | 6.2 | Notificações são enviadas quando o usuário está a 10% do teto de gastos. | 6.3 | As categorias de gastos mais frequentes são destacadas para análise. |
+| **Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | Aprimorar Análise de Categorias | O sistema permitirá que o usuário aprofunde a análise das categorias de gastos para obter
 
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | O usuário tem informações atualizadas sobre o progresso em direção às metas de economia. |
-| 6.2 | Notificações são enviadas quando o usuário está a 10% do teto de gastos. |
-| 6.3 | As categorias de gastos mais frequentes são destacadas para análise. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | Aprimorar Análise de Categorias | O sistema permitirá que o usuário aprofunde a análise das categorias de gastos para obter insights mais detalhados. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 | O sistema deve garantir a segurança e privacidade das informações financeiras do usuário. |
-
-## 9. Informações Adicionais
-
-- Este caso de uso serve como base para futuras funcionalidades de análise avançada de gastos e economias.
 
 # Especificação caso de uso-06
 # CDU-06 Gerenciar Acesso de Perfil
 
-## 1. Breve Descrição
-Este caso de uso permite que o usuário acesse as informações do seu perfil na plataforma.
+# Caso de Uso: Acesso ao Perfil do Usuário
 
-## 2. Fluxo Básico de Eventos
-1. O usuário acessa a área de gerenciamento de conta.
-2. O usuário escolhe a opção de acessar seu perfil (RF19).
-3. O sistema exibe as informações do perfil do usuário.
+| **Breve Descrição** | Este caso de uso permite que o usuário acesse as informações do seu perfil na plataforma. |
+| --- | --- |
+| **Fluxo Básico de Eventos** | Passo | Descrição | --- | --- | 1 | O usuário acessa a área de gerenciamento de conta. | 2 | O usuário escolhe a opção de acessar seu perfil (RF19). | 3 | O sistema exibe as informações do perfil do usuário. |
+| **Fluxos Alternativos** |
+| --- | Não há |
+| **Fluxos de Exceção** | Passo | Descrição | --- | --- | 1 | Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico. |
+| **Pré-Condições** | Número | Descrição | --- | --- | 1 | O usuário está autenticado no sistema. | 2 | O usuário possui um perfil ativo no sistema. |
+| **Pós-Condições** | --- | O perfil do usuário é acessível e exibido corretamente. |
+| **Pontos de Extensão** | Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | - | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** | Número | Descrição | --- | --- | 1 | O sistema deve garantir a segurança durante o acesso às informações do perfil do usuário. |
+| **Informações Adicionais** | --- | Nenhuma informação adicional fornecida. |
 
-## 3. Fluxos Alternativos
-- Não há
-## 4. Fluxos de Exceção
-1. Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.
-
-## 5. Pré-Condições
-1. O usuário está autenticado no sistema.
-2. O usuário possui um perfil ativo no sistema.
-
-## 6. Pós-Condições
-- O perfil do usuário é acessível e exibido corretamente.
-
-## 7. Pontos de Extensão
-- Não há pontos de extensão definidos para este caso de uso.
-
-## 8. Requisitos Especiais
-1. O sistema deve garantir a segurança durante o acesso às informações do perfil do usuário.
-
-## 9. Informações Adicionais
-Nenhuma informação adicional fornecida.
 
 # Especificação do Caso de Uso 07
 # CDU-07 Gerenciar Alteração de Perfil
 
-## 1. Breve Descrição
-Este caso de uso permite que o usuário realize alterações em seu perfil na plataforma.
+# Caso de Uso: Alteração de Conta do Usuário
 
-## 2. Fluxo Básico de Eventos
-1. O usuário acessa a área de gerenciamento de conta.
-2. O usuário escolhe a opção de alterar sua conta (RF20).
-3. O sistema permite que o usuário faça as alterações necessárias de senha e de nome.
+| **Breve Descrição** | Este caso de uso permite que o usuário realize alterações em seu perfil na plataforma. |
+| --- | --- |
+| **Fluxo Básico de Eventos** | Passo | Descrição | --- | --- | 1 | O usuário acessa a área de gerenciamento de conta. | 2 | O usuário escolhe a opção de alterar sua conta (RF20). | 3 | O sistema permite que o usuário faça as alterações necessárias de senha e de nome. |
+| **Fluxos Alternativos** |
+| --- | --- |
+| - | Se o usuário optar por não realizar alterações, ele pode retornar à página principal. |
+| **Fluxos de Exceção** | Passo | Descrição | --- | --- | 1 | Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico. |
+| **Pré-Condições** | Número | Descrição | --- | --- | 1 | O usuário está autenticado no sistema. |
+| **Pós-Condições** | --- | As alterações na conta do usuário são refletidas no sistema. |
+| **Pontos de Extensão** | Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | - | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** | Número | Descrição | --- | --- | 1 | O sistema deve garantir a segurança durante a alteração de informações da conta do usuário. |
+| **Informações Adicionais** | --- | Nenhuma informação adicional fornecida. |
 
-## 3. Fluxos Alternativos
-- Se o usuário optar por não realizar alterações, ele pode retornar à página principal.
-
-## 4. Fluxos de Exceção
-1. Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.
-
-## 5. Pré-Condições
-1. O usuário está autenticado no sistema.
-
-## 6. Pós-Condições
-- As alterações na conta do usuário são refletidas no sistema.
-
-## 7. Pontos de Extensão
-- Não há pontos de extensão definidos para este caso de uso.
-
-## 8. Requisitos Especiais
-1. O sistema deve garantir a segurança durante a alteração de informações da conta do usuário.
-
-## 9. Informações Adicionais
-Nenhuma informação adicional fornecida.
 
 # Especificação do Caso de Uso 08
 # CDU-08 Gerenciar Deleção de Perfil
 
-## 1. Breve Descrição
-Este caso de uso permite que o usuário exclua permanentemente seu perfil na plataforma.
+# Caso de Uso: Exclusão de Conta do Usuário
 
-## 2. Fluxo Básico de Eventos
-1. O usuário acessa a área de gerenciamento de conta.
-2. O usuário escolhe a opção de deletar sua conta (RF18).
-3. O sistema solicita confirmação do usuário.
-4. O usuário confirma a exclusão da conta.
+| **Breve Descrição** | Este caso de uso permite que o usuário exclua permanentemente seu perfil na plataforma. |
+| --- | --- |
+| **Fluxo Básico de Eventos** | Passo | Descrição | --- | --- | 1 | O usuário acessa a área de gerenciamento de conta. | 2 | O usuário escolhe a opção de deletar sua conta (RF18). | 3 | O sistema solicita confirmação do usuário. | 4 | O usuário confirma a exclusão da conta. |
+| **Fluxos Alternativos** |
+| --- | --- |
+| - | Se a confirmação da exclusão não for recebida, o sistema mantém a conta do usuário. |
+| **Fluxos de Exceção** | Passo | Descrição | --- | --- | 1 | Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico. |
+| **Pré-Condições** | Número | Descrição | --- | --- | 1 | O usuário está autenticado no sistema. | 2 | O usuário possui um perfil ativo no sistema. |
+| **Pós-Condições** | --- | A conta do usuário é deletada do sistema, se confirmada. |
+| **Pontos de Extensão** | Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | - | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** | Número | Descrição | --- | --- | 1 | O sistema deve garantir a segurança durante a deleção da conta do usuário. |
+| **Informações Adicionais** | --- | Nenhuma informação adicional fornecida. |
 
-## 3. Fluxos Alternativos
-- Se a confirmação da exclusão não for recebida, o sistema mantém a conta do usuário.
-
-## 4. Fluxos de Exceção
-1. Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.
-
-## 5. Pré-Condições
-1. O usuário está autenticado no sistema.
-2. O usuário possui um perfil ativo no sistema.
-
-## 6. Pós-Condições
-- A conta do usuário é deletada do sistema, se confirmada.
-
-## 7. Pontos de Extensão
-- Não há pontos de extensão definidos para este caso de uso.
-
-## 8. Requisitos Especiais
-1. O sistema deve garantir a segurança durante a deleção da conta do usuário.
-
-## 9. Informações Adicionais
-Nenhuma informação adicional fornecida.
 
 
 # Especificação de Caso de Uso: CDU-09 Gerenciar Plano de Gastos para Economia
@@ -534,72 +307,31 @@ Nenhuma informação adicional fornecida.
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo |
 
-## 1. Breve Descrição
+# Caso de Uso: Definição de Plano de Gastos e Objetivos de Economia
 
-Este caso de uso permite que o usuário defina um plano de gastos com objetivos de economia, incluindo a definição de teto de gastos para cada categoria de despesas e objetivos de economia.
-
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
+| **Breve Descrição** | Este caso de uso permite que o usuário defina um plano de gastos com objetivos de economia, incluindo a definição de teto de gastos para cada categoria de despesas e objetivos de economia. |
 | --- | --- |
-| 2.1 | O usuário acessa a área de gerenciamento de plano de gastos. |
-| 2.2 | O usuário escolhe a opção de definir teto de gastos para cada categoria de despesas (RF12). |
-| 2.3 | O sistema exibe as categorias de despesas disponíveis. |
-| 2.4 | O usuário define os tetos de gastos para cada categoria. |
-| 2.5 | O usuário escolhe a opção de definir objetivos de economia (RF13). |
-| 2.6 | O sistema exibe as opções de objetivos de economia. |
-| 2.7 | O usuário define os objetivos de economia para o período desejado. |
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Definir Teto de Gastos
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-- Se o usuário decidir não definir tetos de gastos, ele pode retornar à página principal.
-
-### 3.2 Área de Funcionalidade: Definir Objetivos de Economia
-
-#### 3.2.1 A2 Segundo Fluxo Alternativo
-
-- Se o usuário decidir não definir objetivos de economia, ele pode retornar à página principal.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na exibição das categorias de despesas, o sistema notifica o usuário e oferece suporte técnico. |
-| 4.2 | FE2 | Se a definição de tetos de gastos ou objetivos de economia não for concluída com sucesso, o sistema notifica o usuário e permite nova tentativa. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
+| **Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a área de gerenciamento de plano de gastos. | 2.2 | O usuário escolhe a opção de definir teto de gastos para cada categoria de despesas (RF12). | 2.3 | O sistema exibe as categorias de despesas disponíveis. | 2.4 | O usuário define os tetos de gastos para cada categoria. | 2.5 | O usuário escolhe a opção de definir objetivos de economia (RF13). | 2.6 | O sistema exibe as opções de objetivos de economia. | 2.7 | O usuário define os objetivos de economia para o período desejado. |
+| **Fluxos Alternativos** |
 | --- | --- |
-| 5.1 | O usuário está autenticado no sistema. |
-| 5.2 | Não há restrições específicas para a definição de tetos de gastos ou objetivos de economia. |
+| **Área de Funcionalidade: Definir Teto de Gastos** |
+| **A1 Primeiro Fluxo Alternativo** | - Se o usuário decidir não definir tetos de gastos, ele pode retornar à página principal. |
+| **Área de Funcionalidade: Definir Objetivos de Economia** |
+| **A2 Segundo Fluxo Alternativo** | - Se o usuário decidir não definir objetivos de economia, ele pode retornar à página principal. |
+| **Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha na exibição das categorias de despesas, o sistema notifica o usuário e oferece suporte técnico. | 4.2 | FE2 | Se a definição de tetos de gastos ou objetivos de economia não for concluída com sucesso, o sistema notifica o usuário e permite nova tentativa. |
+| **Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Não há restrições específicas para a definição de tetos de gastos ou objetivos de economia. |
+| **Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | Os tetos de gastos para cada categoria são registrados no sistema. | 6.2 | Os objetivos de economia são registrados no sistema. |
+| **Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a atualização em tempo real dos tetos de gastos e objetivos de economia. |
+| **Informações Adicionais** |
+| --- | Nenhuma informação adicional fornecida. |
 
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | Os tetos de gastos para cada categoria são registrados no sistema. |
-| 6.2 | Os objetivos de economia são registrados no sistema. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 | O sistema deve garantir a atualização em tempo real dos tetos de gastos e objetivos de economia. |
-
-## 9. Informações Adicionais
-
-- Nenhuma informação adicional fornecida.
 
 # Especificação de Caso de Uso: CDU-10 Gerenciar Transações Financeiras
 
@@ -676,69 +408,31 @@ Este caso de uso permite que o usuário tenha controle de suas transações fina
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo |
 
-## 1. Breve Descrição
+# Caso de Uso: Visualização de Estatísticas
 
-Este caso de uso permite que o usuário visualize gráficos estatísticos de suas economias, incluindo a geração de gráfico de gastos no final do mês e a criação de gráfico sobre as transações financeiras.
-
-## 2. Fluxo Básico de Eventos
-
-| Passo | Descrição |
+| **Breve Descrição** | Este caso de uso permite que o usuário visualize gráficos estatísticos de suas economias, incluindo a geração de gráfico de gastos no final do mês e a criação de gráfico sobre as transações financeiras. |
 | --- | --- |
-| 2.1 | O usuário acessa a área de visualização de estatísticas. |
-| 2.2 | O usuário escolhe a opção de gerar gráfico de gastos no final do mês (RF16). |
-| 2.3 | O sistema exibe o gráfico com a distribuição de gastos ao longo do mês. |
-| 2.4 | O usuário escolhe a opção de criar gráfico sobre as transações financeiras (RF17). |
-| 2.5 | O sistema permite que o usuário selecione parâmetros para o gráfico de transações financeiras. |
-| 2.6 | O sistema gera e exibe o gráfico com base nos parâmetros selecionados. |
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Gerar Gráfico de Gastos
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-- Se o usuário decidir não gerar o gráfico de gastos, ele pode retornar à página principal.
-
-### 3.2 Área de Funcionalidade: Criar Gráfico sobre Transações Financeiras
-
-#### 3.2.1 A2 Segundo Fluxo Alternativo
-
-- Se o usuário não selecionar parâmetros para o gráfico de transações financeiras, o sistema exibe um gráfico padrão.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na geração ou exibição dos gráficos, o sistema notifica o usuário e oferece suporte técnico. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
+| **Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a área de visualização de estatísticas. | 2.2 | O usuário escolhe a opção de gerar gráfico de gastos no final do mês (RF16). | 2.3 | O sistema exibe o gráfico com a distribuição de gastos ao longo do mês. | 2.4 | O usuário escolhe a opção de criar gráfico sobre as transações financeiras (RF17). | 2.5 | O sistema permite que o usuário selecione parâmetros para o gráfico de transações financeiras. | 2.6 | O sistema gera e exibe o gráfico com base nos parâmetros selecionados. |
+| **Fluxos Alternativos** |
 | --- | --- |
-| 5.1 | O usuário está autenticado no sistema. |
-| 5.2 | Dados suficientes estão disponíveis para a geração dos gráficos. |
+| **Área de Funcionalidade: Gerar Gráfico de Gastos** |
+| **A1 Primeiro Fluxo Alternativo** | - Se o usuário decidir não gerar o gráfico de gastos, ele pode retornar à página principal. |
+| **Área de Funcionalidade: Criar Gráfico sobre Transações Financeiras** |
+| **A2 Segundo Fluxo Alternativo** | - Se o usuário não selecionar parâmetros para o gráfico de transações financeiras, o sistema exibe um gráfico padrão. |
+| **Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha na geração ou exibição dos gráficos, o sistema notifica o usuário e oferece suporte técnico. |
+| **Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Dados suficientes estão disponíveis para a geração dos gráficos. |
+| **Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | Os gráficos são exibidos para o usuário com base nas escolhas feitas. |
+| **Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a precisão e clareza na representação gráfica das estatísticas. |
+| **Informações Adicionais** |
+| --- | Os gráficos gerados são destinados apenas para fins informativos e análise do usuário. |
 
-## 6. Pós-Condições
-
-| Número | Descrição |
-| --- | --- |
-| 6.1 | Os gráficos são exibidos para o usuário com base nas escolhas feitas. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-| --- | --- |
-| 8.1 | O sistema deve garantir a precisão e clareza na representação gráfica das estatísticas. |
-
-## 9. Informações Adicionais
-
-- Os gráficos gerados são destinados apenas para fins informativos e análise do usuário.
 
 # Especificação de Caso de Uso: CDU-12 Gerenciar Alteração de Despesas
 
@@ -748,72 +442,31 @@ Este caso de uso permite que o usuário visualize gráficos estatísticos de sua
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
 
-## 1. Breve Descrição
+# Caso de Uso: Alteração de Despesas
 
-Este caso de uso permite que o usuário realize alterações em suas despesas já registradas.
+| **1. Breve Descrição** | Este caso de uso permite que o usuário realize alterações em suas despesas já registradas. |
+| --- | --- |
+| **2. Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a seção de gerenciamento de despesas. | 2.2 | Seleciona a opção de alterar despesas (RF4). | 2.3 | O sistema exibe a lista de despesas disponíveis para edição. | 2.4 | O usuário seleciona a despesa desejada e realiza as alterações necessárias. |
+| **3. Fluxos Alternativos** |
+| --- | --- |
+| **Área de Funcionalidade: Alteração de Despesas** |
+| **A1 Primeiro Fluxo Alternativo** | - Se as informações fornecidas pelo usuário para a alteração forem inválidas, o sistema exibe uma mensagem de erro. |
+| **A2 Segundo Fluxo Alternativo** | - Se o usuário decidir não realizar alterações, ele pode retornar à página principal. |
+| **4. Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
+| **5. Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Existem despesas registradas. |
+| **6. Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | As alterações nas despesas são refletidas no sistema. |
+| **7. Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **8. Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a segurança durante a alteração das informações de despesas. |
+| **9. Informações Adicionais** |
+| --- | Nenhuma informação adicional fornecida. |
 
-## 2. Fluxo Básico de Eventos
 
-### 2.1
-O usuário acessa a seção de gerenciamento de despesas.
-
-### 2.2
-Seleciona a opção de alterar despesas (RF4).
-
-### 2.3
-O sistema exibe a lista de despesas disponíveis para edição.
-
-### 2.4
-O usuário seleciona a despesa desejada e realiza as alterações necessárias.
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Alteração de Despesas
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-##### 3.1.1.1
-Se as informações fornecidas pelo usuário para a alteração forem inválidas, o sistema exibe uma mensagem de erro.
-
-#### 3.1.2 A2 Segundo Fluxo Alternativo
-
-##### 3.1.2.1
-Se o usuário decidir não realizar alterações, ele pode retornar à página principal.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-|--------|------------------|-----------|
-| 4.1    | FE1              | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 5.1    | O usuário está autenticado no sistema. |
-| 5.2    | Existem despesas registradas. |
-
-## 6. Pós-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 6.1    | As alterações nas despesas são refletidas no sistema. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-|--------|---------------------------|-----------|
-| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-|--------|-----------|
-| 8.1    | O sistema deve garantir a segurança durante a alteração das informações de despesas. |
-
-## 9. Informações Adicionais
-
-Nenhuma informação adicional fornecida.
 
 # Especificação de Caso de Uso: CDU-13 Gerenciar Registros de Despesas
 
@@ -823,63 +476,29 @@ Nenhuma informação adicional fornecida.
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
 
-## 1. Breve Descrição
+# Caso de Uso: Registro de Despesas Mensais
 
-Este caso de uso permite que o usuário registre suas despesas mensais.
+| **1. Breve Descrição** | Este caso de uso permite que o usuário registre suas despesas mensais. |
+| --- | --- |
+| **2. Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a seção de registro de despesas mensais. | 2.2 | Seleciona a opção de registrar despesas mensais (RF9). | 2.3 | O sistema exibe um formulário para o usuário preencher as informações referentes às despesas do mês. |
+| **3. Fluxos Alternativos** |
+| --- | --- |
+| **Área de Funcionalidade: Registro de Despesas Mensais** |
+| **A1 Primeiro Fluxo Alternativo** | - Se o usuário decidir não registrar despesas mensais, ele pode cancelar o processo. |
+| **4. Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha no acesso ao formulário de registro, o sistema notifica o usuário e oferece suporte técnico. |
+| **5. Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. |
+| **6. Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | As despesas mensais são registradas no sistema. |
+| **7. Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **8. Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a segurança durante o registro das despesas mensais. |
+| **9. Informações Adicionais** |
+| --- | Nenhuma informação adicional fornecida. |
 
-## 2. Fluxo Básico de Eventos
-
-### 2.1
-O usuário acessa a seção de registro de despesas mensais.
-
-### 2.2
-Seleciona a opção de registrar despesas mensais (RF9).
-
-### 2.3
-O sistema exibe um formulário para o usuário preencher as informações referentes às despesas do mês.
-
-## 3. Fluxos Alternativos
-
-### 3.1 Área de Funcionalidade: Registro de Despesas Mensais
-
-#### 3.1.1 A1 Primeiro Fluxo Alternativo
-
-##### 3.1.1.1
-Se o usuário decidir não registrar despesas mensais, ele pode cancelar o processo.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-|--------|------------------|-----------|
-| 4.1    | FE1              | Se houver falha no acesso ao formulário de registro, o sistema notifica o usuário e oferece suporte técnico. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 5.1    | O usuário está autenticado no sistema. |
-
-## 6. Pós-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 6.1    | As despesas mensais são registradas no sistema. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-|--------|---------------------------|-----------|
-| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-|--------|-----------|
-| 8.1    | O sistema deve garantir a segurança durante o registro das despesas mensais. |
-
-## 9. Informações Adicionais
-
-Nenhuma informação adicional fornecida.
 
 # Especificação de Caso de Uso: CDU-14 Gerenciar Deleção de Despesas
 
@@ -889,68 +508,28 @@ Nenhuma informação adicional fornecida.
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
 
-## 1. Breve Descrição
+# Caso de Uso: Exclusão de Despesas
 
-Este caso de uso permite que o usuário exclua despesas previamente registradas.
+| **1. Breve Descrição** | Este caso de uso permite que o usuário exclua despesas previamente registradas. |
+| --- | --- |
+| **2. Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a seção de gerenciamento de despesas. | 2.2 | Seleciona a opção de deletar despesas (RF5). | 2.3 | O sistema exibe a lista de despesas disponíveis para exclusão. | 2.4 | O usuário seleciona a despesa que deseja excluir. | 2.5 | O sistema solicita confirmação do usuário. | 2.6 | O usuário confirma a exclusão da despesa. |
+| **3. Fluxos Alternativos** |
+| --- | --- |
+| - | Se a confirmação da exclusão não for recebida, o sistema mantém a despesa. |
+| **4. Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
+| **5. Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Existem despesas registradas. |
+| **6. Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | A despesa é removida do sistema, se confirmada. |
+| **7. Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **8. Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a segurança durante a exclusão das despesas. |
+| **9. Informações Adicionais** |
+| --- | Nenhuma informação adicional fornecida. |
 
-## 2. Fluxo Básico de Eventos
-
-### 2.1
-O usuário acessa a seção de gerenciamento de despesas.
-
-### 2.2
-Seleciona a opção de deletar despesas (RF5).
-
-### 2.3
-O sistema exibe a lista de despesas disponíveis para exclusão.
-
-### 2.4
-O usuário seleciona a despesa que deseja excluir.
-
-### 2.5
-O sistema solicita confirmação do usuário.
-
-### 2.6
-O usuário confirma a exclusão da despesa.
-
-## 3. Fluxos Alternativos
-
-- Se a confirmação da exclusão não for recebida, o sistema mantém a despesa.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-|--------|------------------|-----------|
-| 4.1    | FE1              | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 5.1    | O usuário está autenticado no sistema. |
-| 5.2    | Existem despesas registradas. |
-
-## 6. Pós-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 6.1    | A despesa é removida do sistema, se confirmada. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-|--------|---------------------------|-----------|
-| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-|--------|-----------|
-| 8.1    | O sistema deve garantir a segurança durante a exclusão das despesas. |
-
-## 9. Informações Adicionais
-
-Nenhuma informação adicional fornecida.
 
 # Especificação de Caso de Uso: CDU-15 Gerenciar Categorização de Despesas
 
@@ -960,62 +539,27 @@ Nenhuma informação adicional fornecida.
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
 
-## 1. Breve Descrição
+# Caso de Uso: Categorização de Despesas
 
-Este caso de uso permite que o usuário atribua categorias às suas despesas para melhor organização.
-
-## 2. Fluxo Básico de Eventos
-
-### 2.1
-O usuário acessa a seção de gerenciamento de despesas.
-
-### 2.2
-Seleciona a opção de categorizar despesas (RF6).
-
-### 2.3
-O sistema exibe a lista de despesas disponíveis para categorização.
-
-### 2.4
-O usuário seleciona a despesa e escolhe a categoria desejada.
-
-## 3. Fluxos Alternativos
-
-- Se o usuário decidir não categorizar uma despesa, ele pode retornar à página principal.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-|--------|------------------|-----------|
-| 4.1    | FE1              | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 5.1    | O usuário está autenticado no sistema. |
-| 5.2    | Existem despesas registradas. |
-
-## 6. Pós-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 6.1    | A categoria é atribuída à despesa no sistema. |
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-|--------|---------------------------|-----------|
-| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-|--------|-----------|
-| 8.1    | O sistema deve garantir a segurança durante a categorização das despesas. |
-
-## 9. Informações Adicionais
-
-Nenhuma informação adicional fornecida.
+| **1. Breve Descrição** | Este caso de uso permite que o usuário atribua categorias às suas despesas para melhor organização. |
+| --- | --- |
+| **2. Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a seção de gerenciamento de despesas. | 2.2 | Seleciona a opção de categorizar despesas (RF6). | 2.3 | O sistema exibe a lista de despesas disponíveis para categorização. | 2.4 | O usuário seleciona a despesa e escolhe a categoria desejada. |
+| **3. Fluxos Alternativos** |
+| --- | --- |
+| - | Se o usuário decidir não categorizar uma despesa, ele pode retornar à página principal. |
+| **4. Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
+| **5. Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Existem despesas registradas. |
+| **6. Pós-Condições** |
+| Número | Descrição | --- | --- | 6.1 | A categoria é atribuída à despesa no sistema. |
+| **7. Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **8. Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a segurança durante a categorização das despesas. |
+| **9. Informações Adicionais** |
+| --- | Nenhuma informação adicional fornecida. |
 
 # Especificação de Caso de Uso: CDU-16 Gerenciar Pesquisa de Despesas
 
@@ -1025,63 +569,28 @@ Nenhuma informação adicional fornecida.
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
 
-## 1. Breve Descrição
+# Caso de Uso: Pesquisa de Despesas
 
-Este caso de uso permite que o usuário pesquise suas despesas com base em termos específicos.
+| **1. Breve Descrição** | Este caso de uso permite que o usuário pesquise suas despesas com base em termos específicos. |
+| --- | --- |
+| **2. Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a seção de gerenciamento de despesas. | 2.2 | Seleciona a opção de pesquisar gastos (RF8). | 2.3 | O sistema exibe uma barra de pesquisa. | 2.4 | O usuário insere os termos de pesquisa desejados. | 2.5 | O sistema exibe as despesas que correspondem aos termos de pesquisa. |
+| **3. Fluxos Alternativos** |
+| --- | --- |
+| - | Se o usuário decidir não realizar uma pesquisa, ele pode continuar visualizando a lista padrão de despesas. |
+| **4. Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha no acesso às despesas ou na execução da pesquisa, o sistema notifica o usuário e oferece suporte técnico. |
+| **5. Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Existem despesas registradas. |
+| **6. Pós-Condições** |
+| --- | O sistema exibe as despesas de acordo com os resultados da pesquisa. |
+| **7. Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **8. Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a segurança das informações do usuário durante a pesquisa de despesas. |
+| **9. Informações Adicionais** |
+| --- | Nenhuma informação adicional fornecida. |
 
-## 2. Fluxo Básico de Eventos
-
-### 2.1
-O usuário acessa a seção de gerenciamento de despesas.
-
-### 2.2
-Seleciona a opção de pesquisar gastos (RF8).
-
-### 2.3
-O sistema exibe uma barra de pesquisa.
-
-### 2.4
-O usuário insere os termos de pesquisa desejados.
-
-### 2.5
-O sistema exibe as despesas que correspondem aos termos de pesquisa.
-
-## 3. Fluxos Alternativos
-
-- Se o usuário decidir não realizar uma pesquisa, ele pode continuar visualizando a lista padrão de despesas.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-|--------|------------------|-----------|
-| 4.1    | FE1              | Se houver falha no acesso às despesas ou na execução da pesquisa, o sistema notifica o usuário e oferece suporte técnico. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 5.1    | O usuário está autenticado no sistema. |
-| 5.2    | Existem despesas registradas. |
-
-## 6. Pós-Condições
-
-O sistema exibe as despesas de acordo com os resultados da pesquisa.
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-|--------|---------------------------|-----------|
-| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-|--------|-----------|
-| 8.1    | O sistema deve garantir a segurança das informações do usuário durante a pesquisa de despesas. |
-
-## 9. Informações Adicionais
-
-Nenhuma informação adicional fornecida.
 
 # Especificação de Caso de Uso: CDU-17 Gerenciar Filtro de Despesas
 
@@ -1091,69 +600,27 @@ Nenhuma informação adicional fornecida.
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
 
-## 1. Breve Descrição
+# Caso de Uso: Filtrar Despesas por Categoria
 
-Este caso de uso permite que o usuário filtre suas despesas com base em categorias específicas.
-
-## 2. Fluxo Básico de Eventos
-
-### 2.1
-O usuário acessa a seção de gerenciamento de despesas.
-
-### 2.2
-Seleciona a opção de filtrar os gastos por categoria de gastos (RF7).
-
-### 2.3
-O sistema exibe uma lista de categorias disponíveis.
-
-### 2.4
-O usuário escolhe a categoria desejada.
-
-### 2.5
-O sistema exibe as despesas associadas à categoria selecionada.
-
-## 3. Fluxos Alternativos
-
-- Se o usuário decidir não aplicar um filtro, a lista padrão de despesas é exibida.
-
-## 4. Fluxos de Exceção
-
-| Número | Fluxo de Exceção | Descrição |
-|--------|------------------|-----------|
-| 4.1    | FE1              | Se houver falha no acesso às categorias ou despesas, o sistema notifica o usuário e oferece suporte técnico. |
-
-## 5. Pré-Condições
-
-| Número | Descrição |
-|--------|-----------|
-| 5.1    | O usuário está autenticado no sistema. |
-| 5.2    | Existem despesas categorizadas. |
-
-## 6. Pós-Condições
-
-O sistema exibe as despesas de acordo com o filtro aplicado.
-
-## 7. Pontos de Extensão
-
-| Número | Nome do Ponto de Extensão | Descrição |
-|--------|---------------------------|-----------|
-| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
-
-## 8. Requisitos Especiais
-
-| Número | Descrição |
-|--------|-----------|
-| 8.1    | O sistema deve garantir a segurança das informações do usuário durante o uso do filtro de despesas. |
-
-## 9. Informações Adicionais
-
-Nenhuma informação adicional fornecida.
-
-
-
-
-
-
+| **1. Breve Descrição** | Este caso de uso permite que o usuário filtre suas despesas com base em categorias específicas. |
+| --- | --- |
+| **2. Fluxo Básico de Eventos** |
+| Passo | Descrição | --- | --- | 2.1 | O usuário acessa a seção de gerenciamento de despesas. | 2.2 | Seleciona a opção de filtrar os gastos por categoria de gastos (RF7). | 2.3 | O sistema exibe uma lista de categorias disponíveis. | 2.4 | O usuário escolhe a categoria desejada. | 2.5 | O sistema exibe as despesas associadas à categoria selecionada. |
+| **3. Fluxos Alternativos** |
+| --- | --- |
+| - | Se o usuário decidir não aplicar um filtro, a lista padrão de despesas é exibida. |
+| **4. Fluxos de Exceção** |
+| Número | Fluxo de Exceção | Descrição | --- | --- | --- | 4.1 | FE1 | Se houver falha no acesso às categorias ou despesas, o sistema notifica o usuário e oferece suporte técnico. |
+| **5. Pré-Condições** |
+| Número | Descrição | --- | --- | 5.1 | O usuário está autenticado no sistema. | 5.2 | Existem despesas categorizadas. |
+| **6. Pós-Condições** |
+| --- | O sistema exibe as despesas de acordo com o filtro aplicado. |
+| **7. Pontos de Extensão** |
+| Número | Nome do Ponto de Extensão | Descrição | --- | --- | --- | 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| **8. Requisitos Especiais** |
+| Número | Descrição | --- | --- | 8.1 | O sistema deve garantir a segurança das informações do usuário durante o uso do filtro de despesas. |
+| **9. Informações Adicionais** |
+| --- | Nenhuma informação adicional fornecida. |
 
 ## Critério de priorização
 Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5, sendo 0 o valor mínimo e 5 o valor máximo. O caso de uso será priorizado se seu MVP for maior ou igual 6 (MVP >= 6).
@@ -1195,23 +662,14 @@ Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5
 
 | ID | Descrição                                        | Valor de negócio | Viabilidade | Complexidade | Pontuação | MVP |
 | :----: | ------------------------------------------- | :--------------: | :---------: | :----------: | :-------: | :------: |
-|CDU-01| O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias  |        5         |      5      |      2       |     8     | ✅ |
-|CDU-02| O usuário pode fazer login no sistema, fornecendo suas credenciais  |      5     |   5|    2      |     8    |✅|
-|CDU-03| O usuário pode cadastrar até três contas bancárias associadas ao seu perfil |   4   |      5   |    2   |     5  |❌ |
-|CDU-04|Relata os ganhos financeiros do usuário  |        5         |     5      |    2       |    8     |✅ |
-|CDU-05| O usuário tem informações de como estão suas economias |     4       |   5       |      1      |  5   |❌ |
-|CDU-06  | O usuário pode acessar seu perfil |      5 |       5 |      4 | 6    |✅ |
-|CDU-07| O usuário pode alterar seu perfil |    4 |   5      |   3   |    6    |✅ |
-|CDU-08 |O usuário pode deletar seu perfil  |        4         |      5      |      2       |     7     |✅|
-|CDU-09|O  usuário define um plano de gastos com objetivos de economia |        4         |      2      |      2       |     5     |❌|
-|CDU-10| O usuário tem controle de suas transações financeiras|     4         |      5      |      2       |     7     |✅|
-|CDU-11| O usuário visualiza gráficos estatísticos de suas economias|     4         |      5      |      2       |     7     |✅|
-|CDU-12 |  O usuário pode alterar suas depesas|     4         |      5      |      2       |     7     |✅|
-|CDU-13 |  O usuário pode alterar registrar suas despesas |     4         |      5      |      3      |     78    |✅|
-|CDU-14 | O usuário pode  deletar suas despesas |      4         |      5      |      2       |     3     |✅|
-|CDU-15 |  O usuário pode  categorizar suas despesas |      4         |      5      |      2       |     8     |✅|
-|CDU-16 | O usuário pode  pesquisar suas despesas |      4         |      5      |      2       |     7     |✅|
-|CDU-17 | O usuário pode filtrar suas despesas |     4         |      5      |      23      |     8     |✅|
+|  CDU-01 -  Gerenciar Casos de Usuário  | O usuário pode cadastrar e logar   |        5         |      5      |      2       |     8     | ✅ |
+|  CDU-02 - Gerenciar Ganhos  | Relatra os ganhos financeiros do usuário   |        5        |      5     |      2      |     8    |✅|
+|  CDU-03 - Manter o usuário informado | O usuário tem informações de como estão suas esconomias |   4   |      5   |    3   |     5  |❌ |
+|  CDU-04 - Gerenciar contas de usuário  | O usuário pode alterar, acessar seu perfil e deletá-lo |        5         |     5      |    2       |    8     |✅ |
+|  CDU-05 - Gerenciar planos de gasto para economia | O usuário define um plano de gastos com objetivos de economia  |     4       |   5       |      3       |  5   |❌ |
+|  CDU-06 - Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras |      5 |       5 |      4 | 6    |✅ |
+|  CDU-07 - Definir Estatísticas | O usuário visulzias gráficos estatísticos de suas economias |    4 |   5      |   3   |    6    |✅ |
+|  CDU-08 - Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas depesas                          |        4         |      5      |      2       |     7     |✅|
 
 
 ### MVP
@@ -1220,12 +678,9 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 
 |Objetivos| Casos de Uso do MVP |
 |---|----|
-|Aprimorar controle Financeiro| CDU-06 O usuário pode acessar seu perfil,CDU-07 O usuário pode alterar seu perfil,CDU-08 O usuário pode deletar seu perfil, CDU-10 O usuário tem controle de suas transações financeiras, CDU-04 Relata os ganhos financeiros do usuário  |
-| Relatar gastos excessivos | CDU-01 O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias,  CDU-02 O usuário pode fazer login no sistema, fornecendo suas credenciais|
-|garantindo a análise de suas finanças| CDU-11 O usuário visualiza gráficos estatísticos de suas economias, CDU-12 O usuário pode alterar suas depesas,CDU-13   O usuário pode alterar registrar suas despesas, CDU-14  O usuário pode  deletar suas despesas, CDU-15   O usuário pode  categorizar suas despesas , CDU-16 O usuário pode  pesquisar suas despesas , CDU-17 O usuário pode filtrar suas despesas
-|
-
-
+|Aprimorar controle Financeiro| CDU-02 - Gerenciar Ganhos e CDU-06 - Gerenciar Transações Financeiras  |
+| Relatar gastos excessivos | CDU-08 - Gerenciar Despesas, CDU-01 - Gerenciar casos de usuário e CDU-04 -  Gerenciar contas de usuário
+|garantindo a análise de suas finanças| CDU-07 - Definir Estatísticas|
 
 ### Definição de Preparado (DOR)
 
@@ -1236,10 +691,6 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
  - A equipe de desenvolvimento alcançou um consenso unânime de que este caso de uso específico é não apenas viável, mas altamente recomendado para ser incorporado à iteração de desenvolvimento em questão;
  - A representação visual do caso de uso, através de uma interface ou protótipo, está completamente alinhada com as expectativas e requisitos do cliente;
  - Quaisquer dependências inerentes aos requisitos foram cuidadosamente identificadas e estão prontas para serem gerenciadas de forma eficiente durante o processo.
-
- ### Aplicação do Dor:
-
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe>
 
 ### Definição de Pronto (DOD)
 
