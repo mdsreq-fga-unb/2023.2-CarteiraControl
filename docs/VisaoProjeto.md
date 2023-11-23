@@ -34,7 +34,15 @@ A tabela a seguir possui os integrantes definidos para cada divisão de atribui�
 |Encontro com o cliente       | Toda a equipe      | Quinzenal          | - Validação dos artefatos construídos.                                |
 |Comunicar situação do projeto| Equipe e professor.| Semanal           | - Tirar dúvidas em relação ao andamento e aspectos que podem ser melhorados.                             |
 
-## 2.4 Gerenciamento de riscos
+## 2.4 Aspectos Humanos
+
+Durante o projeto das Disciplina de Requisitos de Software, nosso grupo, Gunthers, formado pelos integrantes Jefferson Sena, João Lucas, Juan Pablo e Tiago Albuquerque passou por alguns empecilhos relacionados  a perda de integrantes, mas nos reorganizanos para atender as entregas da matéria, entregas do projeto e a codificação. Apesar do aumento da demanda por menos integrantes na facção, todos os membros participaram de todas as entregas propostas. A equipe apresenta um relacionamento engajado, com boa comunicação, sempre dispostos a se reunirem e fazerem todas as entregas a tempo. Além disso, os integrantes se mostram pró-ativos em ajudar os colegas após já terem terminado suas tarefas o que agiliza o andamento das entregas.
+
+Por fim, definimos através da análise dos aspectos humanos algumas características importantes de cada membro. O integrante Jefferson Sena apresenta boa organização, atitude durante as tarefas e boa comunicação. Já o integrante João Lucas é um pouco mais introvertido, porém tem personalidade e opinião bem formada o que é decisivo para o grupo. O membro Juan Pablo apresenta capacidade de liderança, sabe descontrair quando em momentos oportunos para equipe ficar mais dinâmica. E, por último,  Tiago Albuquerque é o membro pró-ativo que desempenha grande papel no desenvolvimento das atividades e resiliente.
+
+Diante do que foi abordado, é possível concluir que a facção independente das adversidades surgidas tem comprometimento com as atividades propostas. A relação entre cada uma das características dos integrantes gera desafios quanto as formas de desenvolver as tarefas, contudo, o gerenciamento, organização e dedicação  de cada um promove a realização de cada etapa.
+
+## 2.5 Gerenciamento de riscos
 
 Os riscos identificados para o projeto foram:
 
@@ -45,7 +53,7 @@ Os riscos identificados para o projeto foram:
     - Solução:
       Replanejamento das atribuições designadas e replanejamento das fases de desenvolvimento.
 
-## 2.5 Critérios de Replanejamento
+## 2.6 Critérios de Replanejamento
 
    - **Diminuição dos membros da equipe**
 
@@ -66,5 +74,6 @@ Os riscos identificados para o projeto foram:
 |    1.0   |   Juan Pablo     |   Implementação do documento inicial |  23/09 |
 |    1.1   |   Jefferson     |   Correção dos Textos |  21/10 |
 |    1.2| Juan Pablo | Replaneja | 26/10| 
+|    1.3| Jefferson  | Aspectos Humanos | 23/10| 
 
 

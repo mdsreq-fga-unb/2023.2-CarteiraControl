@@ -784,15 +784,24 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 | Relatar gastos excessivos | CDU-08 - Gerenciar Despesas, CDU-01 - Gerenciar casos de usuário e CDU-04 -  Gerenciar contas de usuário
 |garantindo a análise de suas finanças| CDU-07 - Definir Estatísticas|
 
+<center>
+Diagrama de Casos de Uso
+
+<iframe allowfullscreen frameborder="0"  style="width: 640px; height: 480px; margin: 10px; position: relative;" style="width:960px; height:720px" src="https://lucid.app/documents/embedded/6ae438cc-9a4d-48b1-b8a2-dbe71275316f" id="6dMP5.bNy~9T"></iframe>
+</center>
+
 ### Definição de Preparado (DOR)
 
 <p align="justify">&emsp;&emsp; A Declaração de Pronto (DOR) é um compromisso essencial estabelecido entre o time de desenvolvimento e o cliente, delineando meticulosamente o momento preciso em que um requisito estará plenamente preparado para ser integrado a uma iteração. Este acordo abrange diversos critérios que asseguram a qualidade e a prontidão do trabalho a ser realizado, visando uma execução eficiente e eficaz.</p>
 
- - O requisito, devidamente representado em um caso de uso, é considerado integral e passível de ser abordado de maneira completa e efetiva;
  - O caso de uso é minuciosamente especificado, atendendo de maneira abrangente a todos os requisitos necessários para ser trabalhado com sucesso;
  - A equipe de desenvolvimento alcançou um consenso unânime de que este caso de uso específico é não apenas viável, mas altamente recomendado para ser incorporado à iteração de desenvolvimento em questão;
  - A representação visual do caso de uso, através de uma interface ou protótipo, está completamente alinhada com as expectativas e requisitos do cliente;
  - Quaisquer dependências inerentes aos requisitos foram cuidadosamente identificadas e estão prontas para serem gerenciadas de forma eficiente durante o processo.
+
+ <center>
+ <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe>
+ </center>
 
 ### Definição de Pronto (DOD)
 
