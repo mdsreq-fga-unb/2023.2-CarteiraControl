@@ -55,18 +55,23 @@ Definição de Ciclo de Vida, Abordagem e Processo
 ## Missão 3: Cerco do Comando Estelar
 
 1° entrega: 02/11/2023 - DOR e DOD.
+
 [Entrega 1](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/caso_uso/#definicao-de-preparado-dor)
 
 2° entrega:  07/11/2023 - PBB E BDD
+
 [Entrega 2](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/entrega3/bdd-tanas/)
 
 3° entrega: 16/11/2023 - User Story Mapping
+
 [Entrega 3](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/entrega3/usm/)
 
 4° entrega: 22/11/2023 - Aspectos Humanos e Sociais da Engenharia de Requisitos
+
 [Entrega 4](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/entrega3/aspectos-eticos/)
 
 5° entrega: 23/11/2023 - Entrega Final da Missão
+
 [VIDEO APRESENTAÇÃO]()
 
 
