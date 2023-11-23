@@ -49,24 +49,16 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 |CDU-09|Gerenciar plano de gastos para economia | O  usuário define um plano de gastos com objetivos de economia|RF12	Definir teto de gastos para cada categoria de despesas, RF13	Definir objetivos de economia | Plano de gastos|
 |CDU-10|Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras|RF15	Registrar transferências | Gerenciamentos de Transações financeiras|
 |CDU-11|Definir Estatísticas | O usuário visualiza gráficos estatísticos de suas economias|RF16	Gerar gráfico de gastos no final do mês, RF17	Criar gráfico sobre as transações financeiras | Gerar Estatísticas  |
-
 |CDU-12 | Gerenciar alteração Despesas | O usuário pode alterar suas depesas| RF4	Alterar despesas | Despesas Apresentadas |
-
 |CDU-13 | Gerenciar registros de despesas | O usuário pode alterar registrar suas despesas |RF9 Registrar despesas mensais| Despesas Apresentadas |
-
 |CDU-14 | Gerenciar deleção de despesas | O usuário pode  deletar suas despesas | RF5	Deletar despesas | Despesas Apresentadas |
-
 |CDU-15 | Gerenciar categorização de despesas | O usuário pode  categorizar suas despesas |  RF6	Categorizar despesas | Despesas Apresentadas |
-
 |CDU-16 | Gerenciar pesquisa de despesas | O usuário pode  pesquisar suas despesas | RF8	Pesquisar gastos | Despesas Apresentadas |
-
 |CDU-17 | Gerenciar filtro de despesas | O usuário pode filtrar suas despesas |  RF7	Filtrar os gastos por categoria de gastos | Despesas Apresentadas |
 
+## Especificação dos Casos de Uso
 
-
-# Especificação dos Casos de Uso
-
-# Especificação de Caso de Uso: CDU-01 Gerenciar cadastro de Usuário
+## CDU-01 Gerenciar cadastro de Usuário
 
 | Número do Caso de Uso | CDU-01 |
 | --- | --- |
@@ -74,8 +66,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Versão** | 1.0 |
 | **Data de Criação** | 20/11/2023 |
 | **Responsável** | Juan Pablo e João Lucas|
-
-# Caso de Uso: Cadastro de Usuário
 
 | **Breve Descrição** | Este caso de uso permite que um usuário realize o cadastro no sistema. |
 | --- | --- |
@@ -110,7 +100,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | Nenhuma informação adicional fornecida. |
 
 
-# Especificação de Caso de Uso: CDU-02 Gerenciar login de Usuário
+## CDU-02 Gerenciar login de Usuário
 
 | Número do Caso de Uso | CDU-02 |
 | --- | --- |
@@ -118,8 +108,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Versão** | 1.0 |
 | **Data de Criação** | 20/11/2023 |
 | **Responsável** | Juan Pablo e João Lucas|
-
-# Caso de Uso: Login de Usuário
 
 
 | **Breve Descrição** | Este caso de uso permite que um usuário faça login no sistema. |
@@ -153,7 +141,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Nenhuma informação adicional fornecida. |
 
 
-# Especificação de Caso de Uso: CDU-03 Gerenciar Cadastro de Conta Bancária
+## CDU-03 Gerenciar Cadastro de Conta Bancária
 
 | Número do Caso de Uso | CDU-03 |
 | --- | --- |
@@ -162,7 +150,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Data de Criação** | 20/11/2023 |
 | **Responsável** | Juan Pablo e João Lucas|
 
-# Caso de Uso: Cadastro de Conta Bancária
 
 | **Breve Descrição** | Este caso de uso permite que um usuário cadastre até três contas bancárias associadas ao seu perfil. |
 | --- | --- |
@@ -196,7 +183,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 
 
 
-# Especificação de Caso de Uso: CDU-04 Gerenciar Ganhos
+## CDU-04 Gerenciar Ganhos
 
 | Número do Caso de Uso | CDU-04 |
 | --- | --- |
@@ -205,7 +192,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo |
 
-# Caso de Uso: Registro de Ganhos
 
 | **Breve Descrição** | Este caso de uso permite que o usuário registre seus ganhos financeiros, fornecendo uma visão detalhada de seus ingressos mensais. |
 | --- | --- |
@@ -240,7 +226,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Os ganhos registrados serão utilizados para análises estatísticas nas funcionalidades futuras. |
 
 
-# Especificação de Caso de Uso: CDU-05 Manter o Usuário Informado
+## CDU-05 Manter o Usuário Informado
 
 | Número do Caso de Uso | CDU-05 |
 | --- | --- |
@@ -248,8 +234,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Versão** | 1.0 |
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo|
-
-# Caso de Uso: Acompanhamento Financeiro
 
 | **Breve Descrição** | Este caso de uso permite que o usuário acompanhe o progresso em direção às metas de economia, receba notificações quando estiver a 10% do teto de gastos e tenha insights sobre as categorias de gastos mais frequentes. |
 | --- | --- |
@@ -284,11 +268,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | Número | Descrição |
 | 7.1 | Aprimorar Análise de Categorias - O sistema permitirá que o usuário aprofunde a análise das categorias de gastos para obter|
 
-
-# Especificação caso de uso-06
-# CDU-06 Gerenciar Acesso de Perfil
-
-# Caso de Uso: Acesso ao Perfil do Usuário
+## CDU-06 Gerenciar Acesso de Perfil
 
 | **Breve Descrição** | Este caso de uso permite que o usuário acesse as informações do seu perfil na plataforma. |
 | --- | --- |
@@ -317,11 +297,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
 
-
-# Especificação do Caso de Uso 07
-# CDU-07 Gerenciar Alteração de Perfil
-
-# Caso de Uso: Alteração de Conta do Usuário
+## CDU-07 Gerenciar Alteração de Perfil
 
 | **Breve Descrição** | Este caso de uso permite que o usuário realize alterações em seu perfil na plataforma. |
 | --- | --- |
@@ -350,16 +326,13 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Nenhuma informação adicional fornecida. |
 
 
-# Especificação do Caso de Uso 08
-# CDU-08 Gerenciar Deleção de Perfil
 
-# Caso de Uso: Exclusão de Conta do Usuário
+## CDU-08 Gerenciar Deleção de Perfil
 
 | **Breve Descrição** | Este caso de uso permite que o usuário exclua permanentemente seu perfil na plataforma. |
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-
 | 1 | O usuário acessa a área de gerenciamento de conta. |
 | 2 | O usuário escolhe a opção de deletar sua conta (RF18). |
 | 3 | O sistema solicita confirmação do usuário. |
@@ -386,7 +359,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 
 
 
-# Especificação de Caso de Uso: CDU-09 Gerenciar Plano de Gastos para Economia
+## CDU-09 Gerenciar Plano de Gastos para Economia
 
 | Número do Caso de Uso | CDU-09 |
 | --- | --- |
@@ -394,8 +367,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Versão** | 1.0 |
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo |
-
-# Caso de Uso: Definição de Plano de Gastos e Objetivos de Economia
 
 
 | **1. Breve Descrição** | Este caso de uso permite que o usuário tenha controle de suas transações financeiras, incluindo o registro de transferências. |
@@ -431,7 +402,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 
 
 
-# Especificação de Caso de Uso: CDU-10 Gerenciar Transações Financeiras
+## CDU-10 Gerenciar Transações Financeiras
 
 | Número do Caso de Uso | CDU-10 |
 | --- | --- |
@@ -473,7 +444,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Nenhuma informação adicional fornecida. |
 
 
-# Especificação de Caso de Uso: CDU-11 Definir Estatísticas
+## CDU-11 Definir Estatísticas
 
 | Número do Caso de Uso | CDU-11 |
 | --- | --- |
@@ -481,8 +452,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Versão** | 1.0 |
 | **Data de Criação** | 13/11/2023 |
 | **Responsável** | Juan Pablo |
-
-# Caso de Uso: Visualização de Estatísticas
 
 | **Breve Descrição** | Este caso de uso permite que o usuário visualize gráficos estatísticos de suas economias, incluindo a geração de gráfico de gastos no final do mês e a criação de gráfico sobre as transações financeiras. |
 | --- | --- |
@@ -519,15 +488,13 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Os gráficos gerados são destinados apenas para fins informativos e análise do usuário. |
 
 
-# Especificação de Caso de Uso: CDU-12 Gerenciar Alteração de Despesas
+## CDU-12 Gerenciar Alteração de Despesas
 
 - **Número do Caso de Uso:** CDU-12
 - **Nome do Caso de Uso:** Gerenciar Alteração de Despesas
 - **Versão:** 1.0
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
-
-# Caso de Uso: Alteração de Despesas
 
 | **1. Breve Descrição** | Este caso de uso permite que o usuário realize alterações em suas despesas já registradas. |
 | --- | --- |
@@ -562,15 +529,13 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 
 
 
-# Especificação de Caso de Uso: CDU-13 Gerenciar Registros de Despesas
+## CDU-13 Gerenciar Registros de Despesas
 
 - **Número do Caso de Uso:** CDU-13
 - **Nome do Caso de Uso:** Gerenciar Registros de Despesas
 - **Versão:** 1.0
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
-
-# Caso de Uso: Registro de Despesas Mensais
 
 | **1. Breve Descrição** | Este caso de uso permite que o usuário registre suas despesas mensais. |
 | --- | --- |
@@ -601,7 +566,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Nenhuma informação adicional fornecida. |
 
 
-# Especificação de Caso de Uso: CDU-14 Gerenciar Deleção de Despesas
+## CDU-14 Gerenciar Deleção de Despesas
 
 - **Número do Caso de Uso:** CDU-14
 - **Nome do Caso de Uso:** Gerenciar Deleção de Despesas
@@ -609,13 +574,10 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
 
-# Caso de Uso: Exclusão de Despesas
-
 | **1. Breve Descrição** | Este caso de uso permite que o usuário exclua despesas previamente registradas. |
 | --- | --- |
 | **2. Fluxo Básico de Eventos** |
 | Passo | Descrição |
-
 | 2.1 | O usuário acessa a seção de gerenciamento de despesas. |
 | 2.2 | Seleciona a opção de deletar despesas (RF5). |
 | 2.3 | O sistema exibe a lista de despesas disponíveis para exclusão. |
@@ -623,42 +585,34 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | 2.5 | O sistema solicita confirmação do usuário. |
 | 2.6 | O usuário confirma a exclusão da despesa. |
 | **3. Fluxos Alternativos** |
-
 | - | Se a confirmação da exclusão não for recebida, o sistema mantém a despesa. |
 | **4. Fluxos de Exceção** |
 | Número | Descrição |
-
 | 4.1 | FE1 - Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
 | **5. Pré-Condições** |
 | Número | Descrição |
-
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Existem despesas registradas. |
 | **6. Pós-Condições** |
 | Número | Descrição |
-
 | 6.1 | A despesa é removida do sistema, se confirmada. |
 | **7. Pontos de Extensão** |
 | Número | Descrição |
-
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** |
 | Número | Descrição |
-
 | 8.1 | O sistema deve garantir a segurança durante a exclusão das despesas. |
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
 
 
-# Especificação de Caso de Uso: CDU-15 Gerenciar Categorização de Despesas
+## CDU-15 Gerenciar Categorização de Despesas
 
 - **Número do Caso de Uso:** CDU-15
 - **Nome do Caso de Uso:** Gerenciar Categorização de Despesas
 - **Versão:** 1.0
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
-
-# Caso de Uso: Categorização de Despesas
 
 | **1. Breve Descrição** | Este caso de uso permite que o usuário atribua categorias às suas despesas para melhor organização. |
 | --- | ---|
@@ -689,15 +643,13 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
 
-# Especificação de Caso de Uso: CDU-16 Gerenciar Pesquisa de Despesas
+## CDU-16 Gerenciar Pesquisa de Despesas
 
 - **Número do Caso de Uso:** CDU-16
 - **Nome do Caso de Uso:** Gerenciar Pesquisa de Despesas
 - **Versão:** 1.0
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
-
-# Caso de Uso: Pesquisa de Despesas
 
 | **1. Breve Descrição** | Este caso de uso permite que o usuário pesquise suas despesas com base em termos específicos. |
 | --- | --- |
@@ -729,15 +681,13 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Nenhuma informação adicional fornecida. |
 
 
-# Especificação de Caso de Uso: CDU-17 Gerenciar Filtro de Despesas
+## CDU-17 Gerenciar Filtro de Despesas
 
 - **Número do Caso de Uso:** CDU-17
 - **Nome do Caso de Uso:** Gerenciar Filtro de Despesas
 - **Versão:** 1.0
 - **Data de Criação:** 20/11/2023
 - **Responsável:** Juan Pablo e João Lucas
-
-# Caso de Uso: Filtrar Despesas por Categoria
 
 | **1. Breve Descrição** | Este caso de uso permite que o usuário filtre suas despesas com base em categorias específicas. |
 | --- | --- |
@@ -792,7 +742,7 @@ Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5
 | 4 | Alta |
 | 5 | Muito alta, vital |       
 
-### Viabilidade
+#### Viabilidade
 |escala| Viabilidade no tempo disponível|                                                                                                  
 | ----- | ------------| 
 | 1 | Muito baixa |
@@ -801,7 +751,7 @@ Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5
 | 4 | Alta |
 | 5 | Muito alta | 
 
-### Complexidade
+#### Complexidade
 |escala| Nível de complexidade|                                                                                                  
 | ----- | ------------| 
 | 1 | Muito baixa |
@@ -851,14 +801,6 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 - Os casos de uso não apenas oferecem um incremento ao produto, mas proporcionam uma experiência palpável que foi validada e aprovada pelo cliente;
 - Todos os fluxos de eventos e condições do caso de uso são seguidos de maneira meticulosa, garantindo uma implementação precisa e completa;
 - O código relacionado às funcionalidades vinculadas ao caso de uso passa por uma revisão detalhada e é submetido à aprovação de pelo menos outro membro experiente da equipe, assegurando uma qualidade consistente e elevada.
-
-
-
-
-
-
-
-
 
 ## Histórico de versão
 
