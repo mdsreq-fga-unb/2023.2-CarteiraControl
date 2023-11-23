@@ -1239,7 +1239,7 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 
  ### Aplicação do Dor:
 
- <iframe src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe>
+ <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe>
 
 ### Definição de Pronto (DOD)
 
