@@ -1225,6 +1225,8 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 |garantindo a análise de suas finanças| CDU-11 O usuário visualiza gráficos estatísticos de suas economias, CDU-12 O usuário pode alterar suas depesas,CDU-13   O usuário pode alterar registrar suas despesas, CDU-14  O usuário pode  deletar suas despesas, CDU-15   O usuário pode  categorizar suas despesas , CDU-16 O usuário pode  pesquisar suas despesas , CDU-17 O usuário pode filtrar suas despesas
 |
 
+<iframe allowfullscreen frameborder="0"  style="width: 640px; height: 480px; margin: 10px; position: relative;" style="width:960px; height:720px" src="https://lucid.app/documents/embedded/6ae438cc-9a4d-48b1-b8a2-dbe71275316f" id="6dMP5.bNy~9T"></iframe>
+
 
 
 ### Definição de Preparado (DOR)
@@ -1237,7 +1239,6 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
  - A representação visual do caso de uso, através de uma interface ou protótipo, está completamente alinhada com as expectativas e requisitos do cliente;
  - Quaisquer dependências inerentes aos requisitos foram cuidadosamente identificadas e estão prontas para serem gerenciadas de forma eficiente durante o processo.
 
- ### Aplicação do Dor:
 
  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe>
 
