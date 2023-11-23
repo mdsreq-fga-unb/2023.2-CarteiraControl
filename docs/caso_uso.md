@@ -1237,6 +1237,10 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
  - A representação visual do caso de uso, através de uma interface ou protótipo, está completamente alinhada com as expectativas e requisitos do cliente;
  - Quaisquer dependências inerentes aos requisitos foram cuidadosamente identificadas e estão prontas para serem gerenciadas de forma eficiente durante o processo.
 
+ ### Aplicação do Dor:
+
+ <iframe src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe>
+
 ### Definição de Pronto (DOD)
 
 <p align="justify">&emsp;&emsp; A Declaração de Pronto (DOD) é um compromisso crucial que atesta não apenas a conclusão, mas a qualidade inquestionável do requisito produzido. A expressão "Done" vai além de uma mera confirmação; é a validação coletiva da satisfação integral com o trabalho realizado. Em conformidade com os mais elevados padrões de excelência, um requisito que não atenda aos rigorosos critérios de "Done" não apenas é retido, mas é excluído da possibilidade de ser liberado ou apresentado na iteração em curso.</p>
