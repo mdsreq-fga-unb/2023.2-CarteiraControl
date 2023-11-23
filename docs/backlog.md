@@ -24,14 +24,17 @@
 |RF21| Destacar categorias de gastos mais frequentes|
                                     
 ## Requisitos Não-Funcionais
-O framework utilizado para a declaração de requisitos não funcionais foi o URPS+
+Requisitos não-funcionais são restrições aos serviços ou funções fornecidos pelo sistema. Esses requisitos incluem uma série de "ilidades", como: flexibildade, portabilidade, etc. Foi utilizado o URPS+ para a definição dos requisitos não-funcionais
 
-### Tabela Requisitos Não Funcionais
+### Tabela Requisitos Não-Funcionais
+
 |ID| Categoria | Declaração |
 |----| -----| ------|
-|RNF1| Implementação| App Mobile Android|
-|RNF2| Disponibilidade| App Online |
-|RNF3| Usabilidade| Compatibilidade com o modo retrato e paisagem |
+|RNF1| Requisitos de implementação| Utilização do Flutter e Dart para a construção da aplicação|
+|RNF2| Requisitos de implementação| Utilização do VScode como ambiente de operação e git para o versionamento |
+|RNF3| Suportabilidade | Compatível com dispositos android (a partir do android 10) |
+|RNF4| Suportabilidade | O aplicativo deve ser otimizado para diferentes tamanhos de tela e resoluções |
+|RNF5| Desempenho | O tempo de resposta para a execução de operações críticas, como consulta de saldos, cadastro de ganho e despesas deve ser inferior a 3 segundos para garantir uma experiência responsiva. |
 
 ## Backlog SAFe
 A partir dos requisitos funcionais, foi estruturado o backlog do SAFe utilizando o mural abaixo: 
