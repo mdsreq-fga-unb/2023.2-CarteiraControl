@@ -49,11 +49,17 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 |CDU-09|Gerenciar plano de gastos para economia | O  usuário define um plano de gastos com objetivos de economia|RF12	Definir teto de gastos para cada categoria de despesas, RF13	Definir objetivos de economia | Plano de gastos|
 |CDU-10|Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras|RF15	Registrar transferências | Gerenciamentos de Transações financeiras|
 |CDU-11|Definir Estatísticas | O usuário visualiza gráficos estatísticos de suas economias|RF16	Gerar gráfico de gastos no final do mês, RF17	Criar gráfico sobre as transações financeiras | Gerar Estatísticas  |
+
 |CDU-12 | Gerenciar alteração Despesas | O usuário pode alterar suas depesas| RF4	Alterar despesas | Despesas Apresentadas |
+
 |CDU-13 | Gerenciar registros de despesas | O usuário pode alterar registrar suas despesas |RF9 Registrar despesas mensais| Despesas Apresentadas |
+
 |CDU-14 | Gerenciar deleção de despesas | O usuário pode  deletar suas despesas | RF5	Deletar despesas | Despesas Apresentadas |
+
 |CDU-15 | Gerenciar categorização de despesas | O usuário pode  categorizar suas despesas |  RF6	Categorizar despesas | Despesas Apresentadas |
+
 |CDU-16 | Gerenciar pesquisa de despesas | O usuário pode  pesquisar suas despesas | RF8	Pesquisar gastos | Despesas Apresentadas |
+
 |CDU-17 | Gerenciar filtro de despesas | O usuário pode filtrar suas despesas |  RF7	Filtrar os gastos por categoria de gastos | Despesas Apresentadas |
 
 
@@ -61,8 +67,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 # Especificação dos Casos de Uso
 
 # Especificação de Caso de Uso: CDU-01 Gerenciar cadastro de Usuário
-
-
 
 | Número do Caso de Uso | CDU-01 |
 | --- | --- |
@@ -77,36 +81,29 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** | 
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário escolhe a opção de cadastrar um novo usuário (RF1). |
 | 2.2 | O sistema solicita as informações necessárias para o cadastro do usuário. |
 | 2.3 | O usuário fornece os dados necessários. |
 | 2.4 | O sistema valida as informações e cadastra o usuário. |
 | **Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Cadastro de Usuário** |
 | **A1 Primeiro Fluxo Alternativo** | Se as informações fornecidas pelo usuário no cadastro forem inválidas, o sistema exibe uma mensagem de erro. |
 | **A2 Segundo Fluxo Alternativo** | Se o usuário já possuir uma conta, ele pode optar por fazer login em vez de cadastrar um novo usuário. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- | 
 | 4.1 | FE1 - Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O sistema está operacional. |
 | 5.2 | Não há restrições específicas para o cadastro de novos usuários. |
 | **Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | O usuário está autenticado no sistema. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança das informações do usuário durante o cadastro. |
 | **Informações Adicionais** |
 | --- |
@@ -129,35 +126,28 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário escolhe a opção de fazer login (RF2). |
 | 2.2 | O sistema solicita as credenciais do usuário. |
 | 2.3 | O usuário fornece as credenciais. |
 | 2.4 | O sistema valida as credenciais. |
 | 2.5 | O sistema autentica o usuário e o direciona para a área logada. |
 | **Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Login de Usuário** |
 | **A1 Primeiro Fluxo Alternativo** | A1: Se o usuário não tiver uma conta no sistema: - O sistema não autentica o usuário. - O sistema exibe uma mensagem informando que o usuário não possui uma conta no sistema. - O usuário pode escolher criar uma nova conta. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- | 
 |5.1 | O sistema está operacional. |
 | **Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | O usuário está autenticado no sistema. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança das informações do usuário durante o login. |
 | **Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -178,35 +168,28 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário escolhe a opção de cadastrar conta bancária (RF3). |
 | 2.2 | O sistema solicita as informações da conta bancária. |
 | 2.3 | O usuário fornece os dados necessários. |
 | 2.4 | O sistema valida as informações e associa a conta bancária ao usuário. |
 | **Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Cadastro de Conta Bancária** |
 | **A1 Primeiro Fluxo Alternativo** | **A1.1 Um Subfluxo Alternativo** | A1: Se o usuário tentar cadastrar mais de três contas bancárias: - O sistema não permite o cadastro da conta bancária. - O sistema exibe uma mensagem informando que o usuário só pode cadastrar até três contas bancárias. |
 | **A2 Segundo Fluxo Alternativo** | - A2: Se o usuário tentar cadastrar uma conta bancária de um banco que não é suportado pelo sistema: - O sistema não permite o cadastro da conta bancária. - O sistema exibe uma mensagem informando que o banco não é suportado pelo sistema. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
  5.1 | O sistema está operacional. |
 | **Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
  6.1 | As informações do cadastro e as contas bancárias associadas foram registradas no sistema.|
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 |  O sistema deve garantir a segurança das informações do usuário durante o cadastro. |
 | **Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -228,37 +211,30 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a área de gerenciamento de ganhos. |
 | 2.2 | O usuário escolhe a opção de registrar ganhos mensais (RF14). |
 | 2.3 | O sistema exibe um formulário para o usuário inserir os detalhes do ganho. |
 | 2.4 | O usuário fornece as informações necessárias. |
 | 2.5 | O sistema valida as informações e registra os ganhos. |
 | **Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Registro de Ganhos** |
 | **A1 Primeiro Fluxo Alternativo** | - Se o usuário decidir não registrar ganhos, ele pode retornar à página principal. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver falha na validação das informações do ganho, o sistema notifica o usuário e destaca os campos inválidos. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Não há restrições específicas para o registro de ganhos. |
 | **Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | Os ganhos são registrados no sistema e associados ao perfil do usuário. |
 | 6.2 | As estatísticas de ganhos são atualizadas para refletir as alterações. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve fornecer uma interface intuitiva para facilitar o registro de ganhos. |
 | **Informações Adicionais** |
 | --- | Os ganhos registrados serão utilizados para análises estatísticas nas funcionalidades futuras. |
@@ -279,13 +255,11 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a área de informações financeiras. |
 | 2.2 | O sistema exibe o acompanhamento do progresso em direção às metas de economia (RF10). |
 | 2.3 | O usuário visualiza notificações sobre o teto de gastos quando estiver a 10% do limite (RF11). |
 | 2.4 | O sistema destaca as categorias de gastos mais frequentes (RF21). |
 | **Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Acompanhar Progresso** |
 | **A1 Primeiro Fluxo Alternativo** | - Se o usuário não tiver definido metas de economia, o sistema sugere a definição de metas antes de exibir o progresso. |
 | **Área de Funcionalidade: Notificações de Gastos** |
@@ -294,24 +268,20 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **A3 Terceiro Fluxo Alternativo** | - Se não houver dados suficientes para identificar as categorias de gastos mais frequentes, o sistema informa ao usuário. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver uma falha na exibição do progresso em direção às metas, o sistema notifica o usuário e oferece suporte técnico. |
 | 4.2 | FE2 - Se não for possível enviar notificações, o sistema registra a ocorrência e sugere que o usuário verifique suas configurações de notificação. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Metas de economia foram definidas pelo usuário. |
 | 5.3 | O usuário concordou em receber notificações. |
 | **Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | O usuário tem informações atualizadas sobre o progresso em direção às metas de economia. |
 | 6.2 | Notificações são enviadas quando o usuário está a 10% do teto de gastos. |
 | 6.3 | As categorias de gastos mais frequentes são destacadas para análise. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Aprimorar Análise de Categorias - O sistema permitirá que o usuário aprofunde a análise das categorias de gastos para obter|
 
 
@@ -324,7 +294,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 1 | O usuário acessa a área de gerenciamento de conta. |
 | 2 | O usuário escolhe a opção de acessar seu perfil (RF19). |
 | 3 | O sistema exibe as informações do perfil do usuário. |
@@ -332,22 +301,18 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | Não há |
 | **Fluxos de Exceção** |
 | Passo | Descrição |
-| --- | --- |
 | 1 | Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 1 | O usuário está autenticado no sistema. |
 | 2 | O usuário possui um perfil ativo no sistema. |
 | **Pós-Condições** |
 | --- | O perfil do usuário é acessível e exibido corretamente. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | - | - | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 1 | O sistema deve garantir a segurança durante o acesso às informações do perfil do usuário. |
 | **Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -362,30 +327,24 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 1 | O usuário acessa a área de gerenciamento de conta. |
 | 2 | O usuário escolhe a opção de alterar sua conta (RF20). |
 | 3 | O sistema permite que o usuário faça as alterações necessárias de senha e de nome. |
 | **Fluxos Alternativos** |
-| --- | --- |
 | - | Se o usuário optar por não realizar alterações, ele pode retornar à página principal. |
 | **Fluxos de Exceção** |
 | Passo | Descrição |
-| --- | --- |
 | 1 | Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 1 | O usuário está autenticado no sistema. |
 | **Pós-Condições** |
 | --- | As alterações na conta do usuário são refletidas no sistema. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- | 
 | - | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 1 | O sistema deve garantir a segurança durante a alteração de informações da conta do usuário. |
 | **Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -400,32 +359,27 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
+
 | 1 | O usuário acessa a área de gerenciamento de conta. |
 | 2 | O usuário escolhe a opção de deletar sua conta (RF18). |
 | 3 | O sistema solicita confirmação do usuário. |
 | 4 | O usuário confirma a exclusão da conta. |
 | **Fluxos Alternativos** |
-| --- | --- |
 | - | Se a confirmação da exclusão não for recebida, o sistema mantém a conta do usuário. |
 | **Fluxos de Exceção** |
 | Passo | Descrição |
-| --- | --- |
 | 1 | Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 1 | O usuário está autenticado no sistema. |
 | 2 | O usuário possui um perfil ativo no sistema. |
 | **Pós-Condições** |
 | --- | A conta do usuário é deletada do sistema, se confirmada. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | - | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição | 
-|--- | --- |
 | 1 | O sistema deve garantir a segurança durante a deleção da conta do usuário. |
 | **Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -448,7 +402,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **2. Fluxo Básico de Eventos** | |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a área de gerenciamento de transações financeiras. |
 | 2.2 | O usuário escolhe a opção de registrar transferências (RF15). |
 | 2.3 | O sistema exibe um formulário para o usuário inserir os detalhes da transferência. |
@@ -459,24 +412,19 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | A1 Primeiro Fluxo Alternativo | Se o usuário decidir não registrar transferências, ele pode retornar à página principal. |
 | **4. Fluxos de Exceção** | |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver falha na validação das informações da transferência, o sistema notifica o usuário e destaca os campos inválidos. |
 | **5. Pré-Condições** | |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Não há restrições específicas para o registro de transferências. |
 | **6. Pós-Condições** | |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | A transferência é registrada no sistema e associada ao perfil do usuário. |
 | **7. Pontos de Extensão** | |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** | |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança durante o registro e armazenamento das informações de transferências financeiras. |
 | **9. Informações Adicionais** | |
 | --- | Nenhuma informação adicional fornecida. |
@@ -497,7 +445,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **1. Breve Descrição** | Este caso de uso permite que o usuário tenha controle de suas transações financeiras, incluindo o registro de transferências. |
 | **2. Fluxo Básico de Eventos** | |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a área de gerenciamento de transações financeiras. |
 | 2.2 | O usuário escolhe a opção de registrar transferências (RF15). |
 | 2.3 | O sistema exibe um formulário para o usuário inserir os detalhes da transferência. |
@@ -507,25 +454,20 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | **Área de Funcionalidade: Registro de Transferências** | |
 | A1 Primeiro Fluxo Alternativo | Se o usuário decidir não registrar transferências, ele pode retornar à página principal. |
 | **4. Fluxos de Exceção** | |
-| Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na validação das informações da transferência, o sistema notifica o usuário e destaca os campos inválidos. |
+| Número | Descrição |
+| 4.1 | FE1 - Se houver falha na validação das informações da transferência, o sistema notifica o usuário e destaca os campos inválidos. |
 | **5. Pré-Condições** | |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Não há restrições específicas para o registro de transferências. |
 | **6. Pós-Condições** | |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | A transferência é registrada no sistema e associada ao perfil do usuário. |
 | **7. Pontos de Extensão** | |
-| Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+| Número | Descrição |
+| 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** | |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança durante o registro e armazenamento das informações de transferências financeiras. |
 | **9. Informações Adicionais** | |
 | --- | Nenhuma informação adicional fornecida. |
@@ -546,7 +488,6 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a área de visualização de estatísticas. |
 | 2.2 | O usuário escolhe a opção de gerar gráfico de gastos no final do mês (RF16). |
 | 2.3 | O sistema exibe o gráfico com a distribuição de gastos ao longo do mês. |
@@ -554,31 +495,25 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | 2.5 | O sistema permite que o usuário selecione parâmetros para o gráfico de transações financeiras. |
 | 2.6 | O sistema gera e exibe o gráfico com base nos parâmetros selecionados. |
 | **Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Gerar Gráfico de Gastos** |
 | **A1 Primeiro Fluxo Alternativo** | - Se o usuário decidir não gerar o gráfico de gastos, ele pode retornar à página principal. |
 | **Área de Funcionalidade: Criar Gráfico sobre Transações Financeiras** |
 | **A2 Segundo Fluxo Alternativo** | - Se o usuário não selecionar parâmetros para o gráfico de transações financeiras, o sistema exibe um gráfico padrão. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver falha na geração ou exibição dos gráficos, o sistema notifica o usuário e oferece suporte técnico. |
 | **Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Dados suficientes estão disponíveis para a geração dos gráficos. |
 | **Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | Os gráficos são exibidos para o usuário com base nas escolhas feitas. |
 | **Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a precisão e clareza na representação gráfica das estatísticas. |
 | **Informações Adicionais** |
 | --- | Os gráficos gerados são destinados apenas para fins informativos e análise do usuário. |
@@ -598,36 +533,29 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **2. Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a seção de gerenciamento de despesas. |
 | 2.2 | Seleciona a opção de alterar despesas (RF4). |
 | 2.3 | O sistema exibe a lista de despesas disponíveis para edição. |
 | 2.4 | O usuário seleciona a despesa desejada e realiza as alterações necessárias. |
 | **3. Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Alteração de Despesas** |
 | **A1 Primeiro Fluxo Alternativo** | - Se as informações fornecidas pelo usuário para a alteração forem inválidas, o sistema exibe uma mensagem de erro. |
 | **A2 Segundo Fluxo Alternativo** | - Se o usuário decidir não realizar alterações, ele pode retornar à página principal. |
 | **4. Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
 | **5. Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Existem despesas registradas. |
 | **6. Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | As alterações nas despesas são refletidas no sistema. |
 | **7. Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança durante a alteração das informações de despesas. |
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -648,32 +576,26 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **2. Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a seção de registro de despesas mensais. |
 | 2.2 | Seleciona a opção de registrar despesas mensais (RF9). |
 | 2.3 | O sistema exibe um formulário para o usuário preencher as informações referentes às despesas do mês. |
 | **3. Fluxos Alternativos** |
-| --- | --- |
 | **Área de Funcionalidade: Registro de Despesas Mensais** |
 | **A1 Primeiro Fluxo Alternativo** | - Se o usuário decidir não registrar despesas mensais, ele pode cancelar o processo. |
 | **4. Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
  | 4.1 | FE1 - Se houver falha no acesso ao formulário de registro, o sistema notifica o usuário e oferece suporte técnico. |
 | **5. Pré-Condições** |
 | Número | Descrição |
-| --- | --- | 5.1 | O usuário está autenticado no sistema. |
+ 5.1 | O usuário está autenticado no sistema. |
 | **6. Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | As despesas mensais são registradas no sistema. |
 | **7. Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança durante o registro das despesas mensais. |
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -693,7 +615,7 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **2. Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
+
 | 2.1 | O usuário acessa a seção de gerenciamento de despesas. |
 | 2.2 | Seleciona a opção de deletar despesas (RF5). |
 | 2.3 | O sistema exibe a lista de despesas disponíveis para exclusão. |
@@ -701,28 +623,28 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | 2.5 | O sistema solicita confirmação do usuário. |
 | 2.6 | O usuário confirma a exclusão da despesa. |
 | **3. Fluxos Alternativos** |
-| --- | --- |
+
 | - | Se a confirmação da exclusão não for recebida, o sistema mantém a despesa. |
 | **4. Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
+
 | 4.1 | FE1 - Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
 | **5. Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
+
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Existem despesas registradas. |
 | **6. Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
+
 | 6.1 | A despesa é removida do sistema, se confirmada. |
 | **7. Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
+
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
+
 | 8.1 | O sistema deve garantir a segurança durante a exclusão das despesas. |
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -739,37 +661,30 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 # Caso de Uso: Categorização de Despesas
 
 | **1. Breve Descrição** | Este caso de uso permite que o usuário atribua categorias às suas despesas para melhor organização. |
-| --- | --- |
+| --- | ---|
 | **2. Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a seção de gerenciamento de despesas. |
 | 2.2 | Seleciona a opção de categorizar despesas (RF6). |
 | 2.3 | O sistema exibe a lista de despesas disponíveis para categorização. |
 | 2.4 | O usuário seleciona a despesa e escolhe a categoria desejada. |
 | **3. Fluxos Alternativos** |
-| --- | --- |
 | - | Se o usuário decidir não categorizar uma despesa, ele pode retornar à página principal. |
 | **4. Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
 | 4.1 | FE1 - Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
 | **5. Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Existem despesas registradas. |
 | **6. Pós-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 6.1 | A categoria é atribuída à despesa no sistema. |
 | **7. Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- |
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança durante a categorização das despesas. |
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -788,33 +703,27 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **2. Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a seção de gerenciamento de despesas. |
 | 2.2 | Seleciona a opção de pesquisar gastos (RF8). |
 | 2.3 | O sistema exibe uma barra de pesquisa. |
 | 2.4 | O usuário insere os termos de pesquisa desejados. |
 | 2.5 | O sistema exibe as despesas que correspondem aos termos de pesquisa. |
 | **3. Fluxos Alternativos** |
-| --- | --- |
 | - | Se o usuário decidir não realizar uma pesquisa, ele pode continuar visualizando a lista padrão de despesas. |
 | **4. Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- | 
  | 4.1 | FE1 - Se houver falha no acesso às despesas ou na execução da pesquisa, o sistema notifica o usuário e oferece suporte técnico. |
 | **5. Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Existem despesas registradas. |
 | **6. Pós-Condições** |
 | --- | O sistema exibe as despesas de acordo com os resultados da pesquisa. |
 | **7. Pontos de Extensão** |
 | Número | Descrição |
-| --- | --- | 
 | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança das informações do usuário durante a pesquisa de despesas. |
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
@@ -834,22 +743,18 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 | --- | --- |
 | **2. Fluxo Básico de Eventos** |
 | Passo | Descrição |
-| --- | --- |
 | 2.1 | O usuário acessa a seção de gerenciamento de despesas. |
 | 2.2 | Seleciona a opção de filtrar os gastos por categoria de gastos (RF7). |
 | 2.3 | O sistema exibe uma lista de categorias disponíveis. |
 | 2.4 | O usuário escolhe a categoria desejada. |
 | 2.5 | O sistema exibe as despesas associadas à categoria selecionada. |
 | **3. Fluxos Alternativos** |
-| --- | --- |
 | - | Se o usuário decidir não aplicar um filtro, a lista padrão de despesas é exibida. |
 | **4. Fluxos de Exceção** |
 | Número | Descrição |
-| --- | --- |
  | 4.1 | FE1 - Se houver falha no acesso às categorias ou despesas, o sistema notifica o usuário e oferece suporte técnico. |
 | **5. Pré-Condições** |
 | Número | Descrição |
-| --- | --- |
 | 5.1 | O usuário está autenticado no sistema. |
 | 5.2 | Existem despesas categorizadas. |
 | **6. Pós-Condições** |
@@ -860,10 +765,14 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
  | 7.1 | Não há pontos de extensão definidos para este caso de uso. |
 | **8. Requisitos Especiais** |
 | Número | Descrição |
-| --- | --- |
 | 8.1 | O sistema deve garantir a segurança das informações do usuário durante o uso do filtro de despesas. |
 | **9. Informações Adicionais** |
 | --- | Nenhuma informação adicional fornecida. |
+
+
+
+
+
 
 ## Critério de priorização
 Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5, sendo 0 o valor mínimo e 5 o valor máximo. O caso de uso será priorizado se seu MVP for maior ou igual 6 (MVP >= 6).
@@ -921,14 +830,9 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 
 |Objetivos| Casos de Uso do MVP |
 |---|----|
-|Aprimorar controle Financeiro| CDU-06 O usuário pode acessar seu perfil,CDU-07 O usuário pode alterar seu perfil,CDU-08 O usuário pode deletar seu perfil, CDU-10 O usuário tem controle de suas transações financeiras, CDU-04 Relata os ganhos financeiros do usuário  |
-| Relatar gastos excessivos | CDU-01 O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias,  CDU-02 O usuário pode fazer login no sistema, fornecendo suas credenciais|
-|garantindo a análise de suas finanças| CDU-11 O usuário visualiza gráficos estatísticos de suas economias, CDU-12 O usuário pode alterar suas depesas,CDU-13   O usuário pode alterar registrar suas despesas, CDU-14  O usuário pode  deletar suas despesas, CDU-15   O usuário pode  categorizar suas despesas , CDU-16 O usuário pode  pesquisar suas despesas , CDU-17 O usuário pode filtrar suas despesas
-|
-
-<iframe allowfullscreen frameborder="0"  style="width: 640px; height: 480px; margin: 10px; position: relative;" style="width:960px; height:720px" src="https://lucid.app/documents/embedded/6ae438cc-9a4d-48b1-b8a2-dbe71275316f" id="6dMP5.bNy~9T"></iframe>
-
-
+|Aprimorar controle Financeiro| CDU-02 - Gerenciar Ganhos e CDU-06 - Gerenciar Transações Financeiras  |
+| Relatar gastos excessivos | CDU-08 - Gerenciar Despesas, CDU-01 - Gerenciar casos de usuário e CDU-04 -  Gerenciar contas de usuário
+|garantindo a análise de suas finanças| CDU-07 - Definir Estatísticas|
 
 ### Definição de Preparado (DOR)
 
@@ -939,9 +843,6 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
  - A equipe de desenvolvimento alcançou um consenso unânime de que este caso de uso específico é não apenas viável, mas altamente recomendado para ser incorporado à iteração de desenvolvimento em questão;
  - A representação visual do caso de uso, através de uma interface ou protótipo, está completamente alinhada com as expectativas e requisitos do cliente;
  - Quaisquer dependências inerentes aos requisitos foram cuidadosamente identificadas e estão prontas para serem gerenciadas de forma eficiente durante o processo.
-
-
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe>
 
 ### Definição de Pronto (DOD)
 
@@ -967,3 +868,4 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 | 1.1| Juan Pablo |  Especificação dos Casos de Uso | 14/11/2023 |
 | 1.2| Juan Pablo | Atualiza MVP | 16/11/2023 |
 | 1.3| João Lucas | Atualização de especificação dos Casos de Uso | 20/11/2023|
+| 1.4| João Lucas e Juan Pablo | Atualização de especificação dos Casos de Uso | 22/11/2023|
