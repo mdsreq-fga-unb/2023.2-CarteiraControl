@@ -9,7 +9,8 @@
 <p align=justify>Durante a segunda missão, aprofundamos nossa compreensão em relação aos requisitos funcionais e não funcionais, bem como na elaboração adequada de um backlog. Além disso, adquirimos conhecimentos mais aprofundados sobre técnicas das atividades de engenharia de requisitos, em especial as técnicas de validação e verificação.</p> 
 <p align=justify>A equipe enfrentou dificuldades relacionadas a saída de dois dos seus membros, porém fomos capazes de contornar o problema e realizar nossas atividades normalmente nos mantendo organizados, comunicativos e realocando as atividades entre os membros restantes.</p>
 
-## Missão 3: Conhecimento e inovação
+## Missão 3: Cerco do Comando Estelar 
+<p align=justify>Durante a terceira missão, aprendemos a levantar os casos de uso, enfrentando dificuldades principalmente nas especificações, de modo que confundimos bastante fluxo alternativo e de exceção. Tivemos dificuldade, também, no diagrama, as atividades de PBB E BDD foram mais tranquilas, USM também foi tranquilo.</p>
 
 ## Missão 4: Preservação da galáxia
 
@@ -20,3 +21,4 @@
 |    1.0   |   Tiago     |   Adiciona lições da primeira missão |  23/09 |
 | 1.1| Jefferson |  Correção dos Textos | 21/10 |
 | 1.2| João Lucas |  Adiciona lições da segunda missão | 25/10 |
+|1.3| Juan Pablo | Adiciona lições da terceira missão |22/10|

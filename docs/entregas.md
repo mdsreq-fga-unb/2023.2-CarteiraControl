@@ -52,9 +52,28 @@ Definição de Ciclo de Vida, Abordagem e Processo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I_WQ8K1-x9s?si=IPCpGDPH1HExqKqS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Missão 3: Cerco do Comando Estelar
+
+1° entrega: 02/11/2023 - DOR e DOD.
+[Entrega 1](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/caso_uso/#definicao-de-preparado-dor)
+
+2° entrega:  07/11/2023 - PBB E BDD
+[Entrega 2](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/entrega3/bdd-tanas/)
+
+3° entrega: 16/11/2023 - User Story Mapping
+[Entrega 3](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/entrega3/usm/)
+
+4° entrega: 22/11/2023 - Aspectos Humanos e Sociais da Engenharia de Requisitos
+[Entrega 4](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/entrega3/aspectos-eticos/)
+
+5° entrega: 23/11/2023 - Entrega Final da Missão
+[VIDEO APRESENTAÇÃO]()
+
+
 ## Histórico de versão
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
-| 1.1| Jefferson, Tiago, Juan e João |  Adicionando Entrega 1 | 20/09 |
+| 1.0| Jefferson, Tiago, Juan e João |  Adicionando Entrega 1 | 20/09 |
 | 1.1| Jefferson, Tiago, Juan e João |  Adicionando Entrega 2 | 25/10 |
+| 1.2| Jefferson, Tiago, Juan e João |  Adicionando Entrega 3 | 23/11 |
