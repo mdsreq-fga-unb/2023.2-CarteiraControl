@@ -45,6 +45,9 @@ nav:
     - Backlog SAFe: backlog.md
     - Verificação e Validação: verificacao_validacao.md
     - Casos de uso: caso_uso.md
+  - PBB e BDD:
+    - BDD Tanás: entrega3/bdd-tanas.md
+    - PBB HealthNet: entrega3/pbb.md
   - Lições aprendidas: Licoes.md
   - Entregas: entregas.md
   - Iterações: iteração.md
