@@ -49,7 +49,20 @@ O Processo Unificado emprega casos de uso como uma maneira de declarar e especif
 |CDU-09|Gerenciar plano de gastos para economia | O  usuário define um plano de gastos com objetivos de economia|RF12	Definir teto de gastos para cada categoria de despesas, RF13	Definir objetivos de economia | Plano de gastos|
 |CDU-10|Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras|RF15	Registrar transferências | Gerenciamentos de Transações financeiras|
 |CDU-11|Definir Estatísticas | O usuário visualiza gráficos estatísticos de suas economias|RF16	Gerar gráfico de gastos no final do mês, RF17	Criar gráfico sobre as transações financeiras | Gerar Estatísticas  |
-|CDU-12 | Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas despesas | RF4	Alterar despesas, RF5	Deletar despesas, RF6	Categorizar despesas, RF9	Registrar despesas mensais, RF7	Filtrar os gastos por categoria de gastos, RF8	Pesquisar gastos | Despesas Apresentadas |
+
+|CDU-12 | Gerenciar alteração Despesas | O usuário pode alterar suas depesas| RF4	Alterar despesas | Despesas Apresentadas |
+
+|CDU-13 | Gerenciar registros de despesas | O usuário pode alterar registrar suas despesas |RF9 Registrar despesas mensais| Despesas Apresentadas |
+
+|CDU-14 | Gerenciar deleção de despesas | O usuário pode  deletar suas despesas | RF5	Deletar despesas | Despesas Apresentadas |
+
+|CDU-15 | Gerenciar categorização de despesas | O usuário pode  categorizar suas despesas |  RF6	Categorizar despesas | Despesas Apresentadas |
+
+|CDU-16 | Gerenciar pesquisa de despesas | O usuário pode  pesquisar suas despesas | RF8	Pesquisar gastos | Despesas Apresentadas |
+
+|CDU-17 | Gerenciar filtro de despesas | O usuário pode filtrar suas despesas |  RF7	Filtrar os gastos por categoria de gastos | Despesas Apresentadas |
+
+
 
 # Especificação dos Casos de Uso
 
@@ -733,115 +746,419 @@ Este caso de uso permite que o usuário visualize gráficos estatísticos de sua
 
 - Os gráficos gerados são destinados apenas para fins informativos e análise do usuário.
 
-# Especificação de Caso de Uso: CDU-12 Gerenciar Despesas
+# Especificação de Caso de Uso: CDU-12 Gerenciar Alteração de Despesas
 
-| Número do Caso de Uso | CDU-12 |
-| --- | --- |
-| **Nome do Caso de Uso** | Gerenciar Despesas |
-| **Versão** | 1.0 |
-| **Data de Criação** | 13/11/2023 |
-| **Responsável** | Juan Pablo |
+- **Número do Caso de Uso:** CDU-12
+- **Nome do Caso de Uso:** Gerenciar Alteração de Despesas
+- **Versão:** 1.0
+- **Data de Criação:** 20/11/2023
+- **Responsável:** Juan Pablo e João Lucas
 
 ## 1. Breve Descrição
 
-Este caso de uso permite que o usuário altere, delete, registre, categorize, pesquise e filtre suas despesas, proporcionando um controle detalhado sobre suas finanças.
+Este caso de uso permite que o usuário realize alterações em suas despesas já registradas.
 
 ## 2. Fluxo Básico de Eventos
 
-| Passo | Descrição |
-| --- | --- |
-| 2.1 | O usuário acessa a área de gerenciamento de despesas. |
-| 2.2 | O usuário escolhe a opção de registrar despesas mensais (RF9). |
-| 2.3 | O sistema exibe um formulário para o usuário inserir os detalhes da despesa. |
-| 2.4 | O usuário fornece as informações necessárias. |
-| 2.5 | O sistema valida as informações e registra a despesa. |
-| 2.6 | O usuário escolhe a opção de alterar despesas existentes (RF4). |
-| 2.7 | O sistema lista as despesas existentes e permite que o usuário selecione a despesa a ser alterada. |
-| 2.8 | O usuário realiza as alterações desejadas. |
-| 2.9 | O usuário escolhe a opção de deletar despesas (RF5). |
-| 2.10 | O sistema lista as despesas existentes e permite que o usuário selecione a despesa a ser deletada. |
-| 2.11 | O usuário confirma a exclusão da despesa. |
-| 2.12 | O usuário escolhe a opção de categorizar despesas (RF6). |
-| 2.13 | O sistema exibe as despesas e permite que o usuário atribua categorias a cada uma. |
-| 2.14 | O usuário escolhe a opção de pesquisar gastos (RF8). |
-| 2.15 | O sistema exibe um campo de pesquisa onde o usuário insere os termos desejados. |
-| 2.16 | O sistema lista as despesas que correspondem à pesquisa. |
-| 2.17 | O usuário escolhe a opção de filtrar gastos por categoria de gastos (RF7). |
-| 2.18 | O sistema exibe as opções de categorias de gastos disponíveis. |
-| 2.19 | O usuário seleciona uma categoria e o sistema filtra as despesas correspondentes. |
+### 2.1
+O usuário acessa a seção de gerenciamento de despesas.
+
+### 2.2
+Seleciona a opção de alterar despesas (RF4).
+
+### 2.3
+O sistema exibe a lista de despesas disponíveis para edição.
+
+### 2.4
+O usuário seleciona a despesa desejada e realiza as alterações necessárias.
 
 ## 3. Fluxos Alternativos
 
-### 3.1 Área de Funcionalidade: Registro de Despesas
+### 3.1 Área de Funcionalidade: Alteração de Despesas
 
 #### 3.1.1 A1 Primeiro Fluxo Alternativo
 
-- Se o usuário decidir não registrar despesas, ele pode retornar à página principal.
+##### 3.1.1.1
+Se as informações fornecidas pelo usuário para a alteração forem inválidas, o sistema exibe uma mensagem de erro.
 
-### 3.2 Área de Funcionalidade: Alterar Despesas
+#### 3.1.2 A2 Segundo Fluxo Alternativo
 
-#### 3.2.1 A2 Segundo Fluxo Alternativo
-
-- Se o usuário decidir não realizar alterações, ele pode retornar à página principal.
-
-### 3.3 Área de Funcionalidade: Deletar Despesas
-
-#### 3.3.1 A3 Terceiro Fluxo Alternativo
-
-- Se o usuário não confirmar a exclusão da despesa, o sistema mantém a despesa.
-
-### 3.4 Área de Funcionalidade: Categorizar Despesas
-
-#### 3.4.1 A4 Quarto Fluxo Alternativo
-
-- Se o usuário decidir não categorizar as despesas, ele pode retornar à página principal.
-
-### 3.5 Área de Funcionalidade: Pesquisar Gastos
-
-#### 3.5.1 A5 Quinto Fluxo Alternativo
-
-- Se o usuário não encontrar resultados correspondentes à pesquisa, o sistema notifica o usuário.
-
-### 3.6 Área de Funcionalidade: Filtrar Gastos por Categoria
-
-#### 3.6.1 A6 Sexto Fluxo Alternativo
-
-- Se o usuário decidir não filtrar os gastos por categoria, ele pode retornar à página principal.
+##### 3.1.2.1
+Se o usuário decidir não realizar alterações, ele pode retornar à página principal.
 
 ## 4. Fluxos de Exceção
 
 | Número | Fluxo de Exceção | Descrição |
-| --- | --- | --- |
-| 4.1 | FE1 | Se houver falha na validação das informações da despesa, o sistema notifica o usuário e destaca os campos inválidos. |
+|--------|------------------|-----------|
+| 4.1    | FE1              | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
 
 ## 5. Pré-Condições
 
 | Número | Descrição |
-| --- | --- |
-| 5.1 | O usuário está autenticado no sistema. |
-| 5.2 | Não há restrições específicas para o registro, alteração, deleção, categorização, pesquisa e filtro de despesas. |
+|--------|-----------|
+| 5.1    | O usuário está autenticado no sistema. |
+| 5.2    | Existem despesas registradas. |
 
 ## 6. Pós-Condições
 
 | Número | Descrição |
-| --- | --- |
-| 6.1 | As despesas são registradas, alteradas, deletadas, categorizadas, pesquisadas e filtradas no sistema conforme as escolhas do usuário. |
+|--------|-----------|
+| 6.1    | As alterações nas despesas são refletidas no sistema. |
 
 ## 7. Pontos de Extensão
 
 | Número | Nome do Ponto de Extensão | Descrição |
-| --- | --- | --- |
-| 7.1 | - | Não há pontos de extensão definidos para este caso de uso. |
+|--------|---------------------------|-----------|
+| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
 
 ## 8. Requisitos Especiais
 
 | Número | Descrição |
-| --- | --- |
-| 8.1 | O sistema deve garantir a segurança durante o registro, alteração, deleção, categorização, pesquisa e filtro de despesas. |
+|--------|-----------|
+| 8.1    | O sistema deve garantir a segurança durante a alteração das informações de despesas. |
 
 ## 9. Informações Adicionais
 
-- Nenhuma informação adicional fornecida.
+Nenhuma informação adicional fornecida.
+
+# Especificação de Caso de Uso: CDU-13 Gerenciar Registros de Despesas
+
+- **Número do Caso de Uso:** CDU-13
+- **Nome do Caso de Uso:** Gerenciar Registros de Despesas
+- **Versão:** 1.0
+- **Data de Criação:** 20/11/2023
+- **Responsável:** Juan Pablo e João Lucas
+
+## 1. Breve Descrição
+
+Este caso de uso permite que o usuário registre suas despesas mensais.
+
+## 2. Fluxo Básico de Eventos
+
+### 2.1
+O usuário acessa a seção de registro de despesas mensais.
+
+### 2.2
+Seleciona a opção de registrar despesas mensais (RF9).
+
+### 2.3
+O sistema exibe um formulário para o usuário preencher as informações referentes às despesas do mês.
+
+## 3. Fluxos Alternativos
+
+### 3.1 Área de Funcionalidade: Registro de Despesas Mensais
+
+#### 3.1.1 A1 Primeiro Fluxo Alternativo
+
+##### 3.1.1.1
+Se o usuário decidir não registrar despesas mensais, ele pode cancelar o processo.
+
+## 4. Fluxos de Exceção
+
+| Número | Fluxo de Exceção | Descrição |
+|--------|------------------|-----------|
+| 4.1    | FE1              | Se houver falha no acesso ao formulário de registro, o sistema notifica o usuário e oferece suporte técnico. |
+
+## 5. Pré-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 5.1    | O usuário está autenticado no sistema. |
+
+## 6. Pós-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 6.1    | As despesas mensais são registradas no sistema. |
+
+## 7. Pontos de Extensão
+
+| Número | Nome do Ponto de Extensão | Descrição |
+|--------|---------------------------|-----------|
+| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
+
+## 8. Requisitos Especiais
+
+| Número | Descrição |
+|--------|-----------|
+| 8.1    | O sistema deve garantir a segurança durante o registro das despesas mensais. |
+
+## 9. Informações Adicionais
+
+Nenhuma informação adicional fornecida.
+
+# Especificação de Caso de Uso: CDU-14 Gerenciar Deleção de Despesas
+
+- **Número do Caso de Uso:** CDU-14
+- **Nome do Caso de Uso:** Gerenciar Deleção de Despesas
+- **Versão:** 1.0
+- **Data de Criação:** 20/11/2023
+- **Responsável:** Juan Pablo e João Lucas
+
+## 1. Breve Descrição
+
+Este caso de uso permite que o usuário exclua despesas previamente registradas.
+
+## 2. Fluxo Básico de Eventos
+
+### 2.1
+O usuário acessa a seção de gerenciamento de despesas.
+
+### 2.2
+Seleciona a opção de deletar despesas (RF5).
+
+### 2.3
+O sistema exibe a lista de despesas disponíveis para exclusão.
+
+### 2.4
+O usuário seleciona a despesa que deseja excluir.
+
+### 2.5
+O sistema solicita confirmação do usuário.
+
+### 2.6
+O usuário confirma a exclusão da despesa.
+
+## 3. Fluxos Alternativos
+
+- Se a confirmação da exclusão não for recebida, o sistema mantém a despesa.
+
+## 4. Fluxos de Exceção
+
+| Número | Fluxo de Exceção | Descrição |
+|--------|------------------|-----------|
+| 4.1    | FE1              | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
+
+## 5. Pré-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 5.1    | O usuário está autenticado no sistema. |
+| 5.2    | Existem despesas registradas. |
+
+## 6. Pós-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 6.1    | A despesa é removida do sistema, se confirmada. |
+
+## 7. Pontos de Extensão
+
+| Número | Nome do Ponto de Extensão | Descrição |
+|--------|---------------------------|-----------|
+| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
+
+## 8. Requisitos Especiais
+
+| Número | Descrição |
+|--------|-----------|
+| 8.1    | O sistema deve garantir a segurança durante a exclusão das despesas. |
+
+## 9. Informações Adicionais
+
+Nenhuma informação adicional fornecida.
+
+# Especificação de Caso de Uso: CDU-15 Gerenciar Categorização de Despesas
+
+- **Número do Caso de Uso:** CDU-15
+- **Nome do Caso de Uso:** Gerenciar Categorização de Despesas
+- **Versão:** 1.0
+- **Data de Criação:** 20/11/2023
+- **Responsável:** Juan Pablo e João Lucas
+
+## 1. Breve Descrição
+
+Este caso de uso permite que o usuário atribua categorias às suas despesas para melhor organização.
+
+## 2. Fluxo Básico de Eventos
+
+### 2.1
+O usuário acessa a seção de gerenciamento de despesas.
+
+### 2.2
+Seleciona a opção de categorizar despesas (RF6).
+
+### 2.3
+O sistema exibe a lista de despesas disponíveis para categorização.
+
+### 2.4
+O usuário seleciona a despesa e escolhe a categoria desejada.
+
+## 3. Fluxos Alternativos
+
+- Se o usuário decidir não categorizar uma despesa, ele pode retornar à página principal.
+
+## 4. Fluxos de Exceção
+
+| Número | Fluxo de Exceção | Descrição |
+|--------|------------------|-----------|
+| 4.1    | FE1              | Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico. |
+
+## 5. Pré-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 5.1    | O usuário está autenticado no sistema. |
+| 5.2    | Existem despesas registradas. |
+
+## 6. Pós-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 6.1    | A categoria é atribuída à despesa no sistema. |
+
+## 7. Pontos de Extensão
+
+| Número | Nome do Ponto de Extensão | Descrição |
+|--------|---------------------------|-----------|
+| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
+
+## 8. Requisitos Especiais
+
+| Número | Descrição |
+|--------|-----------|
+| 8.1    | O sistema deve garantir a segurança durante a categorização das despesas. |
+
+## 9. Informações Adicionais
+
+Nenhuma informação adicional fornecida.
+
+# Especificação de Caso de Uso: CDU-16 Gerenciar Pesquisa de Despesas
+
+- **Número do Caso de Uso:** CDU-16
+- **Nome do Caso de Uso:** Gerenciar Pesquisa de Despesas
+- **Versão:** 1.0
+- **Data de Criação:** 20/11/2023
+- **Responsável:** Juan Pablo e João Lucas
+
+## 1. Breve Descrição
+
+Este caso de uso permite que o usuário pesquise suas despesas com base em termos específicos.
+
+## 2. Fluxo Básico de Eventos
+
+### 2.1
+O usuário acessa a seção de gerenciamento de despesas.
+
+### 2.2
+Seleciona a opção de pesquisar gastos (RF8).
+
+### 2.3
+O sistema exibe uma barra de pesquisa.
+
+### 2.4
+O usuário insere os termos de pesquisa desejados.
+
+### 2.5
+O sistema exibe as despesas que correspondem aos termos de pesquisa.
+
+## 3. Fluxos Alternativos
+
+- Se o usuário decidir não realizar uma pesquisa, ele pode continuar visualizando a lista padrão de despesas.
+
+## 4. Fluxos de Exceção
+
+| Número | Fluxo de Exceção | Descrição |
+|--------|------------------|-----------|
+| 4.1    | FE1              | Se houver falha no acesso às despesas ou na execução da pesquisa, o sistema notifica o usuário e oferece suporte técnico. |
+
+## 5. Pré-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 5.1    | O usuário está autenticado no sistema. |
+| 5.2    | Existem despesas registradas. |
+
+## 6. Pós-Condições
+
+O sistema exibe as despesas de acordo com os resultados da pesquisa.
+
+## 7. Pontos de Extensão
+
+| Número | Nome do Ponto de Extensão | Descrição |
+|--------|---------------------------|-----------|
+| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
+
+## 8. Requisitos Especiais
+
+| Número | Descrição |
+|--------|-----------|
+| 8.1    | O sistema deve garantir a segurança das informações do usuário durante a pesquisa de despesas. |
+
+## 9. Informações Adicionais
+
+Nenhuma informação adicional fornecida.
+
+# Especificação de Caso de Uso: CDU-17 Gerenciar Filtro de Despesas
+
+- **Número do Caso de Uso:** CDU-17
+- **Nome do Caso de Uso:** Gerenciar Filtro de Despesas
+- **Versão:** 1.0
+- **Data de Criação:** 20/11/2023
+- **Responsável:** Juan Pablo e João Lucas
+
+## 1. Breve Descrição
+
+Este caso de uso permite que o usuário filtre suas despesas com base em categorias específicas.
+
+## 2. Fluxo Básico de Eventos
+
+### 2.1
+O usuário acessa a seção de gerenciamento de despesas.
+
+### 2.2
+Seleciona a opção de filtrar os gastos por categoria de gastos (RF7).
+
+### 2.3
+O sistema exibe uma lista de categorias disponíveis.
+
+### 2.4
+O usuário escolhe a categoria desejada.
+
+### 2.5
+O sistema exibe as despesas associadas à categoria selecionada.
+
+## 3. Fluxos Alternativos
+
+- Se o usuário decidir não aplicar um filtro, a lista padrão de despesas é exibida.
+
+## 4. Fluxos de Exceção
+
+| Número | Fluxo de Exceção | Descrição |
+|--------|------------------|-----------|
+| 4.1    | FE1              | Se houver falha no acesso às categorias ou despesas, o sistema notifica o usuário e oferece suporte técnico. |
+
+## 5. Pré-Condições
+
+| Número | Descrição |
+|--------|-----------|
+| 5.1    | O usuário está autenticado no sistema. |
+| 5.2    | Existem despesas categorizadas. |
+
+## 6. Pós-Condições
+
+O sistema exibe as despesas de acordo com o filtro aplicado.
+
+## 7. Pontos de Extensão
+
+| Número | Nome do Ponto de Extensão | Descrição |
+|--------|---------------------------|-----------|
+| 7.1    | -                         | Não há pontos de extensão definidos para este caso de uso. |
+
+## 8. Requisitos Especiais
+
+| Número | Descrição |
+|--------|-----------|
+| 8.1    | O sistema deve garantir a segurança das informações do usuário durante o uso do filtro de despesas. |
+
+## 9. Informações Adicionais
+
+Nenhuma informação adicional fornecida.
+
+
+
+
+
 
 
 ## Critério de priorização
