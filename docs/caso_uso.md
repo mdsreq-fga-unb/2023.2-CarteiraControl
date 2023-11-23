@@ -764,14 +764,23 @@ Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5
 
 | ID | Descrição                                        | Valor de negócio | Viabilidade | Complexidade | Pontuação | MVP |
 | :----: | ------------------------------------------- | :--------------: | :---------: | :----------: | :-------: | :------: |
-|  CDU-01 -  Gerenciar Casos de Usuário  | O usuário pode cadastrar e logar   |        5         |      5      |      2       |     8     | ✅ |
-|  CDU-02 - Gerenciar Ganhos  | Relatra os ganhos financeiros do usuário   |        5        |      5     |      2      |     8    |✅|
-|  CDU-03 - Manter o usuário informado | O usuário tem informações de como estão suas esconomias |   4   |      5   |    3   |     5  |❌ |
-|  CDU-04 - Gerenciar contas de usuário  | O usuário pode alterar, acessar seu perfil e deletá-lo |        5         |     5      |    2       |    8     |✅ |
-|  CDU-05 - Gerenciar planos de gasto para economia | O usuário define um plano de gastos com objetivos de economia  |     4       |   5       |      3       |  5   |❌ |
-|  CDU-06 - Gerenciar Transações Financeiras | O usuário tem controle de suas transações financeiras |      5 |       5 |      4 | 6    |✅ |
-|  CDU-07 - Definir Estatísticas | O usuário visulzias gráficos estatísticos de suas economias |    4 |   5      |   3   |    6    |✅ |
-|  CDU-08 - Gerenciar Despesas | O usuário pode alterar, deletar, registrar, categorizar, pesquisar e filtrar suas depesas                          |        4         |      5      |      2       |     7     |✅|
+|CDU-01| O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias  |        5         |      5      |      2       |     8     | ✅ |
+|CDU-02| O usuário pode fazer login no sistema, fornecendo suas credenciais  |      5     |   5|    2      |     8    |✅|
+|CDU-03| O usuário pode cadastrar até três contas bancárias associadas ao seu perfil |   4   |      5   |    2   |     5  |❌ |
+|CDU-04|Relata os ganhos financeiros do usuário  |        5         |     5      |    2       |    8     |✅ |
+|CDU-05| O usuário tem informações de como estão suas economias |     4       |   5       |      1      |  5   |❌ |
+|CDU-06  | O usuário pode acessar seu perfil |      5 |       5 |      4 | 6    |✅ |
+|CDU-07| O usuário pode alterar seu perfil |    4 |   5      |   3   |    6    |✅ |
+|CDU-08 |O usuário pode deletar seu perfil  |        4         |      5      |      2       |     7     |✅|
+|CDU-09|O  usuário define um plano de gastos com objetivos de economia |        4         |      2      |      2       |     5     |❌|
+|CDU-10| O usuário tem controle de suas transações financeiras|     4         |      5      |      2       |     7     |✅|
+|CDU-11| O usuário visualiza gráficos estatísticos de suas economias|     4         |      5      |      2       |     7     |✅|
+|CDU-12 |  O usuário pode alterar suas depesas|     4         |      5      |      2       |     7     |✅|
+|CDU-13 |  O usuário pode alterar registrar suas despesas |     4         |      5      |      3      |     78    |✅|
+|CDU-14 | O usuário pode  deletar suas despesas |      4         |      5      |      2       |     3     |✅|
+|CDU-15 |  O usuário pode  categorizar suas despesas |      4         |      5      |      2       |     8     |✅|
+|CDU-16 | O usuário pode  pesquisar suas despesas |      4         |      5      |      2       |     7     |✅|
+|CDU-17 | O usuário pode filtrar suas despesas |     4         |      5      |      23      |     8     |✅|
 
 
 ### MVP
@@ -780,9 +789,9 @@ Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem p
 
 |Objetivos| Casos de Uso do MVP |
 |---|----|
-|Aprimorar controle Financeiro| CDU-02 - Gerenciar Ganhos e CDU-06 - Gerenciar Transações Financeiras  |
-| Relatar gastos excessivos | CDU-08 - Gerenciar Despesas, CDU-01 - Gerenciar casos de usuário e CDU-04 -  Gerenciar contas de usuário
-|garantindo a análise de suas finanças| CDU-07 - Definir Estatísticas|
+|Aprimorar controle Financeiro| CDU-06 O usuário pode acessar seu perfil,CDU-07 O usuário pode alterar seu perfil,CDU-08 O usuário pode deletar seu perfil, CDU-10 O usuário tem controle de suas transações financeiras, CDU-04 Relata os ganhos financeiros do usuário  |
+| Relatar gastos excessivos | CDU-01 O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias,  CDU-02 O usuário pode fazer login no sistema, fornecendo suas credenciais|
+|garantindo a análise de suas finanças| CDU-11 O usuário visualiza gráficos estatísticos de suas economias, CDU-12 O usuário pode alterar suas depesas,CDU-13   O usuário pode alterar registrar suas despesas, CDU-14  O usuário pode  deletar suas despesas, CDU-15   O usuário pode  categorizar suas despesas , CDU-16 O usuário pode  pesquisar suas despesas , CDU-17 O usuário pode filtrar suas despesas |
 
 <center>
 Diagrama de Casos de Uso

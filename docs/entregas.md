@@ -68,7 +68,7 @@ Definição de Ciclo de Vida, Abordagem e Processo
 
 4° entrega: 22/11/2023 - Aspectos Humanos e Sociais da Engenharia de Requisitos
 
-[Entrega 4](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/entrega3/aspectos-eticos/)
+[Entrega 4](https://mdsreq-fga-unb.github.io/2023.2-CarteiraControl/VisaoProjeto/#24-aspectos-humanos)
 
 5° entrega: 23/11/2023 - Entrega Final da Missão
 
