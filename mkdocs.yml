@@ -49,6 +49,8 @@ nav:
     - BDD Tanás: entrega3/bdd-tanas.md
     - PBB HealthNet: entrega3/pbb.md
     - USM ComunEventos: entrega3/usm.md
+  - Casos de Uso:
+    - Especificação UC: entrega4/especificacao_uc.md
   - Lições aprendidas: Licoes.md
   - Entregas: entregas.md
   - Iterações: iteração.md
