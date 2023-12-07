@@ -6,8 +6,7 @@
 
 
 ## Diagrama de Casos de Uso
-
-
+<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:600px; height:480px" src="https://lucid.app/documents/embedded/5e68cc99-8ac2-4845-9a48-001935e25b16" id="E~7THSsdRGx."></iframe></div>
 
 ## CDU-01 Explorar Destinos
 
@@ -132,8 +131,14 @@
 | |
 
 
+## Checklist UC - Bersek
+
+![checklist-bersek](../../assets/entrega4/bersek.png){width: 500}
+
+
 ## Histórico de versão
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 | 1.0| Jefferson e Tiago |  Especificação dos casos de uso do VoyageX | 06/12 |
+| 1.1| Jefferson  |  Diagrama dos casos de uso do VoyageX e checklist Bersek | 06/12 |
