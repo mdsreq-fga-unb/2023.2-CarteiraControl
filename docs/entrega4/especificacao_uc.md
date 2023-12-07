@@ -7,7 +7,7 @@
 
 ## Diagrama de Casos de Uso
 
-
+<div style="width: 480px; height: 360px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:480px; height:360px" src="https://lucid.app/documents/embedded/5e68cc99-8ac2-4845-9a48-001935e25b16" id="TYXTOTEZFBK."></iframe></div>
 
 ## CDU-01 Explorar Destinos
 
