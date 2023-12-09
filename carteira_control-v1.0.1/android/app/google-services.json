@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "423221143275",
+    "project_id": "carteiracontrol",
+    "storage_bucket": "carteiracontrol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423221143275:android:c90e640000d4456c84c0ae",
+        "android_client_info": {
+          "package_name": "com.carteiracontrol.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAudaAeWCp4N7xSa3hD6Q_ME0gPRtPbM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

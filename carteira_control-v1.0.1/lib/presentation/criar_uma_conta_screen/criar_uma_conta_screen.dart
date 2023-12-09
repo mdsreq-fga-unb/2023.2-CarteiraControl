@@ -62,7 +62,7 @@ class CriarUmaContaScreen extends StatelessWidget {
                   SizedBox(
                     width: 237.h,
                     child: Text(
-                      "Comece a economizar",
+                      "Crie sua Conta",
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.center,
@@ -113,21 +113,26 @@ class CriarUmaContaScreen extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                       padding: EdgeInsets.only(left: 82.h),
-                      child: RichText(
-                        text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: "Já possui uma conta? ",
-                              style: CustomTextStyles.bodyMediumGray80014,
-                            ),
-                            TextSpan(
-                              text: "Log in",
-                              style: CustomTextStyles.bodyMediumLightblueA700,
-                            ),
-                          ],
-                        ),
-                        textAlign: TextAlign.left,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.popAndPushNamed(context, AppRoutes.loginScreen);
+                    },
+                    child: RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "Já possui uma conta? ",
+                            style: CustomTextStyles.bodyMediumGray80014,
+                          ),
+                          TextSpan(
+                            text: "Log in",
+                            style: CustomTextStyles.bodyMediumLightblueA700,
+                          ),
+                        ],
                       ),
+                      textAlign: TextAlign.left,
                     ),
                   ),
                 ],
@@ -322,6 +327,7 @@ class CriarUmaContaScreen extends StatelessWidget {
       buttonTextStyle: CustomTextStyles.titleMediumWhiteA700SemiBold18_1,
       alignment: Alignment.centerLeft,
       onPressed: () {
+        // Navigator.pushReplacementNamed(context, AppRoutes.loginScreen);
         if (_formKey.currentState?.validate() ?? false) {
           // O formulário é válido, continue com o processo de inscrição
         }

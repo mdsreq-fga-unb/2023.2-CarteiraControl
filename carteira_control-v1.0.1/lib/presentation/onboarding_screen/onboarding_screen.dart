@@ -83,20 +83,26 @@ class OnboardingScreen extends StatelessWidget {
                 },
               ),
               SizedBox(height: 25.v),
-              RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(
-                      text: "Já possui uma conta? ",
-                      style: CustomTextStyles.bodyMediumGray80014,
-                    ),
-                    TextSpan(
-                      text: "Log in",
-                      style: theme.textTheme.titleSmall,
-                    ),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacementNamed(
+                      context, AppRoutes.loginScreen);
+                },
+                child: RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "Já possui uma conta? ",
+                        style: CustomTextStyles.bodyMediumGray80014,
+                      ),
+                      TextSpan(
+                        text: "Log in",
+                        style: theme.textTheme.titleSmall,
+                      ),
+                    ],
+                  ),
+                  textAlign: TextAlign.left,
                 ),
-                textAlign: TextAlign.left,
               ),
               SizedBox(height: 5.v),
             ],

@@ -1,6 +1,7 @@
 import 'package:carteira_control/core/app_export.dart';
 import 'package:carteira_control/widgets/custom_elevated_button.dart';
 import 'package:carteira_control/widgets/custom_floating_text_field.dart';
+import 'package:carteira_control/common/utils/validator.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -66,6 +67,7 @@ class LoginScreen extends StatelessWidget {
                     labelStyle: theme.textTheme.titleSmall!,
                     hintText: "Seu E-mail",
                     textInputType: TextInputType.emailAddress,
+                    validator: Validator.validateEmail,
                   ),
                   SizedBox(height: 37.v),
                   CustomFloatingTextField(
@@ -85,6 +87,7 @@ class LoginScreen extends StatelessWidget {
                     suffixConstraints: BoxConstraints(
                       maxHeight: 64.v,
                     ),
+                    validator: Validator.validatePassword,
                   ),
                   SizedBox(height: 32.v),
                   CustomElevatedButton(
@@ -94,22 +97,34 @@ class LoginScreen extends StatelessWidget {
                     buttonStyle: CustomButtonStyles.none,
                     buttonTextStyle:
                         CustomTextStyles.titleMediumWhiteA700SemiBold18_1,
+                    onPressed: () {
+                      // Navigator.pushReplacementNamed(context, AppRoutes.loginScreen);
+                      if (_formKey.currentState?.validate() ?? false) {
+                        // O formulário é válido, continue com o processo de inscrição
+                      }
+                    },
                   ),
                   SizedBox(height: 18.v),
-                  RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "Não tem uma conta? ",
-                          style: CustomTextStyles.bodyMediumGray80014,
-                        ),
-                        TextSpan(
-                          text: "Sign up",
-                          style: theme.textTheme.titleSmall,
-                        ),
-                      ],
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.popAndPushNamed(
+                          context, AppRoutes.criarUmaContaScreen);
+                    },
+                    child: RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "Não tem uma conta? ",
+                            style: CustomTextStyles.bodyMediumGray80014,
+                          ),
+                          TextSpan(
+                            text: "Sign up",
+                            style: theme.textTheme.titleSmall,
+                          ),
+                        ],
+                      ),
+                      textAlign: TextAlign.left,
                     ),
-                    textAlign: TextAlign.left,
                   ),
                 ],
               ),
