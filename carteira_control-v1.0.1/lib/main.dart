@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: theme,
       title: 'carteira_control',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.loginScreen,
+      initialRoute: AppRoutes.splashScreen,
       routes: AppRoutes.routes,
     );
   }

@@ -1,9 +1,10 @@
 import 'package:carteira_control/core/app_export.dart';
 import 'package:carteira_control/widgets/custom_elevated_button.dart';
 import 'package:carteira_control/widgets/custom_floating_text_field.dart';
-import 'package:carteira_control/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
+import '../../common/utils/validator.dart';
 
+// ignore: must_be_immutable
 class CriarUmaContaScreen extends StatelessWidget {
   CriarUmaContaScreen({Key? key})
       : super(
@@ -16,7 +17,14 @@ class CriarUmaContaScreen extends StatelessWidget {
 
   TextEditingController passwordController = TextEditingController();
 
+  TextEditingController confirmarSenhaController =
+      TextEditingController(); // Adicionando o controlador para confirmar a senha
+
+  final _passwordController = TextEditingController();
+
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+  bool isPasswordVisible = false;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +62,7 @@ class CriarUmaContaScreen extends StatelessWidget {
                   SizedBox(
                     width: 237.h,
                     child: Text(
-                      "Comece a economizar o seu dinheiro",
+                      "Comece a economizar",
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.center,
@@ -64,7 +72,7 @@ class CriarUmaContaScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 57.v),
-                  _buildPedroSampaio(context),
+                  _buildNome(context),
                   SizedBox(height: 24.v),
                   _buildEmail(context),
                   SizedBox(height: 24.v),
@@ -76,22 +84,25 @@ class CriarUmaContaScreen extends StatelessWidget {
                       width: 323.h,
                       margin: EdgeInsets.only(right: 46.h),
                       child: Text(
-                        "Sua senha deve conter 8 caracteres, 1 letra maiúscula e 1 número.",
+                        "Sua senha deve conter 8 caracteres",
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: CustomTextStyles.bodySmallLightblueA700,
                       ),
                     ),
                   ),
-                  _buildSixtyFour(context),
-                  SizedBox(height: 5.v),
+                  _buildSixtyThreeConfirm(context),
+                  SizedBox(height: 3.v),
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 3.h),
+                    child: Container(
+                      width: 323.h,
+                      margin: EdgeInsets.only(right: 46.h),
                       child: Text(
-                        "As senhas não conferem. Repita o processo.",
-                        style: CustomTextStyles.bodySmallRed500,
+                        "Confirme sua senha",
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: CustomTextStyles.bodySmallLightblueA700,
                       ),
                     ),
                   ),
@@ -129,7 +140,7 @@ class CriarUmaContaScreen extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildPedroSampaio(BuildContext context) {
+  Widget _buildNome(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(right: 6.h),
       child: CustomFloatingTextField(
@@ -137,6 +148,7 @@ class CriarUmaContaScreen extends StatelessWidget {
         labelText: "Seu nome",
         labelStyle: theme.textTheme.titleSmall!,
         hintText: "Seu nome",
+        validator: Validator.validateName,
       ),
     );
   }
@@ -151,6 +163,7 @@ class CriarUmaContaScreen extends StatelessWidget {
         labelStyle: theme.textTheme.titleSmall!,
         hintText: "Seu E-mail",
         textInputType: TextInputType.emailAddress,
+        validator: Validator.validateEmail,
       ),
     );
   }
@@ -183,7 +196,7 @@ class CriarUmaContaScreen extends StatelessWidget {
                       top: 4.v,
                     ),
                     child: Text(
-                      "123456#Abcdefgh",
+                      "",
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
@@ -200,16 +213,24 @@ class CriarUmaContaScreen extends StatelessWidget {
           Align(
             alignment: Alignment.topLeft,
             child: Container(
-              width: 114.h,
+              width: 364.h, // Ajustado para o mesmo valor que o SizedBox
               margin: EdgeInsets.only(left: 16.h),
               padding: EdgeInsets.symmetric(
                 horizontal: 8.h,
                 vertical: 1.v,
               ),
               decoration: AppDecoration.fillBlue,
-              child: Text(
-                " Digite sua senha",
+              child: TextFormField(
+                controller: _passwordController,
+                // Adicionando um campo de texto interativo
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: "Digite sua senha",
+                  hintStyle: theme.textTheme.bodySmall,
+                  border: InputBorder.none,
+                ),
                 style: theme.textTheme.bodySmall,
+                validator: Validator.validatePassword,
               ),
             ),
           ),
@@ -218,51 +239,74 @@ class CriarUmaContaScreen extends StatelessWidget {
     );
   }
 
-  /// Section Widget
-  Widget _buildConfirmeSuaSenha(BuildContext context) {
-    return CustomElevatedButton(
-      height: 19.v,
-      width: 129.h,
-      text: "Confirme sua senha",
-      margin: EdgeInsets.only(left: 16.h),
-      alignment: Alignment.topLeft,
-    );
-  }
-
-  /// Section Widget
-  Widget _buildPassword(BuildContext context) {
-    return CustomTextFormField(
-      width: 364.h,
-      controller: passwordController,
-      hintText: "***********",
-      textInputAction: TextInputAction.done,
-      textInputType: TextInputType.visiblePassword,
-      alignment: Alignment.bottomCenter,
-      suffix: Container(
-        margin: EdgeInsets.fromLTRB(30.h, 18.v, 14.h, 18.v),
-        child: CustomImageView(
-          imagePath: ImageConstant.imgVectorLightBlueA700,
-          height: 15.v,
-          width: 22.h,
-        ),
-      ),
-      suffixConstraints: BoxConstraints(
-        maxHeight: 54.v,
-      ),
-      obscureText: true,
-    );
-  }
-
-  /// Section Widget
-  Widget _buildSixtyFour(BuildContext context) {
+  Widget _buildSixtyThreeConfirm(BuildContext context) {
     return SizedBox(
       height: 64.v,
       width: 364.h,
       child: Stack(
-        alignment: Alignment.bottomCenter,
+        alignment: Alignment.topLeft,
         children: [
-          _buildConfirmeSuaSenha(context),
-          _buildPassword(context),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              margin: EdgeInsets.only(top: 10.v),
+              padding: EdgeInsets.symmetric(
+                horizontal: 12.h,
+                vertical: 14.v,
+              ),
+              decoration: AppDecoration.outlineLightBlueA.copyWith(
+                borderRadius: BorderRadiusStyle.roundedBorder8,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 6.h,
+                      top: 4.v,
+                    ),
+                    child: Text(
+                      "",
+                      style: theme.textTheme.titleSmall,
+                    ),
+                  ),
+                  CustomImageView(
+                    imagePath: ImageConstant.imgVector,
+                    height: 19.v,
+                    width: 22.h,
+                    margin: EdgeInsets.only(top: 1.v),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.topLeft,
+            child: Container(
+              width: 364.h, // Ajustado para o mesmo valor que o SizedBox
+              margin: EdgeInsets.only(left: 16.h),
+              padding: EdgeInsets.symmetric(
+                horizontal: 8.h,
+                vertical: 1.v,
+              ),
+              decoration: AppDecoration.fillBlue,
+              child: TextFormField(
+                // Adicionando um campo de texto interativo
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: "Confirme sua Senha",
+                  hintStyle: theme.textTheme.bodySmall,
+                  border: InputBorder.none,
+                ),
+                style: theme.textTheme.bodySmall,
+                validator: (value) => Validator.validateConfirmPassword(
+                  _passwordController.text,
+                  value,
+                ),
+                // onEditingComplete: _onSignUpButtonPressed,
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -277,6 +321,11 @@ class CriarUmaContaScreen extends StatelessWidget {
       buttonStyle: CustomButtonStyles.none,
       buttonTextStyle: CustomTextStyles.titleMediumWhiteA700SemiBold18_1,
       alignment: Alignment.centerLeft,
+      onPressed: () {
+        if (_formKey.currentState?.validate() ?? false) {
+          // O formulário é válido, continue com o processo de inscrição
+        }
+      },
     );
   }
 }
