@@ -17,6 +17,7 @@ import 'package:carteira_control/presentation/app_navigation_screen/app_navigati
 
 class AppRoutes {
   static const String criarUmaContaScreen = '/criar_uma_conta_screen';
+  static const String initial = '/';
 
   static const String perfilTrocarNomeScreen = '/perfil_trocar_nome_screen';
 
@@ -62,6 +63,9 @@ class AppRoutes {
   static const String appNavigationScreen = '/app_navigation_screen';
 
   static Map<String, WidgetBuilder> routes = {
+    initial: (context) => OnboardingScreen(),
+    splashScreen: (context) => SplashScreen(),
+    onboardingScreen: (context) => OnboardingScreen(),
     criarUmaContaScreen: (context) => CriarUmaContaScreen(),
     perfilTrocarNomeScreen: (context) => PerfilTrocarNomeScreen(),
     pGinaInicialContainerScreen: (context) => PGinaInicialContainerScreen(),
@@ -71,8 +75,6 @@ class AppRoutes {
     adicionarDespesasTabContainerScreen: (context) =>
         AdicionarDespesasTabContainerScreen(),
     perfilScreen: (context) => PerfilScreen(),
-    splashScreen: (context) => SplashScreen(),
-    onboardingScreen: (context) => OnboardingScreen(),
     loginScreen: (context) => LoginScreen(),
     perfilTrocarSenhaScreen: (context) => PerfilTrocarSenhaScreen(),
     carteiraTabContainerScreen: (context) => CarteiraTabContainerScreen(),

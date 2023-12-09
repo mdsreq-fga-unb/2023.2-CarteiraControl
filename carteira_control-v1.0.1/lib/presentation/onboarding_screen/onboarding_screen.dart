@@ -55,12 +55,12 @@ class OnboardingScreen extends StatelessWidget {
               SizedBox(
                 width: 286.h,
                 child: Text(
-                  "gaste de forma mais inteligente. economize mais.",
-                  maxLines: 3,
+                  "Gerencie Melhor, Economize Mais.",
+                  maxLines: 4,
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
                   style: theme.textTheme.displaySmall!.copyWith(
-                    height: 1.06,
+                    height: 0.9,
                   ),
                 ),
               ),
@@ -77,6 +77,10 @@ class OnboardingScreen extends StatelessWidget {
                     CustomButtonStyles.gradientTealToLightBlueADecoration,
                 buttonTextStyle:
                     CustomTextStyles.titleMediumWhiteA700SemiBold18_1,
+                onPressed: () {
+                  Navigator.pushReplacementNamed(
+                      context, AppRoutes.criarUmaContaScreen);
+                },
               ),
               SizedBox(height: 25.v),
               RichText(
