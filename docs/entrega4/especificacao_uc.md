@@ -23,19 +23,19 @@
 | **Fluxo Básico de Eventos** | 
 | Passo | Descrição |
 | 1 | O usuário acessa a seção de "Explorar Destinos" no aplicativo. |
-| 2 | O sistema utiliza algoritmos para sugerir destinos com base nas preferências e histórico de viagem do usuário. |
-| 3 | O usuário seleciona um destino sugerido pelo sistema |
+| 2 | O sistema sugere, no máximo, 10 novos destinos a serem explorados, destinos estes que devem ser parecidos com os destinos mais bem avaliados pelo usuário. |
+| 3 | O usuário seleciona um destino sugerido pelo sistema. |
 | 4 | O sistema apresenta as seguintes opções: <br> - fotografias, artigos e videos do destino; <br> - Atividades ocorrendo no destino.|
 | 5 | O usuário seleciona fotografias, artigos e vídeos |
-| 6 | O sistema mostra fotografias, artigos e vídeos sobre o destino|
+| 6 | O sistema mostra, no mínimo, 3 fotografias, 1 artigo(s) e 1 vídeo(s) sobre o destino.|
 | 7 | O caso de uso termina |
 | **Fluxos Alternativos** |
-| **FA1 Primeiro Fluxo Alternativo** |No passo 3 do fluxo básico de eventos o usuário não seleciona um dos destino sugeridos, mas faz a pesquisa manualmente. <br> **Passo 3a**: Em vez de selecionar um destino sugerido pelo sistema, o usuário opta por realizar uma busca manual na seção "Explorar Destinos". <br> **Passo 3b**: O sistema permite que o usuário insira um destino específico de sua escolha.<br> **Passo 3c**: Volta para o passo 4 do fluxo básico de eventos |
+| **FA1 Primeiro Fluxo Alternativo** |No passo 3 do fluxo básico de eventos o usuário não seleciona um dos destino sugeridos, mas faz a pesquisa manualmente. <br> **Passo 3a**: Em vez de selecionar um destino sugerido pelo sistema, o usuário opta por realizar uma busca manual na seção "Explorar Destinos". <br> **Passo 3b**: O sistema permite que o usuário insira um destino específico de sua escolha, na barra de pesquisa. <br> **Passo 3c**: Volta para o passo 4 do fluxo básico de eventos |
 | **FA2 Segundo Fluxo Alternativo** |No passo 4 do sistema o usuário consulta as atividades ocorrendo no local. <br> **Passo 4a**: O usuário consulta as atividades do destino ao invés de fotografias, artigos e vídeos.<br> **Passo 4b**: O sistema fornece todas as atividades que estão ocorrendo no destino explorado.<br> **Passo 4c:** O usuário filtra as atividades por preço e avaliações.<br> **Passo 4d**:O sistema fornece informações das atividades que estão ocorrendo no destino que está sendo explorado, satisfazendo os filtros selecionados. <br> **Passo 4e**:Volta para o passo 7 do fluxo básico de eventos|
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| 1 | No passo 2, o usuário nunca ter acessado o aplicativo anteriormente e não possuir histórico. O sistema pede que o usuário preencha suas preferências ou realize a busca manualmente. |
-| 2 | No Passo 2b do fluxo alternativo A1, o usuário insere um destino inexistente, o sitema deve notificar o usuário para inserir destinos existentes|
+| 1 | FE1 - No passo 2, o usuário nunca ter acessado o aplicativo anteriormente e não possuir histórico. Vai para o passo **3a** do FA1. |
+| 2 | FE2 - No Passo **3b** do fluxo alternativo A1, o usuário insere um destino inexistente, o sitema deve notificar o usuário para inserir destinos existentes. Vai para o passo **3b** do FA1 |
 | **Pré-Condições** |
 | Número | Descrição |
 | 1 | O usuário realizou com sucesso o login na plataforma. |
@@ -47,7 +47,7 @@
 | Número | Descrição |
 | 1 | O aplicativo deve ter acesso à internet para buscar informações atualizadas sobre destinos.|
 | 2 |Os algoritmos de sugestão de destinos devem ser periodicamente atualizados para oferecer recomendações relevantes. |
-|
+| 
 
 
 ## CDU-02 Reservar Acomodações
@@ -64,22 +64,21 @@
 | **Fluxo Básico de Eventos** | 
 | Passo | Descrição |
 | 1 | O usuário, após explorar destinos, decide reservar acomodações para um período específico da viagem. |
-| 2 | O sistema filtra opções de hotéis, pousadas e atrações culturais disponíveis para o período determinado. |
-| 3 | O usuário examina as opções disponíveis e seleciona uma pousada de interesse. |
-| 4 | O sistema apresenta fotos e descrições detalhadas do local, bem como os diferentes pacotes de valores oferecidos. |
-| 5 | O usuário escolhe um pacote específico, considerando características como comodidades, refeições incluídas e políticas de cancelamento. |
+| 2 | O sistema filtra todas as opções de hotéis, pousadas e atrações culturais disponíveis para o período determinado. |
+| 3 | O usuário examina as opções disponíveis e seleciona, pelo menos, uma pousada de interesse. |
+| 4 | O sistema apresenta, no mínimo, 3 foto(s) e uma descrição detalhada do local, bem como as opções de pacotes: <br> - pacotes pré-definidos; <br> - pacotes personalizados. |
+| 5 | O usuário escolhe um pacote pré-definido, considerando características como comodidades, refeições incluídas e políticas de cancelamento. |
 | 6 | Após a escolha do pacote, o sistema solicita a confirmação da reserva. |
-| 7 | O usuário confirma a reserva, indicando a quantidade de hóspedes, informações de pagamento e quaisquer preferências adicionais. |
-| 8| O sistema processa a reserva e fornece uma confirmação detalhada, incluindo as datas da estadia, custos associados e informações soe a pousada. |
+| 7 | O usuário confirma a reserva, indicando a quantidade de hóspedes, forma de pagamento e quaisquer preferências adicionais. |
+| 8| O sistema processa a reserva e fornece uma confirmação detalhada, incluindo as datas da estadia, custos associados e informações sobre a pousada. |
 | 9 | Para facilitar a comunicação, o sistema disponibiliza um contato direto com o anfitrião, caso o usuário tenha perguntas ou solicitações específicas antes da chegada. |
 | 10 | O caso de uso termina |
 | **Fluxos Alternativos** |
-| **A1 Primeiro Fluxo Alternativo** | **Passo 4a**: Após o usuário selecionar uma pousada e visualizar os pacotes padrão oferecidos, ele decide personalizar sua reserva. <br> **Passo 4b**: Em vez de escolher um dos pacotes padrão, o usuário opta por personalizar a estadia selecionando serviços adicionais, como serviço de quarto, pacotes especiais de comemoração, ou tours locais.<br> **Passo 4c**: O sistema oferece opções de personalização, apresentando preços adicionais para cada serviço escolhido. <br> **Passo 4d**  O usuário faz suas escolhas personalizadas e adiciona os serviços desejados à reserva.  <br> **Passo 4e** Após a personalização, o sistema recalcula o custo total da reserva com base nas escolhas feitas pelo usuário.      <br> **Passo 4f** O usuário confirma a reserva com os pacotes personalizados e procede ao pagamento. |
+| **A1 Primeiro Fluxo Alternativo** |No passo 5, o usuário não escolhe nenhum dos pacotes pré-definidos, mas faz a solicitação de um pacote personalizado. <br> **Passo 5a**: Após o usuário selecionar uma pousada e visualizar os pacotes padrão oferecidos, ele decide personalizar sua reserva. <br> **Passo 5b**: Em vez de escolher um dos pacotes padrão, o usuário opta por personalizar a estadia selecionando serviços adicionais, como serviço de quarto, pacotes especiais de comemoração, ou tours locais.<br> **Passo 5c**: O sistema oferece opções de personalização, apresentando preços adicionais para cada serviço escolhido. <br> **Passo 5d**  O usuário faz suas escolhas personalizadas e adiciona os serviços desejados à reserva.  <br> **Passo 5e** Após a personalização, o sistema recalcula o custo total da reserva com base nas escolhas feitas pelo usuário.      <br> **Passo 5f** O usuário confirma a reserva com os pacotes personalizados e procede ao pagamento. <br> **Passo 5g** Volta para o passo 6 do fluxo básico de eventos. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| 1 - Reserva Indisponível| FE1 - Se a pousada selecionada não tiver disponibilidade para o período escolhido, o sistema exibe uma mensagem informando que não há vagas. <br>  FE2 - O usuário é incentivado a escolher datas alternativas ou explorar outras opções de acomodação. |
-| 1 - Falha na Confirmação de Reserva| FE1 - Após a confirmação da reserva, se houver uma falha no processamento, o sistema exibe uma mensagem de erro.
- <br>  FE2 - O usuário é orientado a verificar as informações fornecidas, tentar novamente ou entrar em contato com o suporte. |
+| 1 - Reserva Indisponível| FE1 - No passo 3, se a pousada selecionada não tiver disponibilidade para o período escolhido, o sistema exibe uma mensagem informando que não há vagas. Volta para o passo 3 do fluxo básico de eventos. |
+| 2 - Falha na Confirmação de Reserva| FE2 - no passo 7, Após a confirmação da reserva, se houver uma falha no processamento, o sistema exibe uma mensagem de erro "falha na confirmação, tente novamente!". Volta para o passo 6 do fluxo básico de eventos. | 
 | **Pré-Condições** |
 | Número | Descrição |
 | 1 | O usuário realizou com sucesso o login na plataforma. |
@@ -109,20 +108,17 @@
 | **Fluxo Básico de Eventos** | 
 | Passo | Descrição |
 | 1 | O usuário abre o aplicativo no dispositivo |
-| 2 | O sistema exibe a tela de login, solicitando informações de identificação. |
+| 2 | O sistema exibe a tela de login, solicitando nome de usuário ou e-mail e senha. |
 | 3 | O usuário insere seu nome de usuário ou endereço de e-mail e senha |
 | 4 | O sistema valida as credenciais inseridas |
 | 5 | O aplicativo exibe a tela inicial personalizada com base no perfil do usuário. |
 | 6 | O caso de uso termina |
 | **Fluxos Alternativos** |
-| **1. Recuperação de Senha** | **Passo 1**: O usuário esqueceu a senha e seleciona a opção "Esqueceu a senha?". <br> **Passo 4b**: O sistema envia um link de redefinição de senha para o e-mail registrado<br> **Passo 4c**: O usuário acessa o link e redefine a senha. |
+| **1. Recuperação de Senha** | No passo 2, o usuário esqueceu a senha definida anteriormente. <br> **Passo 2a**: O usuário esqueceu a senha e seleciona a opção "Esqueceu a senha?". <br> **Passo 2b**: O sistema envia um link de redefinição de senha para o e-mail registrado<br> **Passo 2c**: O usuário acessa o link e redefine a senha. |
 | **Fluxos de Exceção** |
 | Número | Descrição |
-| 1 - Credenciais Inválidas | FE1 - Se as credenciais inseridas (nome de usuário ou senha) não coincidirem com os registros do sistema, o sistema exibe uma mensagem de erro. <br>  FE2 - O usuário é incentivado a escolher datas alternativas ou explorar outras opções de acomodação. |
-| 1 - Falha na Confirmação de Reserva| FE1 - Após a confirmação da reserva, se houver uma falha no processamento, o sistema exibe uma mensagem de erro.
- <br>  FE2 - O usuário é convidado a revisar as informações e tentar novamente ou optar por recuperar a senha. |
- | 2 - Conta Bloqueada | FE1 - Se houver várias tentativas de login com falha, o sistema bloqueia temporariamente a conta por motivos de segurança.
- <br>  FE2 - O usuário é notificado sobre o bloqueio e orientado a aguardar um período antes de tentar novamente ou seguir o processo de recuperação de senha. |
+| 1 - Credenciais Inválidas | FE1 - No passo 4, se as credenciais inseridas (nome de usuário ou senha) não coincidirem com os registros do sistema, o sistema exibe uma mensagem de erro. Volta para o passo 3 do fluxo básico de eventos. |
+| 2 - Conta Bloqueada | FE2 - No passo 3, Se houver várias tentativas de login com falha, o sistema bloqueia temporariamente a conta por motivos de segurança e exibe a mensagem "conta bloqueada temporariamente, tente novamente em alguns instantes". Volta para o passo 2 do fluxo básico de eventos.|
 | **Pré-Condições** |
 | Número | Descrição |
 | 1 | O usuário possui uma conta registrada no aplicativo. |
@@ -142,3 +138,4 @@
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 | 1.0| Jefferson e Tiago |  Especificação dos casos de uso do VoyageX | 06/12 |
+| 1.1| João e Tiago | Correção da Especificação dos casos de uso do VoyageX | 10/12 |
