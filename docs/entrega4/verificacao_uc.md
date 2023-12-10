@@ -3,7 +3,16 @@
 ## Introdução
 <p align="justify"> Durante a missão 4, nós da facção Gunther's realizamos a verificação e validação da especificação dos casos de uso executada pela facção Berserk. Abaixo se encontra a tabela com os critérios de avaliação estabelecidos pelos Gunther's e a avaliação se os elementos dos casos de uso estão de acordo. </p>
 
-### Verificação dos casos de uso
+### Verificação do Diagrama de casos de uso
+|Item | Avaliação | Observação|
+|-----|-----------|-----------|
+| Todos os atores foram apresentados? |✅| A especificação foi feita utilizando o Miro, que pode não ser a melhor escolha. Seria interessante a estruturação dos Casos de uso de maneira textual ou tabular.|
+|Os UC foram identificados em Elipses? |✅||
+|Há relacionamentos? Extensão e inclusão? |✅||
+|Os UC foram declarados corretamente? Apartir de Requisitos funcionais? |❌| Não há verbo no infinitivo + objeto, em alguns como UC: Login|
+
+
+### Verificação da especificação dos casos de uso
 
 <center>
 
@@ -29,4 +38,5 @@
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 | 1.1| João e Tiago | Verificação especificação UC Berserk | 10/12 |
+| 1.2| Jefferson | Verificação do diagrama UC Berserk | 10/12 |
 
