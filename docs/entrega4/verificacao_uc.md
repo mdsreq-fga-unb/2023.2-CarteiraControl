@@ -23,8 +23,10 @@
 
 </center>
 
+
 ## Histórico de versão
 
 | Versão  | Autor| Descrição | Data |
 | :---: | :----: | :-------: | :---: |
 | 1.1| João e Tiago | Verificação especificação UC Berserk | 10/12 |
+
