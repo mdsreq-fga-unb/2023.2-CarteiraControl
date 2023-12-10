@@ -1,0 +1,4550 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../verificacao_validacao/">
+      
+      
+        <link rel="next" href="../entrega3/bdd-tanas/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>Casos de uso - CarteiraControl</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introducao" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="CarteiraControl" class="md-header__button md-logo" aria-label="CarteiraControl" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CarteiraControl
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Casos de uso
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../historia/" class="md-tabs__link">
+        
+  
+    
+  
+  Gunther's
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../VisaoProduto/" class="md-tabs__link">
+          
+  
+  Visão do Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../backlog/" class="md-tabs__link">
+          
+  
+  Backlog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../entrega3/bdd-tanas/" class="md-tabs__link">
+          
+  
+  PBB e BDD
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../entrega4/especificacao_uc/" class="md-tabs__link">
+          
+  
+  Casos de Uso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Licoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../itera%C3%A7%C3%A3o/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CarteiraControl" class="md-nav__button md-logo" aria-label="CarteiraControl" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CarteiraControl
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../historia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gunther's
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Visão do Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Visão do Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProduto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProjeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProcessoDesenvolvimento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog SAFe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verificacao_validacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificação e Validação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Casos de uso
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Casos de uso
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos funcionais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      casos de Uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="casos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casos-de-uso-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso Identificados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especificacao-dos-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Especificação dos Casos de Uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-01-gerenciar-cadastro-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-01 Gerenciar cadastro de Usuário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-02-gerenciar-login-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-02 Gerenciar login de Usuário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-03-gerenciar-cadastro-de-conta-bancaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-03 Gerenciar Cadastro de Conta Bancária
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-04-gerenciar-ganhos" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-04 Gerenciar Ganhos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-05-manter-o-usuario-informado" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-05 Manter o Usuário Informado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-06-gerenciar-acesso-de-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-06 Gerenciar Acesso de Perfil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-07-gerenciar-alteracao-de-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-07 Gerenciar Alteração de Perfil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-08-gerenciar-delecao-de-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-08 Gerenciar Deleção de Perfil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-09-gerenciar-plano-de-gastos-para-economia" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-09 Gerenciar Plano de Gastos para Economia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-10-gerenciar-transacoes-financeiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-10 Gerenciar Transações Financeiras
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-11-definir-estatisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-11 Definir Estatísticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-12-gerenciar-alteracao-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-12 Gerenciar Alteração de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-13-gerenciar-registros-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-13 Gerenciar Registros de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-14-gerenciar-delecao-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-14 Gerenciar Deleção de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-15-gerenciar-categorizacao-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-15 Gerenciar Categorização de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-16-gerenciar-pesquisa-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-16 Gerenciar Pesquisa de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-17-gerenciar-filtro-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-17 Gerenciar Filtro de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterio-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critério de priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critério de priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valor de negócio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Valor de negócio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-de-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização de Backlog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Priorização de Backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao-de-preparado-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definição de Preparado (DOR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao-de-pronto-dod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definição de Pronto (DOD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PBB e BDD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            PBB e BDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/bdd-tanas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BDD Tanás
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PBB HealthNet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USM ComunEventos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Casos de Uso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega4/especificacao_uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação UC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega4/verificacao_uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificaçao Especificação UC - Berserk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Licoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../itera%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos funcionais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      casos de Uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="casos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casos-de-uso-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso Identificados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especificacao-dos-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Especificação dos Casos de Uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-01-gerenciar-cadastro-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-01 Gerenciar cadastro de Usuário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-02-gerenciar-login-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-02 Gerenciar login de Usuário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-03-gerenciar-cadastro-de-conta-bancaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-03 Gerenciar Cadastro de Conta Bancária
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-04-gerenciar-ganhos" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-04 Gerenciar Ganhos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-05-manter-o-usuario-informado" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-05 Manter o Usuário Informado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-06-gerenciar-acesso-de-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-06 Gerenciar Acesso de Perfil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-07-gerenciar-alteracao-de-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-07 Gerenciar Alteração de Perfil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-08-gerenciar-delecao-de-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-08 Gerenciar Deleção de Perfil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-09-gerenciar-plano-de-gastos-para-economia" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-09 Gerenciar Plano de Gastos para Economia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-10-gerenciar-transacoes-financeiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-10 Gerenciar Transações Financeiras
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-11-definir-estatisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-11 Definir Estatísticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-12-gerenciar-alteracao-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-12 Gerenciar Alteração de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-13-gerenciar-registros-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-13 Gerenciar Registros de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-14-gerenciar-delecao-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-14 Gerenciar Deleção de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-15-gerenciar-categorizacao-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-15 Gerenciar Categorização de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-16-gerenciar-pesquisa-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-16 Gerenciar Pesquisa de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdu-17-gerenciar-filtro-de-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDU-17 Gerenciar Filtro de Despesas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterio-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critério de priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critério de priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valor de negócio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Valor de negócio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-de-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização de Backlog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Priorização de Backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao-de-preparado-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definição de Preparado (DOR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao-de-pronto-dod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definição de Pronto (DOD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="introducao">Introdução</h1>
+<p>O Processo Unificado emprega casos de uso como uma maneira de declarar e especificar requisitos. Nesse contexto, é importante destacar que, antes de detalhar os casos de uso, foi essencial realizar a elicitação dos requisitos que seriam posteriormente declarados. Esse processo inicial de levantamento de requisitos desempenha um papel fundamental na construção de uma base sólida para a especificação detalhada dos casos de uso no decorrer do desenvolvimento.</p>
+<h2 id="requisitos-funcionais">Requisitos funcionais</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Declaração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF1</td>
+<td>Cadastrar usuário</td>
+</tr>
+<tr>
+<td>RF2</td>
+<td>Logar usuário</td>
+</tr>
+<tr>
+<td>RF3</td>
+<td>Cadastrar até 3 contas bancárias</td>
+</tr>
+<tr>
+<td>RF4</td>
+<td>Alterar despesas</td>
+</tr>
+<tr>
+<td>RF5</td>
+<td>Deletar despesas</td>
+</tr>
+<tr>
+<td>RF6</td>
+<td>Categorizar despesas</td>
+</tr>
+<tr>
+<td>RF7</td>
+<td>Filtrar os gastos por categoria de gastos</td>
+</tr>
+<tr>
+<td>RF8</td>
+<td>Pesquisar gastos</td>
+</tr>
+<tr>
+<td>RF9</td>
+<td>Registrar despesas mensais</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Acompanhar progresso em direção às metas de economia</td>
+</tr>
+<tr>
+<td>RF11</td>
+<td>Notificar quando estiver a 10% do teto de gastos</td>
+</tr>
+<tr>
+<td>RF12</td>
+<td>Definir teto de gastos para cada categoria de despesas</td>
+</tr>
+<tr>
+<td>RF13</td>
+<td>Definir objetivos de economia</td>
+</tr>
+<tr>
+<td>RF14</td>
+<td>Registrar os ganhos mensais</td>
+</tr>
+<tr>
+<td>RF15</td>
+<td>Registrar transferências</td>
+</tr>
+<tr>
+<td>RF16</td>
+<td>Gerar gráfico de gastos no final do mês</td>
+</tr>
+<tr>
+<td>RF17</td>
+<td>Criar gráfico sobre as transações financeiras</td>
+</tr>
+<tr>
+<td>RF18</td>
+<td>Deletar conta</td>
+</tr>
+<tr>
+<td>RF19</td>
+<td>Acessar perfil do usuário</td>
+</tr>
+<tr>
+<td>RF20</td>
+<td>Alterar conta</td>
+</tr>
+<tr>
+<td>RF21</td>
+<td>Destacar categorias de gastos mais frequentes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="casos-de-uso">casos de Uso</h2>
+<h3 id="atores">Atores</h3>
+<p align="justify">&emsp;&emsp; Foi identificado 1 ator dos fluxos de eventos do nosso sistema, sendo ele: </p>
+
+<ul>
+<li><b>Usuário:</b> refere-se ao utilizado do app carteira control, sendo este o que usa e se beneficia do app.</li>
+</ul>
+<h3 id="casos-de-uso-identificados">Casos de Uso Identificados</h3>
+<p align="justify">&emsp;&emsp; Com base nos requisitos elicitados, foram identificados 8 casos de uso, como apresentado na Tabela abaixo: </p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Nome do Casos de Uso</th>
+<th>Descrição</th>
+<th>Requisitos Envolvidos</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CDU-01</td>
+<td>Gerenciar cadastro de Usuário</td>
+<td>O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias</td>
+<td>RF1  Cadastrar usuário</td>
+<td>Usuário cadastrado</td>
+</tr>
+<tr>
+<td>CDU-02</td>
+<td>Gerenciar login de Usuário</td>
+<td>O usuário pode fazer login no sistema, fornecendo suas credenciais</td>
+<td>RF2    Logar usuário</td>
+<td>Usuário autenticado</td>
+</tr>
+<tr>
+<td>CDU-03</td>
+<td>Gerenciar cadastro de conta bancária</td>
+<td>O usuário pode cadastrar até três contas bancárias associadas ao seu perfil</td>
+<td>RF3 Cadastrar até 3 contas bancárias</td>
+<td>Conta bancária cadastrada</td>
+</tr>
+<tr>
+<td>CDU-04</td>
+<td>Gerenciar Ganhos</td>
+<td>Relata os ganhos financeiros do usuário</td>
+<td>RF14   Registrar os ganhos mensais</td>
+<td>Gastos Apresentados</td>
+</tr>
+<tr>
+<td>CDU-05</td>
+<td>Manter o usuário informado</td>
+<td>O usuário tem informações de como estão suas economias</td>
+<td>RF10   Acompanhar progresso em direção às metas de economia, RF11  Notificar quando estiver a 10% do teto de gastos RF21   Destacar categorias de gastos mais frequentes</td>
+<td>Usuário informado sobre suas finanças</td>
+</tr>
+<tr>
+<td>CDU-06</td>
+<td>Gerenciar acesso de perfil</td>
+<td>O usuário pode acessar seu perfil</td>
+<td>RF19  Acessar perfil do usuário</td>
+<td>Conta do usuário</td>
+</tr>
+<tr>
+<td>CDU-07</td>
+<td>Gerenciar alteração de perfil</td>
+<td>O usuário pode alterar seu perfil</td>
+<td>RF20 Alterar conta</td>
+<td>Conta do usuário</td>
+</tr>
+<tr>
+<td>CDU-08</td>
+<td>Gerenciar deleção de perfil</td>
+<td>O usuário pode deletar seu perfil</td>
+<td>RF18 Deletar conta</td>
+<td>Conta do usuário</td>
+</tr>
+<tr>
+<td>CDU-09</td>
+<td>Gerenciar plano de gastos para economia</td>
+<td>O  usuário define um plano de gastos com objetivos de economia</td>
+<td>RF12   Definir teto de gastos para cada categoria de despesas, RF13    Definir objetivos de economia</td>
+<td>Plano de gastos</td>
+</tr>
+<tr>
+<td>CDU-10</td>
+<td>Gerenciar Transações Financeiras</td>
+<td>O usuário tem controle de suas transações financeiras</td>
+<td>RF15   Registrar transferências</td>
+<td>Gerenciamentos de Transações financeiras</td>
+</tr>
+<tr>
+<td>CDU-11</td>
+<td>Definir Estatísticas</td>
+<td>O usuário visualiza gráficos estatísticos de suas economias</td>
+<td>RF16 Gerar gráfico de gastos no final do mês, RF17   Criar gráfico sobre as transações financeiras</td>
+<td>Gerar Estatísticas</td>
+</tr>
+<tr>
+<td>CDU-12</td>
+<td>Gerenciar alteração Despesas</td>
+<td>O usuário pode alterar suas depesas</td>
+<td>RF4   Alterar despesas</td>
+<td>Despesas Apresentadas</td>
+</tr>
+<tr>
+<td>CDU-13</td>
+<td>Gerenciar registros de despesas</td>
+<td>O usuário pode alterar registrar suas despesas</td>
+<td>RF9 Registrar despesas mensais</td>
+<td>Despesas Apresentadas</td>
+</tr>
+<tr>
+<td>CDU-14</td>
+<td>Gerenciar deleção de despesas</td>
+<td>O usuário pode  deletar suas despesas</td>
+<td>RF5   Deletar despesas</td>
+<td>Despesas Apresentadas</td>
+</tr>
+<tr>
+<td>CDU-15</td>
+<td>Gerenciar categorização de despesas</td>
+<td>O usuário pode  categorizar suas despesas</td>
+<td>RF6    Categorizar despesas</td>
+<td>Despesas Apresentadas</td>
+</tr>
+<tr>
+<td>CDU-16</td>
+<td>Gerenciar pesquisa de despesas</td>
+<td>O usuário pode  pesquisar suas despesas</td>
+<td>RF8    Pesquisar gastos</td>
+<td>Despesas Apresentadas</td>
+</tr>
+<tr>
+<td>CDU-17</td>
+<td>Gerenciar filtro de despesas</td>
+<td>O usuário pode filtrar suas despesas</td>
+<td>RF7    Filtrar os gastos por categoria de gastos</td>
+<td>Despesas Apresentadas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="especificacao-dos-casos-de-uso">Especificação dos Casos de Uso</h2>
+<h2 id="cdu-01-gerenciar-cadastro-de-usuario">CDU-01 Gerenciar cadastro de Usuário</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-01</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Gerenciar cadastro de Usuário</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>20/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo e João Lucas</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que um usuário realize o cadastro no sistema.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário escolhe a opção de cadastrar um novo usuário (RF1).</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O sistema solicita as informações necessárias para o cadastro do usuário.</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O usuário fornece os dados necessários.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O sistema valida as informações e cadastra o usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Cadastro de Usuário</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td>Se as informações fornecidas pelo usuário no cadastro forem inválidas, o sistema exibe uma mensagem de erro.</td>
+</tr>
+<tr>
+<td><strong>A2 Segundo Fluxo Alternativo</strong></td>
+<td>Se o usuário já possuir uma conta, ele pode optar por fazer login em vez de cadastrar um novo usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O sistema está operacional.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Não há restrições específicas para o cadastro de novos usuários.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança das informações do usuário durante o cadastro.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+</tr>
+<tr>
+<td>Nenhuma informação adicional fornecida.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-02-gerenciar-login-de-usuario">CDU-02 Gerenciar login de Usuário</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-02</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Gerenciar login de Usuário</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>20/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo e João Lucas</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que um usuário faça login no sistema.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário escolhe a opção de fazer login (RF2).</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O sistema solicita as credenciais do usuário.</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O usuário fornece as credenciais.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O sistema valida as credenciais.</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema autentica o usuário e o direciona para a área logada.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Login de Usuário</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td>A1: Se o usuário não tiver uma conta no sistema: - O sistema não autentica o usuário. - O sistema exibe uma mensagem informando que o usuário não possui uma conta no sistema. - O usuário pode escolher criar uma nova conta.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha na autenticação durante o login, o sistema notifica o usuário e oferece opções para recuperação de senha.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O sistema está operacional.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança das informações do usuário durante o login.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-03-gerenciar-cadastro-de-conta-bancaria">CDU-03 Gerenciar Cadastro de Conta Bancária</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-03</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Gerenciar Cadastro de Conta Bancária</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>20/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo e João Lucas</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que um usuário cadastre até três contas bancárias associadas ao seu perfil.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário escolhe a opção de cadastrar conta bancária (RF3).</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O sistema solicita as informações da conta bancária.</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O usuário fornece os dados necessários.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O sistema valida as informações e associa a conta bancária ao usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Cadastro de Conta Bancária</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td><strong>A1.1 Um Subfluxo Alternativo</strong></td>
+</tr>
+<tr>
+<td><strong>A2 Segundo Fluxo Alternativo</strong></td>
+<td>- A2: Se o usuário tentar cadastrar uma conta bancária de um banco que não é suportado pelo sistema: - O sistema não permite o cadastro da conta bancária. - O sistema exibe uma mensagem informando que o banco não é suportado pelo sistema.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha na validação das informações do cadastro, o sistema notifica o usuário sobre os campos inválidos.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O sistema está operacional.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>As informações do cadastro e as contas bancárias associadas foram registradas no sistema.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança das informações do usuário durante o cadastro.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-04-gerenciar-ganhos">CDU-04 Gerenciar Ganhos</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-04</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Gerenciar Ganhos</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>13/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário registre seus ganhos financeiros, fornecendo uma visão detalhada de seus ingressos mensais.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a área de gerenciamento de ganhos.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O usuário escolhe a opção de registrar ganhos mensais (RF14).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe um formulário para o usuário inserir os detalhes do ganho.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário fornece as informações necessárias.</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema valida as informações e registra os ganhos.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Registro de Ganhos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td>- Se o usuário decidir não registrar ganhos, ele pode retornar à página principal.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha na validação das informações do ganho, o sistema notifica o usuário e destaca os campos inválidos.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Não há restrições específicas para o registro de ganhos.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>Os ganhos são registrados no sistema e associados ao perfil do usuário.</td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>As estatísticas de ganhos são atualizadas para refletir as alterações.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve fornecer uma interface intuitiva para facilitar o registro de ganhos.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Os ganhos registrados serão utilizados para análises estatísticas nas funcionalidades futuras.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-05-manter-o-usuario-informado">CDU-05 Manter o Usuário Informado</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-05</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Manter o Usuário Informado</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>13/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário acompanhe o progresso em direção às metas de economia, receba notificações quando estiver a 10% do teto de gastos e tenha insights sobre as categorias de gastos mais frequentes.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a área de informações financeiras.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O sistema exibe o acompanhamento do progresso em direção às metas de economia (RF10).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O usuário visualiza notificações sobre o teto de gastos quando estiver a 10% do limite (RF11).</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O sistema destaca as categorias de gastos mais frequentes (RF21).</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Acompanhar Progresso</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td>- Se o usuário não tiver definido metas de economia, o sistema sugere a definição de metas antes de exibir o progresso.</td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Notificações de Gastos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A2 Segundo Fluxo Alternativo</strong></td>
+<td>- Se o usuário optar por desativar as notificações de teto de gastos, o sistema atualiza as configurações.</td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Destacar Categorias de Gastos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A3 Terceiro Fluxo Alternativo</strong></td>
+<td>- Se não houver dados suficientes para identificar as categorias de gastos mais frequentes, o sistema informa ao usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver uma falha na exibição do progresso em direção às metas, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>FE2 - Se não for possível enviar notificações, o sistema registra a ocorrência e sugere que o usuário verifique suas configurações de notificação.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Metas de economia foram definidas pelo usuário.</td>
+</tr>
+<tr>
+<td>5.3</td>
+<td>O usuário concordou em receber notificações.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>O usuário tem informações atualizadas sobre o progresso em direção às metas de economia.</td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>Notificações são enviadas quando o usuário está a 10% do teto de gastos.</td>
+</tr>
+<tr>
+<td>6.3</td>
+<td>As categorias de gastos mais frequentes são destacadas para análise.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Aprimorar Análise de Categorias - O sistema permitirá que o usuário aprofunde a análise das categorias de gastos para obter</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-06-gerenciar-acesso-de-perfil">CDU-06 Gerenciar Acesso de Perfil</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário acesse as informações do seu perfil na plataforma.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O usuário acessa a área de gerenciamento de conta.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>O usuário escolhe a opção de acessar seu perfil (RF19).</td>
+</tr>
+<tr>
+<td>3</td>
+<td>O sistema exibe as informações do perfil do usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Não há</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>O usuário possui um perfil ativo no sistema.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>O perfil do usuário é acessível e exibido corretamente.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O sistema deve garantir a segurança durante o acesso às informações do perfil do usuário.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-07-gerenciar-alteracao-de-perfil">CDU-07 Gerenciar Alteração de Perfil</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário realize alterações em seu perfil na plataforma.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O usuário acessa a área de gerenciamento de conta.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>O usuário escolhe a opção de alterar sua conta (RF20).</td>
+</tr>
+<tr>
+<td>3</td>
+<td>O sistema permite que o usuário faça as alterações necessárias de senha e de nome.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Se o usuário optar por não realizar alterações, ele pode retornar à página principal.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>As alterações na conta do usuário são refletidas no sistema.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O sistema deve garantir a segurança durante a alteração de informações da conta do usuário.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-08-gerenciar-delecao-de-perfil">CDU-08 Gerenciar Deleção de Perfil</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário exclua permanentemente seu perfil na plataforma.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O usuário acessa a área de gerenciamento de conta.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>O usuário escolhe a opção de deletar sua conta (RF18).</td>
+</tr>
+<tr>
+<td>3</td>
+<td>O sistema solicita confirmação do usuário.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>O usuário confirma a exclusão da conta.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Se a confirmação da exclusão não for recebida, o sistema mantém a conta do usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Se houver falha no acesso ao perfil, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>O usuário possui um perfil ativo no sistema.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>A conta do usuário é deletada do sistema, se confirmada.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O sistema deve garantir a segurança durante a deleção da conta do usuário.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-09-gerenciar-plano-de-gastos-para-economia">CDU-09 Gerenciar Plano de Gastos para Economia</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-09</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Gerenciar Plano de Gastos para Economia</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>13/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>1. Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário tenha controle de suas transações financeiras, incluindo o registro de transferências.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a área de gerenciamento de transações financeiras.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O usuário escolhe a opção de registrar transferências (RF15).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe um formulário para o usuário inserir os detalhes da transferência.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário fornece as informações necessárias.</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema valida as informações e registra a transferência.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Registro de Transferências</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>A1 Primeiro Fluxo Alternativo</td>
+<td>Se o usuário decidir não registrar transferências, ele pode retornar à página principal.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha na validação das informações da transferência, o sistema notifica o usuário e destaca os campos inválidos.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Não há restrições específicas para o registro de transferências.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>A transferência é registrada no sistema e associada ao perfil do usuário.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança durante o registro e armazenamento das informações de transferências financeiras.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-10-gerenciar-transacoes-financeiras">CDU-10 Gerenciar Transações Financeiras</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Gerenciar Transações Financeiras</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>13/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Caso de Uso: Registro de Transferências Financeiras</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Breve Descrição</strong></td>
+<td>Este caso de uso permite que o usuário tenha controle de suas transações financeiras, incluindo o registro de transferências.</td>
+</tr>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a área de gerenciamento de transações financeiras.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O usuário escolhe a opção de registrar transferências (RF15).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe um formulário para o usuário inserir os detalhes da transferência.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário fornece as informações necessárias.</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema valida as informações e registra a transferência.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Registro de Transferências</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>A1 Primeiro Fluxo Alternativo</td>
+<td>Se o usuário decidir não registrar transferências, ele pode retornar à página principal.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha na validação das informações da transferência, o sistema notifica o usuário e destaca os campos inválidos.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Não há restrições específicas para o registro de transferências.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>A transferência é registrada no sistema e associada ao perfil do usuário.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança durante o registro e armazenamento das informações de transferências financeiras.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-11-definir-estatisticas">CDU-11 Definir Estatísticas</h2>
+<table>
+<thead>
+<tr>
+<th>Número do Caso de Uso</th>
+<th>CDU-11</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome do Caso de Uso</strong></td>
+<td>Definir Estatísticas</td>
+</tr>
+<tr>
+<td><strong>Versão</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Data de Criação</strong></td>
+<td>13/11/2023</td>
+</tr>
+<tr>
+<td><strong>Responsável</strong></td>
+<td>Juan Pablo</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário visualize gráficos estatísticos de suas economias, incluindo a geração de gráfico de gastos no final do mês e a criação de gráfico sobre as transações financeiras.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a área de visualização de estatísticas.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>O usuário escolhe a opção de gerar gráfico de gastos no final do mês (RF16).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe o gráfico com a distribuição de gastos ao longo do mês.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário escolhe a opção de criar gráfico sobre as transações financeiras (RF17).</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema permite que o usuário selecione parâmetros para o gráfico de transações financeiras.</td>
+</tr>
+<tr>
+<td>2.6</td>
+<td>O sistema gera e exibe o gráfico com base nos parâmetros selecionados.</td>
+</tr>
+<tr>
+<td><strong>Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Gerar Gráfico de Gastos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td>- Se o usuário decidir não gerar o gráfico de gastos, ele pode retornar à página principal.</td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Criar Gráfico sobre Transações Financeiras</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A2 Segundo Fluxo Alternativo</strong></td>
+<td>- Se o usuário não selecionar parâmetros para o gráfico de transações financeiras, o sistema exibe um gráfico padrão.</td>
+</tr>
+<tr>
+<td><strong>Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha na geração ou exibição dos gráficos, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Dados suficientes estão disponíveis para a geração dos gráficos.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>Os gráficos são exibidos para o usuário com base nas escolhas feitas.</td>
+</tr>
+<tr>
+<td><strong>Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a precisão e clareza na representação gráfica das estatísticas.</td>
+</tr>
+<tr>
+<td><strong>Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Os gráficos gerados são destinados apenas para fins informativos e análise do usuário.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-12-gerenciar-alteracao-de-despesas">CDU-12 Gerenciar Alteração de Despesas</h2>
+<ul>
+<li><strong>Número do Caso de Uso:</strong> CDU-12</li>
+<li><strong>Nome do Caso de Uso:</strong> Gerenciar Alteração de Despesas</li>
+<li><strong>Versão:</strong> 1.0</li>
+<li><strong>Data de Criação:</strong> 20/11/2023</li>
+<li><strong>Responsável:</strong> Juan Pablo e João Lucas</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>1. Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário realize alterações em suas despesas já registradas.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a seção de gerenciamento de despesas.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Seleciona a opção de alterar despesas (RF4).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe a lista de despesas disponíveis para edição.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário seleciona a despesa desejada e realiza as alterações necessárias.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Alteração de Despesas</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td>- Se as informações fornecidas pelo usuário para a alteração forem inválidas, o sistema exibe uma mensagem de erro.</td>
+</tr>
+<tr>
+<td><strong>A2 Segundo Fluxo Alternativo</strong></td>
+<td>- Se o usuário decidir não realizar alterações, ele pode retornar à página principal.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Existem despesas registradas.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>As alterações nas despesas são refletidas no sistema.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança durante a alteração das informações de despesas.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-13-gerenciar-registros-de-despesas">CDU-13 Gerenciar Registros de Despesas</h2>
+<ul>
+<li><strong>Número do Caso de Uso:</strong> CDU-13</li>
+<li><strong>Nome do Caso de Uso:</strong> Gerenciar Registros de Despesas</li>
+<li><strong>Versão:</strong> 1.0</li>
+<li><strong>Data de Criação:</strong> 20/11/2023</li>
+<li><strong>Responsável:</strong> Juan Pablo e João Lucas</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>1. Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário registre suas despesas mensais.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a seção de registro de despesas mensais.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Seleciona a opção de registrar despesas mensais (RF9).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe um formulário para o usuário preencher as informações referentes às despesas do mês.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Área de Funcionalidade: Registro de Despesas Mensais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A1 Primeiro Fluxo Alternativo</strong></td>
+<td>- Se o usuário decidir não registrar despesas mensais, ele pode cancelar o processo.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha no acesso ao formulário de registro, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>As despesas mensais são registradas no sistema.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança durante o registro das despesas mensais.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-14-gerenciar-delecao-de-despesas">CDU-14 Gerenciar Deleção de Despesas</h2>
+<ul>
+<li><strong>Número do Caso de Uso:</strong> CDU-14</li>
+<li><strong>Nome do Caso de Uso:</strong> Gerenciar Deleção de Despesas</li>
+<li><strong>Versão:</strong> 1.0</li>
+<li><strong>Data de Criação:</strong> 20/11/2023</li>
+<li><strong>Responsável:</strong> Juan Pablo e João Lucas</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>1. Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário exclua despesas previamente registradas.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a seção de gerenciamento de despesas.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Seleciona a opção de deletar despesas (RF5).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe a lista de despesas disponíveis para exclusão.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário seleciona a despesa que deseja excluir.</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema solicita confirmação do usuário.</td>
+</tr>
+<tr>
+<td>2.6</td>
+<td>O usuário confirma a exclusão da despesa.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Se a confirmação da exclusão não for recebida, o sistema mantém a despesa.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Existem despesas registradas.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>A despesa é removida do sistema, se confirmada.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança durante a exclusão das despesas.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-15-gerenciar-categorizacao-de-despesas">CDU-15 Gerenciar Categorização de Despesas</h2>
+<ul>
+<li><strong>Número do Caso de Uso:</strong> CDU-15</li>
+<li><strong>Nome do Caso de Uso:</strong> Gerenciar Categorização de Despesas</li>
+<li><strong>Versão:</strong> 1.0</li>
+<li><strong>Data de Criação:</strong> 20/11/2023</li>
+<li><strong>Responsável:</strong> Juan Pablo e João Lucas</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>1. Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário atribua categorias às suas despesas para melhor organização.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a seção de gerenciamento de despesas.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Seleciona a opção de categorizar despesas (RF6).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe a lista de despesas disponíveis para categorização.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário seleciona a despesa e escolhe a categoria desejada.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Se o usuário decidir não categorizar uma despesa, ele pode retornar à página principal.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha no acesso às despesas, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Existem despesas registradas.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>A categoria é atribuída à despesa no sistema.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança durante a categorização das despesas.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-16-gerenciar-pesquisa-de-despesas">CDU-16 Gerenciar Pesquisa de Despesas</h2>
+<ul>
+<li><strong>Número do Caso de Uso:</strong> CDU-16</li>
+<li><strong>Nome do Caso de Uso:</strong> Gerenciar Pesquisa de Despesas</li>
+<li><strong>Versão:</strong> 1.0</li>
+<li><strong>Data de Criação:</strong> 20/11/2023</li>
+<li><strong>Responsável:</strong> Juan Pablo e João Lucas</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>1. Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário pesquise suas despesas com base em termos específicos.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a seção de gerenciamento de despesas.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Seleciona a opção de pesquisar gastos (RF8).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe uma barra de pesquisa.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário insere os termos de pesquisa desejados.</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema exibe as despesas que correspondem aos termos de pesquisa.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Se o usuário decidir não realizar uma pesquisa, ele pode continuar visualizando a lista padrão de despesas.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha no acesso às despesas ou na execução da pesquisa, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Existem despesas registradas.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>O sistema exibe as despesas de acordo com os resultados da pesquisa.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança das informações do usuário durante a pesquisa de despesas.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cdu-17-gerenciar-filtro-de-despesas">CDU-17 Gerenciar Filtro de Despesas</h2>
+<ul>
+<li><strong>Número do Caso de Uso:</strong> CDU-17</li>
+<li><strong>Nome do Caso de Uso:</strong> Gerenciar Filtro de Despesas</li>
+<li><strong>Versão:</strong> 1.0</li>
+<li><strong>Data de Criação:</strong> 20/11/2023</li>
+<li><strong>Responsável:</strong> Juan Pablo e João Lucas</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>1. Breve Descrição</strong></th>
+<th>Este caso de uso permite que o usuário filtre suas despesas com base em categorias específicas.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. Fluxo Básico de Eventos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Passo</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>O usuário acessa a seção de gerenciamento de despesas.</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Seleciona a opção de filtrar os gastos por categoria de gastos (RF7).</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>O sistema exibe uma lista de categorias disponíveis.</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>O usuário escolhe a categoria desejada.</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>O sistema exibe as despesas associadas à categoria selecionada.</td>
+</tr>
+<tr>
+<td><strong>3. Fluxos Alternativos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Se o usuário decidir não aplicar um filtro, a lista padrão de despesas é exibida.</td>
+</tr>
+<tr>
+<td><strong>4. Fluxos de Exceção</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>FE1 - Se houver falha no acesso às categorias ou despesas, o sistema notifica o usuário e oferece suporte técnico.</td>
+</tr>
+<tr>
+<td><strong>5. Pré-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>O usuário está autenticado no sistema.</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Existem despesas categorizadas.</td>
+</tr>
+<tr>
+<td><strong>6. Pós-Condições</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>O sistema exibe as despesas de acordo com o filtro aplicado.</td>
+</tr>
+<tr>
+<td><strong>7. Pontos de Extensão</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>Não há pontos de extensão definidos para este caso de uso.</td>
+</tr>
+<tr>
+<td><strong>8. Requisitos Especiais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Número</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>O sistema deve garantir a segurança das informações do usuário durante o uso do filtro de despesas.</td>
+</tr>
+<tr>
+<td><strong>9. Informações Adicionais</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>Nenhuma informação adicional fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="criterio-de-priorizacao">Critério de priorização</h2>
+<p>Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5, sendo 0 o valor mínimo e 5 o valor máximo. O caso de uso será priorizado se seu MVP for maior ou igual 6 (MVP &gt;= 6).</p>
+<div class="highlight"><pre><span></span><code>MVP = Valor de negócio + Viabilidade - Complexidade
+</code></pre></div>
+<ul>
+<li>Valor de negócio: O quanto o caso de uso agrega valor ao produto, se um caso de uso tem valor de negócio 5 significa que ele é um ponto vital do sistema, não podendo ficar fora do MVP. Se um caso de uso tem valor de negócio 1 , significa que não agrega valor algum ao sistema, não pertencendo ao MVP. <b>É validado pelo cliente</b>.</li>
+<li>Viabilidade: Se refere a viabilidade de desenvolvimento do caso de uso no tempo disponível. Quanto mais perto de 5, mais viável é o caso de uso, quanto mais perto de 1, menos viável.</li>
+<li>Complexidade: O quão difícil os integrantes consideram o caso de uso. Quanto mais perto de 5, maior é a complexidade, quanto mais perto de 1, menos complexo.</li>
+</ul>
+<h3 id="valor-de-negocio">Valor de negócio</h3>
+<table>
+<thead>
+<tr>
+<th>escala</th>
+<th>prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Muito baixa</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Média</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Muito alta, vital</td>
+</tr>
+</tbody>
+</table>
+<h4 id="viabilidade">Viabilidade</h4>
+<table>
+<thead>
+<tr>
+<th>escala</th>
+<th>Viabilidade no tempo disponível</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Muito baixa</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Média</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Muito alta</td>
+</tr>
+</tbody>
+</table>
+<h4 id="complexidade">Complexidade</h4>
+<table>
+<thead>
+<tr>
+<th>escala</th>
+<th>Nível de complexidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Muito baixa</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Média</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Muito alta, não fazemos ideia de como implementar</td>
+</tr>
+</tbody>
+</table>
+<h2 id="priorizacao-de-backlog">Priorização de Backlog</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th>Descrição</th>
+<th style="text-align: center;">Valor de negócio</th>
+<th style="text-align: center;">Viabilidade</th>
+<th style="text-align: center;">Complexidade</th>
+<th style="text-align: center;">Pontuação</th>
+<th style="text-align: center;">MVP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">CDU-01</td>
+<td>O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-02</td>
+<td>O usuário pode fazer login no sistema, fornecendo suas credenciais</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-03</td>
+<td>O usuário pode cadastrar até três contas bancárias associadas ao seu perfil</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-04</td>
+<td>Relata os ganhos financeiros do usuário</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-05</td>
+<td>O usuário tem informações de como estão suas economias</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-06</td>
+<td>O usuário pode acessar seu perfil</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-07</td>
+<td>O usuário pode alterar seu perfil</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-08</td>
+<td>O usuário pode deletar seu perfil</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-09</td>
+<td>O  usuário define um plano de gastos com objetivos de economia</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-10</td>
+<td>O usuário tem controle de suas transações financeiras</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-11</td>
+<td>O usuário visualiza gráficos estatísticos de suas economias</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-12</td>
+<td>O usuário pode alterar suas depesas</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-13</td>
+<td>O usuário pode alterar registrar suas despesas</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-14</td>
+<td>O usuário pode  deletar suas despesas</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-15</td>
+<td>O usuário pode  categorizar suas despesas</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-16</td>
+<td>O usuário pode  pesquisar suas despesas</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">CDU-17</td>
+<td>O usuário pode filtrar suas despesas</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mvp">MVP</h3>
+<p>Com base nos objetivos a serem atingidos no projeto, os Casos de Uso a fazerem parte do MVP foram selecionados:</p>
+<table>
+<thead>
+<tr>
+<th>Objetivos</th>
+<th>Casos de Uso do MVP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aprimorar controle Financeiro</td>
+<td>CDU-06 O usuário pode acessar seu perfil,CDU-07 O usuário pode alterar seu perfil,CDU-08 O usuário pode deletar seu perfil, CDU-10 O usuário tem controle de suas transações financeiras, CDU-04 Relata os ganhos financeiros do usuário</td>
+</tr>
+<tr>
+<td>Relatar gastos excessivos</td>
+<td>CDU-01 O usuário pode cadastrar-se no sistema, fornecendo as informações necessárias,  CDU-02 O usuário pode fazer login no sistema, fornecendo suas credenciais</td>
+</tr>
+<tr>
+<td>garantindo a análise de suas finanças</td>
+<td>CDU-11 O usuário visualiza gráficos estatísticos de suas economias, CDU-12 O usuário pode alterar suas depesas,CDU-13   O usuário pode alterar registrar suas despesas, CDU-14  O usuário pode  deletar suas despesas, CDU-15   O usuário pode  categorizar suas despesas , CDU-16 O usuário pode  pesquisar suas despesas , CDU-17 O usuário pode filtrar suas despesas</td>
+</tr>
+</tbody>
+</table>
+<p><center>
+Diagrama de Casos de Uso</p>
+<iframe allowfullscreen frameborder="0"  style="width: 640px; height: 480px; margin: 10px; position: relative;" style="width:960px; height:720px" src="https://lucid.app/documents/embedded/6ae438cc-9a4d-48b1-b8a2-dbe71275316f" id="6dMP5.bNy~9T"></iframe>
+<p></center></p>
+<h3 id="definicao-de-preparado-dor">Definição de Preparado (DOR)</h3>
+<p align="justify">&emsp;&emsp; A Declaração de Pronto (DOR) é um compromisso essencial estabelecido entre o time de desenvolvimento e o cliente, delineando meticulosamente o momento preciso em que um requisito estará plenamente preparado para ser integrado a uma iteração. Este acordo abrange diversos critérios que asseguram a qualidade e a prontidão do trabalho a ser realizado, visando uma execução eficiente e eficaz.</p>
+
+<ul>
+<li>O caso de uso é minuciosamente especificado, atendendo de maneira abrangente a todos os requisitos necessários para ser trabalhado com sucesso;</li>
+<li>A equipe de desenvolvimento alcançou um consenso unânime de que este caso de uso específico é não apenas viável, mas altamente recomendado para ser incorporado à iteração de desenvolvimento em questão;</li>
+<li>A representação visual do caso de uso, através de uma interface ou protótipo, está completamente alinhada com as expectativas e requisitos do cliente;</li>
+<li>Quaisquer dependências inerentes aos requisitos foram cuidadosamente identificadas e estão prontas para serem gerenciadas de forma eficiente durante o processo.</li>
+</ul>
+<p><center>
+ 
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://docs.google.com/document/d/e/2PACX-1vS5KZdv4hQQmB5BJv66ZwuD_BLHH-PNOBlegvrOsHHuFBpH5mnt4AyURZ9xsJ_qE6KdbeAVaPwWR4cd/pub?embedded=true"></iframe></p>
+<p></center></p>
+<h3 id="definicao-de-pronto-dod">Definição de Pronto (DOD)</h3>
+<p align="justify">&emsp;&emsp; A Declaração de Pronto (DOD) é um compromisso crucial que atesta não apenas a conclusão, mas a qualidade inquestionável do requisito produzido. A expressão "Done" vai além de uma mera confirmação; é a validação coletiva da satisfação integral com o trabalho realizado. Em conformidade com os mais elevados padrões de excelência, um requisito que não atenda aos rigorosos critérios de "Done" não apenas é retido, mas é excluído da possibilidade de ser liberado ou apresentado na iteração em curso.</p>
+
+<ul>
+<li>Os casos de uso não apenas oferecem um incremento ao produto, mas proporcionam uma experiência palpável que foi validada e aprovada pelo cliente;</li>
+<li>Todos os fluxos de eventos e condições do caso de uso são seguidos de maneira meticulosa, garantindo uma implementação precisa e completa;</li>
+<li>O código relacionado às funcionalidades vinculadas ao caso de uso passa por uma revisão detalhada e é submetido à aprovação de pelo menos outro membro experiente da equipe, assegurando uma qualidade consistente e elevada.</li>
+</ul>
+<h2 id="historico-de-versao">Histórico de versão</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Autor</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Juan Pablo</td>
+<td style="text-align: center;">Declaração dos Casos de Uso</td>
+<td style="text-align: center;">06/11/2023</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Juan Pablo</td>
+<td style="text-align: center;">Especificação dos Casos de Uso</td>
+<td style="text-align: center;">14/11/2023</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Juan Pablo</td>
+<td style="text-align: center;">Atualiza MVP</td>
+<td style="text-align: center;">16/11/2023</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">João Lucas</td>
+<td style="text-align: center;">Atualização de especificação dos Casos de Uso</td>
+<td style="text-align: center;">20/11/2023</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">João Lucas e Juan Pablo</td>
+<td style="text-align: center;">Atualização de especificação dos Casos de Uso</td>
+<td style="text-align: center;">22/11/2023</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

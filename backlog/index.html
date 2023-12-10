@@ -1,0 +1,1896 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../ProcessoDesenvolvimento/">
+      
+      
+        <link rel="next" href="../verificacao_validacao/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>Backlog SAFe - CarteiraControl</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#requisitos-funcionais" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="CarteiraControl" class="md-header__button md-logo" aria-label="CarteiraControl" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CarteiraControl
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backlog SAFe
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../historia/" class="md-tabs__link">
+        
+  
+    
+  
+  Gunther's
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../VisaoProduto/" class="md-tabs__link">
+          
+  
+  Visão do Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Backlog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../entrega3/bdd-tanas/" class="md-tabs__link">
+          
+  
+  PBB e BDD
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../entrega4/especificacao_uc/" class="md-tabs__link">
+          
+  
+  Casos de Uso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Licoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../itera%C3%A7%C3%A3o/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CarteiraControl" class="md-nav__button md-logo" aria-label="CarteiraControl" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CarteiraControl
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../historia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gunther's
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Visão do Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Visão do Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProduto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProjeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProcessoDesenvolvimento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Backlog SAFe
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Backlog SAFe
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos funcionais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Não-Funcionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Não-Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela Requisitos Não-Funcionais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backlog-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backlog SAFe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterio-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critério de priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critério de priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valor de negócio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-de-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização de Backlog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alinhamento-com-os-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alinhamento com os objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verificacao_validacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificação e Validação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../caso_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Casos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PBB e BDD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            PBB e BDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/bdd-tanas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BDD Tanás
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PBB HealthNet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USM ComunEventos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Casos de Uso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega4/especificacao_uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação UC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega4/verificacao_uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificaçao Especificação UC - Berserk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Licoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../itera%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos funcionais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Não-Funcionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Não-Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela Requisitos Não-Funcionais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backlog-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backlog SAFe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterio-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critério de priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critério de priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valor de negócio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-de-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização de Backlog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alinhamento-com-os-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alinhamento com os objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Backlog SAFe</h1>
+
+<h2 id="requisitos-funcionais">Requisitos funcionais</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Declaração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF1</td>
+<td>Cadastrar usuário</td>
+</tr>
+<tr>
+<td>RF2</td>
+<td>Logar usuário</td>
+</tr>
+<tr>
+<td>RF3</td>
+<td>Cadastrar até 3 contas bancárias</td>
+</tr>
+<tr>
+<td>RF4</td>
+<td>Alterar despesas</td>
+</tr>
+<tr>
+<td>RF5</td>
+<td>Deletar despesas</td>
+</tr>
+<tr>
+<td>RF6</td>
+<td>Categorizar despesas</td>
+</tr>
+<tr>
+<td>RF7</td>
+<td>Filtrar os gastos por categoria de gastos</td>
+</tr>
+<tr>
+<td>RF8</td>
+<td>Pesquisar gastos</td>
+</tr>
+<tr>
+<td>RF9</td>
+<td>Registrar despesas mensais</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Acompanhar progresso em direção às metas de economia</td>
+</tr>
+<tr>
+<td>RF11</td>
+<td>Notificar quando estiver a 10% do teto de gastos</td>
+</tr>
+<tr>
+<td>RF12</td>
+<td>Definir teto de gastos para cada categoria de despesas</td>
+</tr>
+<tr>
+<td>RF13</td>
+<td>Definir objetivos de economia</td>
+</tr>
+<tr>
+<td>RF14</td>
+<td>Registrar os ganhos mensais</td>
+</tr>
+<tr>
+<td>RF15</td>
+<td>Registrar transferências</td>
+</tr>
+<tr>
+<td>RF16</td>
+<td>Gerar gráfico de gastos no final do mês</td>
+</tr>
+<tr>
+<td>RF17</td>
+<td>Criar gráfico sobre as transações financeiras</td>
+</tr>
+<tr>
+<td>RF18</td>
+<td>Deletar conta</td>
+</tr>
+<tr>
+<td>RF19</td>
+<td>Acessar perfil do usuário</td>
+</tr>
+<tr>
+<td>RF20</td>
+<td>Alterar conta</td>
+</tr>
+<tr>
+<td>RF21</td>
+<td>Destacar categorias de gastos mais frequentes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requisitos-nao-funcionais">Requisitos Não-Funcionais</h2>
+<p>Requisitos não-funcionais são restrições aos serviços ou funções fornecidos pelo sistema. Esses requisitos incluem uma série de "ilidades", como: flexibildade, portabilidade, etc. Foi utilizado o URPS+ para a definição dos requisitos não-funcionais</p>
+<h3 id="tabela-requisitos-nao-funcionais">Tabela Requisitos Não-Funcionais</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoria</th>
+<th>Declaração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF1</td>
+<td>Requisitos de implementação</td>
+<td>Utilização do Flutter e Dart para a construção da aplicação</td>
+</tr>
+<tr>
+<td>RNF2</td>
+<td>Requisitos de implementação</td>
+<td>Utilização do VScode como ambiente de operação e git para o versionamento</td>
+</tr>
+<tr>
+<td>RNF3</td>
+<td>Suportabilidade</td>
+<td>Compatível com dispositos android (a partir do android 10)</td>
+</tr>
+<tr>
+<td>RNF4</td>
+<td>Suportabilidade</td>
+<td>O aplicativo deve ser otimizado para diferentes tamanhos de tela e resoluções</td>
+</tr>
+<tr>
+<td>RNF5</td>
+<td>Desempenho</td>
+<td>O tempo de resposta para a execução de operações críticas, como consulta de saldos, cadastro de ganho e despesas deve ser inferior a 3 segundos para garantir uma experiência responsiva.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="backlog-safe">Backlog SAFe</h2>
+<p>A partir dos requisitos funcionais, foi estruturado o backlog do SAFe utilizando o mural abaixo: </p>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://app.mural.co/embed/1d2e2e95-009d-4e06-af5b-1b133fb233f0" allowfullscreen></iframe>
+
+<p>A seguir, é utilizado a representação do backlog em formato de tabela:</p>
+<table>
+    <thead>
+        <tr>
+            <th>Épicos</th>
+            <th>Capacidades</th>
+            <th>Funcionalidades</th>
+            <th>Histórias de Usuário</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="37">Gerenciamento de Despesas e Ganhos</td>
+        <td rowspan="8">Transações de Despesa</td>
+        <td rowspan="4">Gerir processos de despesas</td>
+        <td>Eu, como usuário, desejo ver meu gasto individual, para que eu possa controlar meus gastos </td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso às despesas</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="4">Categorizar despesas </td>
+        <td>Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo criar categoria de despesas adicionais, para que eu possa filtrar os despesas adicionais</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="14">Transações de Ganhos</td>
+        <td rowspan="4">Categorizar ganhos</td>
+        <td>Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo criar categoria de ganhos, para que eu possa filtrar os ganhos adicionais</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="2">Gerir Processos de ganhos</td>
+        <td>Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis</td>
+    </tr>
+    <tr>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td rowspan="37">Análise Financeira</td>
+        <td rowspan="8">Definir Planejamento</td>
+        <td rowspan="4">Gerir Planejamentos</td>
+        <td>Eu, como usuário, desejo definir teto de gasto para cada categoria, para que eu controle gastos específicos </td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo definir um planejamento financeiro com metas, para que eu possa melhor administrar meus recursos financeiros</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo acompanhar progresso em direção as metas do planejamento, para que eu possa poupar recursos financeiros</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="4">Notificação de Planejamento </td>
+        <td>Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo ser notificado 5 dias antes da data do planejamento, para que eu não exceda o limite da data.</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="14">Estatísticas</td>
+        <td rowspan="4">Gráfico de ganhos e despesas</td>
+        <td>Eu, como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimentos dos meu gastos ao final do mês</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo ver gráficos de barras dos ganhos por categoria, para que eu tenha conhecimento dos meu ganhos mensais</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês</td>
+    </tr>
+    <tr>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td rowspan="37">Gerenciamento de Usuários e Contas Bancárias</td>
+        <td rowspan="8">Informações de Usuário</td>
+        <td rowspan="4">Gerir cadastro de informações de Usuário</td>
+        <td>Eu, como usuário, desejo criar minha conta, para que eu possa criar um perfil </td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="4">Login e Logoff </td>
+        <td>Eu, como usuário, desejo logar na minha conta, para que eu possa acessar meu perfil</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar as informações de login, para que eu possa modificar meu acesso</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="14">Informações de Contas Bancárias</td>
+        <td rowspan="4">Gerir cadastro de informações de Contas bancárias</td>
+        <td>Eu, como usuário, desejo cadastrar minhas contas dos bancos, para que eu possa rastrear minhas depesas</td>
+    </tr>
+    <tr>
+        <td>Eu, como usuário, desejo atualizar as informações da minha conta do banco, para que eu possa modificar meu perfil</td>
+    </tr>
+    <tr>
+    </tr>
+    </tbody>
+</table>
+
+<h2 id="criterio-de-priorizacao">Critério de priorização</h2>
+<p>Os campos de valor de négocio, viabilidade e complexidade podem variar de 1 a 5, sendo 0 o valor mínimo e 5 o valor máximo. A História de usuário será priorizada se seu MVP for maior ou igual 6 (MVP &gt;= 6).</p>
+<div class="highlight"><pre><span></span><code>MVP = Valor de negócio + Viabilidade - Complexidade
+</code></pre></div>
+<ul>
+<li>Valor de negócio: O quanto a US agrega valor ao produto, se uma US tem valor de negócio 5 significa que ela é um ponto vital do sistema, não podendo ficar fora do MVP. Se uma US tem valor de negócio 1 , significa que não agrega valor algum ao sistema, não pertencendo ao MVP. <b>É validado pelo cliente</b>.</li>
+<li>Viabilidade: Se refere a viabilidade de desenvolvimento da US no tempo disponível. Quanto mais perto de 5, mais viável é a US, quanto mais perto de 1, menos viável.</li>
+<li>Complexidade: O quão difícil os integrantes consideram a US. Quanto mais perto de 5, maior é a complexidade, quanto mais perto de 1, menos complexo.</li>
+</ul>
+<h3 id="valor-de-negocio">Valor de negócio</h3>
+<table>
+<thead>
+<tr>
+<th>escala</th>
+<th>prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Muito baixa</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Média</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Muito alta, vital</td>
+</tr>
+</tbody>
+</table>
+<h3 id="viabilidade">Viabilidade</h3>
+<table>
+<thead>
+<tr>
+<th>escala</th>
+<th>Viabilidade no tempo disponível</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Muito baixa</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Média</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Muito alta</td>
+</tr>
+</tbody>
+</table>
+<h3 id="complexidade">Complexidade</h3>
+<table>
+<thead>
+<tr>
+<th>escala</th>
+<th>Nível de complexidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Muito baixa</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Média</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Muito alta, não fazemos ideia de como implementar</td>
+</tr>
+</tbody>
+</table>
+<h2 id="priorizacao-de-backlog">Priorização de Backlog</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th>Descrição</th>
+<th style="text-align: center;">Valor de negócio</th>
+<th style="text-align: center;">Viabilidade</th>
+<th style="text-align: center;">Complexidade</th>
+<th style="text-align: center;">Pontuação</th>
+<th style="text-align: center;">MVP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">US01</td>
+<td>Eu, como usuário, desejo criar minha conta, para que eu possa criar um perfil</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US02</td>
+<td>Eu, como usuário, desejo logar na minha conta, para que eu possa acessar meu perfil</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US03</td>
+<td>Eu, como usuário, desejo consultar meu gasto individual, para que eu possa controlar meus gastos</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US04</td>
+<td>Eu, como usuário, desejo registrar despesas, para que eu possa ter acesso as despesas</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US05</td>
+<td>Eu, como usuário, desejo registrar meu salário, para que eu tenha um valor fixo a gastar</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US06</td>
+<td>Eu, como usuario, desejo definir um planejamento de gastos para me organizar no período de planejamento</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US07</td>
+<td>Eu, como usuário, desejo cadastrar minhas reservas (ex.:contas,dinheiro físico em carteiro), para que eu possa rastrear minhas depesas</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US08</td>
+<td>Eu, como usuário, desejo atualizar o saldo das minhas contas, para que eu possa saber em, tempo real, os recursos financeiros disponíveis </td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US09</td>
+<td>Eu, como usuário, desejo criar um novo tipo categoria de despesas, para que eu possa filtrar as despesas adicionais</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">US10</td>
+<td>Eu, como usuário, desejo ser notificado 5 dias antes da data do planejamento, para que eu não exceda o limite da data.</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">US11</td>
+<td>Eu, como usuário, desejo categorizar despesas, para que eu possa filtrar as despesas</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US12</td>
+<td>Eu, como usuário, desejo definir teto de gasto para cada categoria, para que eu controle gastos específicos</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US13</td>
+<td>Eu, como usuário, desejo acompanhar progresso em direção as metas do planejamento, para que eu possa poupar recursos   financeiros</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US14</td>
+<td>Eu, como usuário, desejo ser notificado quando 80% perto do teto de gastos. para que eu não exceda o limite de gastos</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">US15</td>
+<td>Eu, como usuário, desejo ver gráfico circular do balanço mensal, para que eu tenha conhecimentos dos meu gastos ao final do mês</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US16</td>
+<td>Eu, como usuário, desejo categorizar ganhos, para que eu possa filtrar os ganhos</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">US17</td>
+<td>Eu, como usuário, desejo atualizar as informações da minha conta de usuário, para que eu possa modificar meu perfil</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US18</td>
+<td>como usuário, desejo ver gráficos de barras dos gastos por categoria, para que eu tenha conhecimento dos meu ganhos mensais em cada categoria de gasto</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: center;">US19</td>
+<td>como usuário, desejo ver gráficos de barras dos ganhos por categoria, para que eu tenha conhecimento dos meu ganhos mensais</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="alinhamento-com-os-objetivos">Alinhamento com os objetivos</h2>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aprimorar o controle financeiro do usuário</td>
+<td>US03, US04, US05, US06, US07, US10, US11, US12, US13</td>
+</tr>
+<tr>
+<td>relatando gastos excessivos</td>
+<td>US03, US04, US10</td>
+</tr>
+<tr>
+<td>garantindo a análise de suas finanças</td>
+<td>US13, US15, US18</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-versao">Histórico de versão</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Autor</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Jefferson, Tiago, Juan e João</td>
+<td style="text-align: center;">Adicionando Backlog MVP com Priorização</td>
+<td style="text-align: center;">25/10</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">João Lucas</td>
+<td style="text-align: center;">Adicionando tabela de requisitos funcionais e atualização de requisitos não funcionais</td>
+<td style="text-align: center;">26/10</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Tiago</td>
+<td style="text-align: center;">Adicionando descriçao dos critérios de aceitação</td>
+<td style="text-align: center;">26/10</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">Jefferson</td>
+<td style="text-align: center;">Adicionando iframe para vizualização do backlog no mural</td>
+<td style="text-align: center;">26/10</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

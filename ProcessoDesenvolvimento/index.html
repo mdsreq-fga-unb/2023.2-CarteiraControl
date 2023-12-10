@@ -1,0 +1,1419 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../VisaoProjeto/">
+      
+      
+        <link rel="next" href="../backlog/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>Processo de desenvolvimento - CarteiraControl</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-processo-de-desenvolvimento-de-software" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="CarteiraControl" class="md-header__button md-logo" aria-label="CarteiraControl" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CarteiraControl
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Processo de desenvolvimento
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../historia/" class="md-tabs__link">
+        
+  
+    
+  
+  Gunther's
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../VisaoProduto/" class="md-tabs__link">
+          
+  
+  Visão do Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../backlog/" class="md-tabs__link">
+          
+  
+  Backlog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../entrega3/bdd-tanas/" class="md-tabs__link">
+          
+  
+  PBB e BDD
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../entrega4/especificacao_uc/" class="md-tabs__link">
+          
+  
+  Casos de Uso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Licoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../itera%C3%A7%C3%A3o/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CarteiraControl" class="md-nav__button md-logo" aria-label="CarteiraControl" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CarteiraControl
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../historia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gunther's
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Visão do Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Visão do Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProduto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProjeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-processo-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Processo de desenvolvimento de software
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Processo de desenvolvimento de software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Metodologia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-abordagem-ciclo-de-vida-e-processo-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Abordagem, Ciclo de Vida e Processo de Software
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-tarefas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Tarefas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapas-do-processo-unificado-aliadas-as-tarefas-do-processo-de-engenharia-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapas do Processo Unificado Aliadas às tarefas do Processo de Engenharia de Requisitos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Etapas do Processo Unificado Aliadas às tarefas do Processo de Engenharia de Requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#34-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Referências
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog SAFe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verificacao_validacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificação e Validação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../caso_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Casos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PBB e BDD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            PBB e BDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/bdd-tanas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BDD Tanás
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PBB HealthNet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega3/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USM ComunEventos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Casos de Uso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega4/especificacao_uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação UC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega4/verificacao_uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificaçao Especificação UC - Berserk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Licoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../itera%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-processo-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Processo de desenvolvimento de software
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Processo de desenvolvimento de software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Metodologia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-abordagem-ciclo-de-vida-e-processo-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Abordagem, Ciclo de Vida e Processo de Software
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-tarefas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Tarefas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapas-do-processo-unificado-aliadas-as-tarefas-do-processo-de-engenharia-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapas do Processo Unificado Aliadas às tarefas do Processo de Engenharia de Requisitos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Etapas do Processo Unificado Aliadas às tarefas do Processo de Engenharia de Requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#34-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Referências
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Processo de desenvolvimento</h1>
+
+<h2 id="3-processo-de-desenvolvimento-de-software">3. Processo de desenvolvimento de software</h2>
+<h3 id="31-metodologia">3.1 Metodologia</h3>
+<p style="text-indent: 20px; text-align: justify;">
+Levamos em conta as três naturezas apontadas por Sommerville: Técnicas, Humanas e Organizacionais, para formular perguntas que nos guiaram a abordagem de processo mais indicada para o nosso projeto.
+</p>
+
+<ul>
+<li><strong>Questões Técnicas:</strong> <br></li>
+</ul>
+<p style="margin-left: 70px;">
+  O sistema está sujeito a controle externo? <b>Não</b>.<br>
+  Que tipo de sistema está sendo desenvolvido? <b>Um aplicativo android</b><br>
+  Qual o tamanho do projeto? <b>É um projeto pequeno</b>
+</p>
+
+<ul>
+<li><strong>Questões Humanas:</strong> <br></li>
+</ul>
+<p style="margin-left: 70px;">
+Quais abordagens de desenvolvimento os desenvolvedores são familiarizados? <b>
+Toda a equipe está familiarizada com o Processo Unificado.</b><br>
+Quais tecnologias estão disponíveis para apoiar o desenvolvimento do sistema? <b>Flutter, Android Studio e Python</b></p>
+
+<ul>
+<li><strong>Questões Organizacionais:</strong> <br></li>
+</ul>
+<p style="margin-left: 70px;">
+É necessária uma especificação antes de começar a fase de implementação 
+do projeto? <b>Sim. A maior parte dos requisitos já são conhecidos.</b>
+<br>Um esquema de entrega incremental é 
+realista? <b>Sim</b>.<br>
+O cliente está disposto e disponível para participar do time de desenvolvimento?
+<b> Sim. Temos contato próximo ao cliente o que nos garante sua participação no
+projeto.</b>
+</p>
+
+<h3 id="32-abordagem-ciclo-de-vida-e-processo-de-software">3.2 Abordagem, Ciclo de Vida e Processo de Software</h3>
+<p align = "justify"> &emsp;&emsp;
+Após a discussão em equipe foi definida o seguinte viés de desenvolvimento:</p>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Abordagem</th>
+<th style="text-align: center;">Ciclo de Vida</th>
+<th style="text-align: center;">Processo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Dirigida a plano</td>
+<td style="text-align: center;">Iterativo-Incremental</td>
+<td style="text-align: center;">Processo unificado</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align = "justify" > Dessa forma com o processo definido, será seguido a seguinte sequência de elaboração: </p>
+
+<p><img alt="pu" src="../assets/imagens/PU.png" /></p>
+<div align="center" style="text-align: center">
+<p>Figura 1: Diagrama do Processo Unificado.</p>
+</div>
+
+<p align = "justify"> &emsp;&emsp;
+&emsp;&emsp;A escolha do processo foi direcionada devido às suas fases de desenvolvimento as quais se encaixaram com o Processo de engenharia de requisitos.
+</p>
+
+<h3 id="33-tarefas">3.3 Tarefas</h3>
+<p align = "justify" >&emsp;&emsp;Por fim, diante do processo de desenvolvimento estabelecido, é necessário relacionar tal, ao processo de engenharia de requisitos, que tem as seguintes fases:  </p>
+
+<p><img alt="er" src="../assets/imagens/ER.png" /></p>
+<div align="center" style="text-align: center">
+<p>Figura 2: Especificação da ER.</p>
+</div>
+
+<p align = "justify" > &emsp;&emsp;A seguir pode ser conferido como foi definido as fases da engenharia de requisitos, os métodos, ferramentas e artefatos produzidos ao final da etapa, tais fases não são inflexíveis e podem mudar e adequar-se ao contexto em que se encontra o processo </p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Atividade</th>
+<th style="text-align: center;">Método</th>
+<th style="text-align: center;">Ferramenta</th>
+<th style="text-align: center;">Artefatos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Elicitação e Descoberta</td>
+<td style="text-align: center;">Entrevistas</td>
+<td style="text-align: center;">Teams</td>
+<td style="text-align: center;">Pedidos do cliente, esboço inicial</td>
+</tr>
+<tr>
+<td style="text-align: center;">Análise e Consenso</td>
+<td style="text-align: center;">Caso de Uso, Brainstorming, Conversas com o cliente, Análises de custo e benefícios, Análises de valor, Análise de Prioridade e Impacto e Entrevistas</td>
+<td style="text-align: center;">Teams, discord e Github</td>
+<td style="text-align: center;">Casos de Uso,   Lista de RFs e RNFs</td>
+</tr>
+<tr>
+<td style="text-align: center;">Declaração</td>
+<td style="text-align: center;">Casos de Uso</td>
+<td style="text-align: center;">Reunião</td>
+<td style="text-align: center;">Casos de uso e visão de requisitos</td>
+</tr>
+<tr>
+<td style="text-align: center;">Representação</td>
+<td style="text-align: center;">Diagrama UML</td>
+<td style="text-align: center;">LucidChart e astah</td>
+<td style="text-align: center;">Diagrama de JCasos de Uso</td>
+</tr>
+<tr>
+<td style="text-align: center;">Validação e Verificação</td>
+<td style="text-align: center;">Casos de Uso, DoR, Feedback, INVEST, Revisão em Pares</td>
+<td style="text-align: center;">Vitest e jest</td>
+<td style="text-align: center;">Feedback do produto</td>
+</tr>
+<tr>
+<td style="text-align: center;">Organização e Atualização</td>
+<td style="text-align: center;">Casos de Uso</td>
+<td style="text-align: center;">Mural, Word, Github</td>
+<td style="text-align: center;">Backlog do produto</td>
+</tr>
+</tbody>
+</table>
+<p align="justify"> 
+
+&emsp;&emsp;O Processo Unificado já possui uma ER, com determinadas tarefas a serem seguidas. Para desenvolver as atividades do projeto é necessário escolher uma abordagem que se adeque às especificidades do software, e para isso utilizaremos um método proposto pela IREB (2022) no qual é apresentado diferentes facetas e configurações 'típicas' para um processo de ER, representado na Figura 3. </p>
+
+<p><img alt="facetas" src="../assets/imagens/facetas.png" /></p>
+<div align="center" style="text-align: center">
+<p>Figura 3: Facetas do processo de ER. IREB (2023).</p>
+</div>
+
+<p align="justify"> &emsp;&emsp;
+Com base no que foi avaliado no sommerville e na abordagem de desenvolvimento já definida, identificamos a faceta do <b>Processo de ER Contratual</b>  compartilhava seus principais pontos. Os pontos definidos para o projeto foram:
+
+<ul>
+  <li>Customer-specific: o produto foi encomendado por um cliente específico, em que o cliente é a principal fonte de requisitos.</li>
+  <li>Iterativo-incremental: devido ser um produto pequeno mas complexo, dividí-lo em pequenas iterações se torna uma forma de gerenciar e minimizar os riscos, às vezes, mas manter um constante linear de entregas é útil, em virtude das dependências entre as funcionalidades.</li>
+  <li>Prescritivo: é um contrato e o dono do produto exige que as funcionalidades sejam implementadas.</li>
+</ul>
+</p>
+
+<h2 id="etapas-do-processo-unificado-aliadas-as-tarefas-do-processo-de-engenharia-de-requisitos">Etapas do Processo Unificado Aliadas às tarefas do Processo de Engenharia de Requisitos</h2>
+<p align = "justify" > &emsp;&emsp;Com o propósito de facilitar a execução das tarefas durante o desenvolvimento do projeto, foram identificadas as tarefas a serem realizadas nas 4 fases do Processo Unificado. </p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Iniciação/Concepção</th>
+<th style="text-align: center;">Elaboração</th>
+<th style="text-align: center;">Construção</th>
+<th style="text-align: center;">Transição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Elicitação e Descoberta, Analise e Consenso, Organização e Atualização, Declaração</td>
+<td style="text-align: center;">Representação</td>
+<td style="text-align: center;">Elicitação e Descoberta, Verificação e Validação, Organização e Atualização</td>
+<td style="text-align: center;">Organização e Atualização, Verificação e Validação</td>
+</tr>
+<tr>
+<td style="text-align: center;">Identificação de stakeholders e suas necessidades, Elaboração de uma visão inicial do sistema e Definição de requisitos de alto nível funcionais e não funcionais</td>
+<td style="text-align: center;">Refinamento e análise dos requisitos iniciais, Modelagem de casos de uso, diagramas e artefatos de modelagem e Priorização dos requisitos com base nas necessidades dos stakeholders</td>
+<td style="text-align: center;">Desenvolvimento dos componentes do sistema baseado nos requisitos, Verificação da definição dos requisitos e Atualização contínua da documentação a medida que ocorrer mudanças</td>
+<td style="text-align: center;">Validação final dos requisitos em relação ao sistema implementado, Preparação para a implantação do sistema no ambiente de produção e Treinamento de usuários finais com base nos requisitos de uso do sistema</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-referencias">3.4 Referências</h3>
+<blockquote>
+<p>Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.</p>
+<p>SCOTT, Kendall. The Unified process explained. Nov 26, 2001. Disponível em: <a href="https://www.informit.com/articles/article.aspx?p=24671&amp;seqNum=8">https://www.informit.com/articles/article.aspx?p=24671&amp;seqNum=8</a></p>
+<p>MARSICANO, George. Requisitos de Software: Introdução a Engenharia de Requisitos (ER). Brasília, 2023. Disponível em: <a href="https://aprender3.unb.br/course/view.php?id=20236">https://aprender3.unb.br/course/view.php?id=20236</a>. Acesso em: 16 set. 2023.</p>
+<p>SOMMERVILLE, Ian. Engenharia de software. 10.ed. São Paulo: Pearson Education do Brasil, 2018.</p>
+</blockquote>
+<h2 id="historico-de-versao">Histórico de versão</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Autor</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Juan Pablo</td>
+<td style="text-align: center;">Implementação do documento inicial</td>
+<td style="text-align: center;">27/09</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Harryson, Jefferson, João Lucas, Juan Pablo, Leandro, Thiago</td>
+<td style="text-align: center;">Regulação e correção do documento</td>
+<td style="text-align: center;">27/09</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Jefferson</td>
+<td style="text-align: center;">Correção dos Textos</td>
+<td style="text-align: center;">21/10</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">João Lucas</td>
+<td style="text-align: center;">Correção de tabela</td>
+<td style="text-align: center;">23/10</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
