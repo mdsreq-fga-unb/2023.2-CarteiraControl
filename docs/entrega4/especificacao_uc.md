@@ -25,10 +25,13 @@
 | 1 | O usuário acessa a seção de "Explorar Destinos" no aplicativo. |
 | 2 | O sistema utiliza algoritmos para sugerir destinos com base nas preferências e histórico de viagem do usuário. |
 | 3 | O usuário seleciona um destino sugerido pelo sistema |
-| 4 | O sistema mostra fotografias, artigos e vídeos sobre o destino |
+| 4 | O sistema apresenta as seguintes opções: <br> - fotografias, artigos e videos do destino; <br> - Atividades ocorrendo no destino.|
+| 5 | O usuário seleciona fotografias, artigos e vídeos |
+| 6 | O sistema mostra fotografias, artigos e vídeos sobre o destino|
+| 7 | O caso de uso termina |
 | **Fluxos Alternativos** |
-| **A1 Primeiro Fluxo Alternativo** | **Passo 2a**: Em vez de selecionar um destino sugerido pelo sistema, o usuário opta por realizar uma busca manual na seção "Explorar Destinos". <br> **Passo 2b**: O sistema permite que o usuário insira um destino específico de sua escolha.<br> **Passo 2c**: O sistema exibe informações (fotografias, artigos e vídeos) sobre o destino escolhido pelo usuário. |
-| **A2 Segundo Fluxo Alternativo** | **Passo 4a**: O usuário consulta as atividades do destino ao invés de fotografias, artigos e vídeos.<br> **Passo 4b**: O sistema fornece todas as atividades que estão ocorrendo no destino explorado.<br> **Passo 4c:** O usuário filtra as atividades por preço e avaliações.<br> **Passo 4d**:O sistema fornece informações das atividades que estão ocorrendo no destino que está sendo explorado, satisfazendo os filtros selecionados. |
+| **FA1 Primeiro Fluxo Alternativo** |No passo 3 do fluxo básico de eventos o usuário não seleciona um dos destino sugeridos, mas faz a pesquisa manualmente. <br> **Passo 3a**: Em vez de selecionar um destino sugerido pelo sistema, o usuário opta por realizar uma busca manual na seção "Explorar Destinos". <br> **Passo 3b**: O sistema permite que o usuário insira um destino específico de sua escolha.<br> **Passo 3c**: Volta para o passo 4 do fluxo básico de eventos |
+| **FA2 Segundo Fluxo Alternativo** |No passo 4 do sistema o usuário consulta as atividades ocorrendo no local. <br> **Passo 4a**: O usuário consulta as atividades do destino ao invés de fotografias, artigos e vídeos.<br> **Passo 4b**: O sistema fornece todas as atividades que estão ocorrendo no destino explorado.<br> **Passo 4c:** O usuário filtra as atividades por preço e avaliações.<br> **Passo 4d**:O sistema fornece informações das atividades que estão ocorrendo no destino que está sendo explorado, satisfazendo os filtros selecionados. <br> **Passo 4e**:Volta para o passo 7 do fluxo básico de eventos|
 | **Fluxos de Exceção** |
 | Número | Descrição |
 | 1 | No passo 2, o usuário nunca ter acessado o aplicativo anteriormente e não possuir histórico. O sistema pede que o usuário preencha suas preferências ou realize a busca manualmente. |
@@ -60,15 +63,16 @@
 | --- | --- |
 | **Fluxo Básico de Eventos** | 
 | Passo | Descrição |
-| 1.1 | O usuário, após explorar destinos, decide reservar acomodações para um período específico da viagem. |
-| 1.2 | O sistema filtra opções de hotéis, pousadas e atrações culturais disponíveis para o período determinado. |
-| 1.3 | O usuário examina as opções disponíveis e seleciona uma pousada de interesse. |
-| 1.4 | O sistema apresenta fotos e descrições detalhadas do local, bem como os diferentes pacotes de valores oferecidos. |
-| 1.5 | O usuário escolhe um pacote específico, considerando características como comodidades, refeições incluídas e políticas de cancelamento. |
-| 1.6 | Após a escolha do pacote, o sistema solicita a confirmação da reserva. |
-| 1.7 | O usuário confirma a reserva, indicando a quantidade de hóspedes, informações de pagamento e quaisquer preferências adicionais. |
-| 1.8| O sistema processa a reserva e fornece uma confirmação detalhada, incluindo as datas da estadia, custos associados e informações sobre a pousada. |
-| 1.9 | Para facilitar a comunicação, o sistema disponibiliza um contato direto com o anfitrião, caso o usuário tenha perguntas ou solicitações específicas antes da chegada. |
+| 1 | O usuário, após explorar destinos, decide reservar acomodações para um período específico da viagem. |
+| 2 | O sistema filtra opções de hotéis, pousadas e atrações culturais disponíveis para o período determinado. |
+| 3 | O usuário examina as opções disponíveis e seleciona uma pousada de interesse. |
+| 4 | O sistema apresenta fotos e descrições detalhadas do local, bem como os diferentes pacotes de valores oferecidos. |
+| 5 | O usuário escolhe um pacote específico, considerando características como comodidades, refeições incluídas e políticas de cancelamento. |
+| 6 | Após a escolha do pacote, o sistema solicita a confirmação da reserva. |
+| 7 | O usuário confirma a reserva, indicando a quantidade de hóspedes, informações de pagamento e quaisquer preferências adicionais. |
+| 8| O sistema processa a reserva e fornece uma confirmação detalhada, incluindo as datas da estadia, custos associados e informações soe a pousada. |
+| 9 | Para facilitar a comunicação, o sistema disponibiliza um contato direto com o anfitrião, caso o usuário tenha perguntas ou solicitações específicas antes da chegada. |
+| 10 | O caso de uso termina |
 | **Fluxos Alternativos** |
 | **A1 Primeiro Fluxo Alternativo** | **Passo 4a**: Após o usuário selecionar uma pousada e visualizar os pacotes padrão oferecidos, ele decide personalizar sua reserva. <br> **Passo 4b**: Em vez de escolher um dos pacotes padrão, o usuário opta por personalizar a estadia selecionando serviços adicionais, como serviço de quarto, pacotes especiais de comemoração, ou tours locais.<br> **Passo 4c**: O sistema oferece opções de personalização, apresentando preços adicionais para cada serviço escolhido. <br> **Passo 4d**  O usuário faz suas escolhas personalizadas e adiciona os serviços desejados à reserva.  <br> **Passo 4e** Após a personalização, o sistema recalcula o custo total da reserva com base nas escolhas feitas pelo usuário.      <br> **Passo 4f** O usuário confirma a reserva com os pacotes personalizados e procede ao pagamento. |
 | **Fluxos de Exceção** |
@@ -109,6 +113,7 @@
 | 3 | O usuário insere seu nome de usuário ou endereço de e-mail e senha |
 | 4 | O sistema valida as credenciais inseridas |
 | 5 | O aplicativo exibe a tela inicial personalizada com base no perfil do usuário. |
+| 6 | O caso de uso termina |
 | **Fluxos Alternativos** |
 | **1. Recuperação de Senha** | **Passo 1**: O usuário esqueceu a senha e seleciona a opção "Esqueceu a senha?". <br> **Passo 4b**: O sistema envia um link de redefinição de senha para o e-mail registrado<br> **Passo 4c**: O usuário acessa o link e redefine a senha. |
 | **Fluxos de Exceção** |
